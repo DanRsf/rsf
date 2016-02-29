@@ -1,0 +1,665 @@
+@charset "UTF-8";
+
+/* ============================================ *
+ * Common styling elements
+ * ============================================ */
+
+ .section-link {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    color: $c-dgrey;
+    &:after {
+        font-family: 'rsficon';
+        content: $icon-arrow-down;
+        font-size: 30px;
+        display: block;
+        margin-top: 10px;
+        color: $c-dgrey;
+    }
+    @include bp(min-width, $bp-medium + 1) {
+        font-size: 16px;
+    }
+    @include bp(min-width, $bp-large + 1) {
+        font-size: 18px;
+        &:after {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+    }
+}
+
+p {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.scroll-block {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main-container {
+    width: 100%;
+    margin: 80px auto 0 auto;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.full {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.copy {
+    position: absolute;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    width: 100%;
+    padding-bottom: 75%;
+    position: relative;
+    img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.cta {
+    &:after {
+        font-family: 'rsficon';
+        content: $icon-arrow-flat-right;
+        margin-left: 4px;
+        display: inline-block;
+    }
+}
+
+#hp-intro {
+    background-image: url(/resources/img/parallax/big-window.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0;
+    background-size: 150%;
+    width: 100%;
+    height: 210px; 
+    position: relative;
+    margin-bottom:60px;
+    .copy {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        h1 {
+            font-family: 'Libre Baskerville', serif;
+            font-style: italic;
+            color: $c-white;
+            font-size: 30px;
+            line-height: 100%;
+            font-weight: 400;
+            margin-bottom: 10px;
+            text-shadow: $text-shadow;
+            span {
+                display: block;
+                font-weight:100;
+                font-size: 75%;
+            }
+        }
+        p {
+            width: 60%;
+            display: block;
+            margin: 0 auto 20px;
+            color: $c-white;
+            font-size:15px;
+            text-shadow: $text-shadow;
+            text-align:center;
+            line-height: 18px;
+        }
+    }
+    .section-link {
+        position: absolute;
+        bottom: -50px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+#hp-info-panels {
+    @extend .container;
+    ul {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 50px;
+        li {
+            overflow: hidden;
+            padding: 20px 7%;
+            text-align: left;
+            display: block;
+            .image {
+                display: inline-block;
+                vertical-align: middle;
+                width: 37%;
+                img {
+                    max-width: 90%;
+                }
+            }
+            .content {
+                width: 61%;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+                h2 {
+                    margin-bottom: 6px;
+                    font-size: 18px;
+                    line-height: 23px;
+                    font-weight: $fw-light;
+                }
+                p {
+                    margin-bottom: 6px;
+                }
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .section-link {
+        display: none;
+    }
+}
+
+#hp-product-design {
+    background-image: url(/resources/img/parallax/pale-blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    //background-size: 100%;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    .copy {
+        padding:20px;
+        background: rgba(0,0,0,0.6);
+        position: relative;
+        h2 {
+            color: $c-white;
+            font-size: 19px;
+            line-height: 19px;
+            text-transform: uppercase;
+            text-align: right;
+            font-weight: 600;
+            margin-bottom:14px;
+            span {
+                font-size: 75%;
+                display: block;
+                font-weight: 100;
+            }
+        }
+        p {
+            color: $c-white;
+            text-align: right;
+            font-weight: 12px;
+            line-height: 14px;
+        }
+        a {
+            float: right;
+            font-size:13px;
+            color: $c-white;
+            &:after {
+                color: $c-white;
+            }
+            &:hover {
+                color: $c-lblue;
+                &:after {
+                    color: $c-lblue;
+                }
+            }
+        }
+    }
+    .section-link {
+        display: none;
+        position: absolute;
+        right: 6%;
+        bottom: 3%;
+        color: $c-white;
+        &:after {
+            color: $c-white;
+        }
+    }
+}
+
+#hp-video {
+    @extend .container;
+    padding-top:30px;
+    padding-bottom: 40px;
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 49.8%;
+        padding-top: 25px;
+        height: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        clear: both;
+        display: block;
+        margin-bottom: 40px;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0
+        }
+    }
+}
+
+#hp-montage {
+    overflow:hidden;
+    div {
+        position: relative;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: 101%;
+    }
+    .sink {
+        background-image: url('/resources/img/general/hp-montage-basin.jpg');
+    }
+    .chrome-tap {
+        background-image: url('/resources/img/general/hp-montage-small-shower.jpg');
+    }
+    .chrome-shower {
+        background-image: url('/resources/img/general/hp-montage-tap.jpg');
+    }
+    .drencher {
+        background-image: url('/resources/img/general/hp-montage-big-shower.jpg');
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        float:right;
+        &.small {
+            width:50%;
+        }
+        &.big {
+            width:100%;
+        }
+    }
+}
+
+#hp-gallery {
+    padding: 40px 10%;
+    .content {
+        margin-bottom: 30px;
+        img {
+            margin: 0 auto 10px auto;
+        }
+        p {
+            text-align: center;
+            font-size: 14px;
+            line-height:18px;
+        }
+    }
+
+    #gallery-viewer {
+        width: 100%;
+    }
+
+    #gallery-thumbs {
+        width: 100%;
+        border-top: 1px solid $c-border;
+        margin-top: 20px;
+        padding-top: 20px;
+        font-size: 0;
+        li {
+            display: inline-block;
+            width: 25%;
+            img {
+                width: 90%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+#hp-testimonials {
+    @extend .container;
+    h3 {
+
+    }
+    ul {
+        font-size: 0;
+        li {
+            display: inline-block;
+            width: 33%;
+            padding: 20px 2%;
+            p {
+                
+            }
+            .customer {
+                font-family: $f-libre;
+                font-size: 18px;
+                color: $c-blue;
+                span {
+                    font-size: 75%;
+                    display: block;
+                    color: $c-grey;
+                }
+            }
+        }
+    }
+}
+
+
+
+@include bp(min-width, $bp-xsmall + 1) {
+
+    #hp-intro {
+        h1 {
+            margin-bottom: 26px;
+        }
+    }
+
+    #hp-info-panels {
+        ul {
+            li {
+                padding: 20px 7%;
+                .image {
+                    width: 31%;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .content {
+                    width: 68%;
+                    h2 {
+                        margin-bottom: 6px;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    #hp-product-design {
+        background-position: 70% 0;
+        .copy {
+            top: 12%;
+            right: 8%;
+            width: 60%;
+        }
+        .section-link {
+            right: 8%;
+            display: block;
+        }
+    }
+
+    #hp-montage {
+        .left {
+            float:left;
+            width:50%;
+        }
+        .right {
+            float:right;
+            &.small {
+                width:25%;
+            }
+            &.big {
+                width:50%;
+            }
+        }
+    }
+
+
+
+}
+
+@include bp(min-width, $bp-small + 1) {
+
+    #hp-intro {
+        h1 {
+            margin-bottom: 30px;
+        }
+    }
+
+    #hp-info-panels {
+        padding: 70px 0 30px 0;
+        ul {
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 40px;
+            li {
+                width:30.3%;
+                padding: 0;
+                overflow: hidden;
+                text-align: center;
+                display: inline-block;
+                vertical-align: top;
+                .image {
+                    width: 100%;
+                    img {
+                        margin: 0 auto 20px;
+                    }
+                }
+                .content {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    #hp-product-design {
+        background-size: 140%;
+        background-position: 70% 0;
+        padding-top: 45%;
+        .copy {
+            top: 8%;
+            right: 5%;
+            width: 52%;
+            p {
+                font-size: 13px;
+            }
+            a {
+                margin-top: 10px;
+                padding: 8px 16px;
+                line-height: 20px;
+            }
+        }
+        .section-link {
+            left: 5%;
+            right: auto;
+        }
+    }
+
+    #hp-video {
+        .video-wrapper {
+            padding-bottom: 51%;
+        }
+    }
+}
+
+@include bp(min-width, $bp-medium + 1) {
+
+    #hp-intro {
+        .copy {
+            h1 {
+                font-size: 5vw;
+                margin-bottom:20px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 23px;
+                width: 60%;
+                font-weight: 100;
+            }
+        }
+    }
+
+    #hp-product-design {
+        .copy {
+            top: 12%;
+            right: 6%;
+            width: 40%;
+            p {
+                font-size: 14px;
+                line-height:18px;
+            }
+            a {
+                margin-top: 10px;
+                font-size: 16px;
+                padding: 10px 20px;
+                line-height: 22px;
+            }
+        }
+        .section-link {
+        }
+    }
+
+    #hp-gallery {
+        padding: 60px 10%;
+        .content {
+            float: right;
+            margin-left: 5%;
+            width: 43%;
+            img {
+                margin: 0;
+                height: 80px;
+            }
+            p {
+                text-align: left;
+                font-size:13px;
+                line-height: 17px;
+            }
+        }
+        #gallery-viewer {
+            width: 52%;
+        }
+
+        #gallery-thumbs {
+            clear: both;
+            li {
+                width: 14.28%;
+            }
+        }
+    }
+
+    #hp-video {
+        .video-wrapper {
+            padding-bottom: 52.2%;
+        }
+    }
+}
+
+@include bp(min-width, $bp-large + 1) {
+
+    #hp-intro {
+        .copy {
+            h1 {
+                font-size: 4.4vw;
+            }
+            p {
+                width: 50%;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    #hp-info-panels {
+        ul {
+            li {
+                .content {
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    #hp-product-design {
+        .copy {
+            width: 43%;
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            a {
+                margin-top: 20px;
+            }
+        }
+        .section-link {
+            right: 6%;
+            left: auto;
+        }
+    }
+
+    #hp-video {
+        .video-wrapper {
+            padding-bottom: 53%;
+        }
+    }
+}
+
+@include bp(min-width, $bp-xlarge + 1) {
+    #hp-intro {
+        .copy {
+            h1 {
+                font-size: 56px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    #hp-product-design {
+        .copy {
+            width: 33%;
+            h2 {
+                font-size: 50px;
+                span {
+                    font-size: 40px;
+                }
+            }
+            a {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    #hp-video {
+        .video-wrapper {
+            padding-bottom: 53.6%;
+        }
+    }
+}

@@ -1,0 +1,352 @@
+@media only screen and (min-width: 200px) and (max-width: 899px) {
+img{
+	max-width:100%;
+}
+	
+#shadow{
+	box-sizing:border-box;
+	width:100%;
+	padding:0 8px;
+}
+#page{
+	box-sizing:border-box;
+	width:100%;
+}
+#header{
+	display:block;
+	width:100%;
+}
+#logo{
+	float:none;
+	display:block;
+	margin:0 auto;
+}
+#top_nav{
+	display:block;
+	width:auto;
+	float:none;
+	text-align:center;
+    margin-top:12px;
+}
+#strapline{
+	padding:8px 0 0;
+	margin-bottom:20px;
+}
+.left_menu_portion{
+	height:auto;
+	float:none;
+	position:relative;
+	display:block;
+	width:auto;
+	margin:0 0 10px 0;
+}
+#tel{
+	float:none;
+	display:block;
+	width:350px;
+	text-align:center;
+	background-size:100% auto;
+	margin:0 auto 15px;
+}
+a.a1_lozenge{
+	margin:20px auto;
+}
+#content{
+	display:block;
+	float:none;
+	width:auto;
+}
+#headline{
+	display:block;
+	float:none;
+	width:auto;
+	height:auto;
+}
+.flex-direction-nav a{
+	top:48% !important;
+}
+#main{
+	display:block;
+	width:auto;
+	float:none;
+	margin:0;
+}
+#sidebar{
+	float:none;
+	display:block;
+	margin:0 auto;
+}
+#footer{
+	display:block;
+	width:auto;
+	float:none;
+	text-align:center;
+}
+#footer blockquote{
+	display:block;
+	width:auto;
+	float:none;
+}
+.footer_block{
+	padding:0;
+	text-align:center;
+}
+.footer_first_box{
+	margin:0 auto 10px;
+	float:none;
+}
+.footer_second_box{
+	margin:0 auto 10px;
+	float:none;
+}
+.footer_third_box{
+	margin:0 auto 10px;
+	float:none;
+}
+
+.footer_fourth_box{
+	margin:0 auto 10px;
+	float:none;
+}
+
+.footer_fifth_box{
+	margin:0 auto 10px;
+	float:none;
+}
+a.twitter{
+	display:inline-block;
+	vertical-align:middle;
+}
+a.youtube{
+	display:inline-block;
+	vertical-align:middle;
+}
+a.facebook{
+	display:inline-block;
+	vertical-align:middle;
+}
+#copy{
+	display:block;
+	width:auto;
+	background-size:100% 8px;
+	margin:0 3px 0 8px;
+}
+.footer_bottom{
+	margin-top:35px;
+	padding:0;
+}
+#colonel_stories p{
+	text-align:left;
+}
+.block-colm{
+	text-align:center;
+}
+.logo-box-3 a{
+	display:inline-block;
+	text-align:center;
+}
+.logo-box-3{
+	text-align:center;
+}
+#content table.framed{
+	width:100%;
+}
+#content ul.gallery{
+	width:100%;
+	text-align:center;
+}
+#content ul.gallery li{
+	float:none;
+	display:inline-block;
+	vertical-align:top;
+	margin:0 10px 30px;
+}
+#content ul.gallery li:first-child{
+	margin-left:0;
+}
+.center-align{
+	text-align:center;
+}
+#content ul.inline{
+	width:100%;
+}
+#content ul.inline li{
+	width:50%;
+}
+#news li{
+	width:100%;
+}
+#content #links{
+	width:100%;
+}
+#accordion dt{
+	width:100%;
+	box-sizing:border-box;
+}
+#accordion dd{
+	width:100%;
+	box-sizing:border-box;
+}
+
+.menu_text
+{
+	display:block;
+}
+
+	
+}
+ @media only screen and (min-width: 768px) and (max-width: 899px) {
+	 
+#logo{
+	float:left;
+}
+#top_nav{
+	float:right;
+	text-align:right;
+	width:auto;
+}
+#tel{
+	background-size:auto auto;
+}
+#main{
+	float:left;
+	width:450px;
+}
+#sidebar{
+	float:right;
+	width:206px;
+}
+.footer_block{
+	text-align:left;
+}
+.footer_first_box{
+	float:left;
+	margin:0;
+}
+.footer_second_box{
+	float:left;
+	margin:0;
+}
+.footer_third_box{
+	float:left;
+	margin:0;
+}
+.footer_fourth_box{
+	float:left;
+	margin:0;
+}
+.footer_fifth_box{
+	float:left;
+	margin:0;
+}
+#footer{
+	text-align:left;
+}
+.footer_first_box{
+	width:204px;
+}
+.footer_second_box{
+	width:104px;
+}
+.footer_third_box{
+	width:104px;
+}
+.footer_fourth_box{
+	width:92px;
+}
+
+	 
+}
+
+
+@media screen and (max-width:767px) {
+.table-responsive {
+	width: 100%;
+	margin-bottom: 15px;
+	overflow-y: hidden;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	border: none
+}
+.table-responsive>.table {
+	margin-bottom: 0
+}
+.table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
+	white-space: nowrap
+}
+.table-responsive>.table-bordered {
+	border: 0
+}
+.table-responsive>.table-bordered>tbody>tr>td:first-child, .table-responsive>.table-bordered>tbody>tr>th:first-child, .table-responsive>.table-bordered>tfoot>tr>td:first-child, .table-responsive>.table-bordered>tfoot>tr>th:first-child, .table-responsive>.table-bordered>thead>tr>td:first-child, .table-responsive>.table-bordered>thead>tr>th:first-child {
+	border-left: 0
+}
+.table-responsive>.table-bordered>tbody>tr>td:last-child, .table-responsive>.table-bordered>tbody>tr>th:last-child, .table-responsive>.table-bordered>tfoot>tr>td:last-child, .table-responsive>.table-bordered>tfoot>tr>th:last-child, .table-responsive>.table-bordered>thead>tr>td:last-child, .table-responsive>.table-bordered>thead>tr>th:last-child {
+	border-right: 0
+}
+.table-responsive>.table-bordered>tbody>tr:last-child>td, .table-responsive>.table-bordered>tbody>tr:last-child>th, .table-responsive>.table-bordered>tfoot>tr:last-child>td, .table-responsive>.table-bordered>tfoot>tr:last-child>th {
+	border-bottom: 0
+}
+}
+
+/* iPhone (portrait) ----------- */	
+@media only screen and (min-width: 480px) and (max-width: 700px) {
+}
+
+	
+/* Mobile Portrait Size to Mobile Landscape Size  ----------- */	
+@media only screen and (max-width: 480px) {
+
+#content .sample_ads{
+ width:100%;
+ box-sizing:border-box;
+ margin:0 0 20px;
+ text-align:center;	
+	
+}
+#content .downloads li{
+	float:none;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+}
+#sitemap{
+	width:100%;
+}
+#content ul.magazine_section, #content ul.magazine_section{
+	text-align:center;
+}
+#content ul.magazine_section, #content ul.magazine_section li{
+	float:none;
+	display:inline-block;
+	vertical-align:top;
+}
+#content ul.dealership_posters li{
+	margin-bottom:10px;
+}
+#ideas_poster{
+	float:left;
+	margin-bottom:10px;
+}
+	
+	
+}
+ @media only screen and (min-width: 200px) and (max-width: 360px) {
+	 
+#tel{
+	width:auto;
+}
+ul#researcher_thumbs{
+	float:none;
+}
+#accordion dd img{
+	float:none;
+	margin-left:0;
+}
+.right{
+	float:none;
+	margin-left:0;
+}
+ 
+	 
+}
+ @media only screen and (min-width: 200px) and (max-width: 320px) {
+}

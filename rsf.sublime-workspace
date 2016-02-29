@@ -1,0 +1,805 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "@charset \"UTF-8\";\n\n/* ============================================ *\n * Main Nav Bar\n * ============================================ */\n\n",
+			"file": "htdocs/resources/scss/layout/_nav.scss",
+			"file_size": 137,
+			"file_write_time": 130946720970000000,
+			"settings":
+			{
+				"buffer_size": 137,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/resources/scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/resources/scss/core/_common.scss",
+			"settings":
+			{
+				"buffer_size": 12790,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/resources/scss/core/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 1592,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "//January Sales Banner Countdown Timer\nfunction promo_time_check() {\n    // Set now, start and finish dates\n    now = Math.floor(new Date().getTime() / 1000);\n    cutOff = Math.floor(new Date(\"January 17, 2016 23:59:59\").getTime() / 1000);\n    startTime = Math.floor(new Date(\"January 11, 2016 00:00:00\").getTime() / 1000);\n    cookieName = 'jan-sale';\n\n    // If the promo isn't active\n    if (now > cutOff || now < startTime) {\n        promo_cutoff();\n    }\n    // If the promo is active\n    else {\n        set_active_promo();\n    }\n}\n\nfunction set_active_promo() {\n    // Show the banner\n    $('#hp-promo-banner').removeClass('hidden');\n    var hp_cookie = $.cookie(cookieName);\n    // If the user hasn't been to the site while the promo is active\n    if (hp_cookie === undefined)\n    {\n        // Show the popup and set the cookie\n        $('#homepage-promo').addClass('active');\n        $.cookie(cookieName, true, {expires: 5, path: '/'});\n    }\n}\n\nfunction promo_cutoff() {\n    // Hide the banner and the promo\n    $('#hp-promo-banner').hide();\n    $('#homepage-promo').hide();\n}\n\n\n\n/*\n * January Sales Banner Countdown Function\n * This is the numbers in the january sales banner\n *\n \n function counter() {\n now = Math.floor(new Date().getTime() / 1000);\n var difference = cutOff - now;\n var days = Math.floor(difference / 86400);\n difference -= days * 86400;\n var hours = Math.floor(difference / 3600);\n difference -= hours * 3600;\n var mins = Math.floor(difference / 60);\n difference -= mins * 60;\n var secs = difference;\n \n var day = \"0\" + days;\n var hour = \"0\" + hours;\n var minute = \"0\" + mins;\n var second = \"0\" + secs;\n $('#days').html(day.slice(day.length - 2, day.length));\n $('#hours').html(hour.slice(hour.length - 2, hour.length));\n $('#minutes').html(minute.slice(minute.length - 2, minute.length));\n $('#seconds').html(second.slice(second.length - 2, second.length));\n }\n */\n\n//snowFall.snow(document.getElementsByTagName(\"body\"));\n\n/**\n * Returns any $_GET vars in the URL as an object\n * \n * @param {string} qs\n * @returns {getQueryParams.params}\n */\n function getQueryParams(qs) {\n    qs = qs.split(\"+\").join(\" \");\n    var params = {},\n    tokens,\n    re = /[?&]?([^=]+)=([^&]*)/g;\n\n    while (tokens = re.exec(qs)) {\n        params[decodeURIComponent(tokens[1])]\n        = decodeURIComponent(tokens[2]);\n    }\n\n    return params;\n}\nvar $_GET = getQueryParams(document.location.search);\n\n\n\nactivate_accordion_leaf = function()\n{\n    $(this).parent().siblings().removeClass('active');\n\n    var link = $(this);\n\n    setTimeout(function() {\n        link.parent().toggleClass('active');\n    }, 500);\n}\n\n\n/*\n snowFall.snow(document.getElementById(\"snow\"), {\n flakeCount: 35,\n minSize: 3,\n maxSize: 10,\n minSpeed: 1,\n maxSpeed: 2,\n image: '/ekmps/shops/underfloorheat/resources/Design/snow.png'\n });\n */\n\n/**\n * Lets get the jQuery action going\n */\n $(document).ready(function()\n {\n    promo_time_check();\n    /**\n     * Show and hide functions for Homepage Info popup\n     */\n     $('#hp-info-banner').click(function() {\n        $('#homepage-info').addClass('active');\n    });\n\n     $('#hp-info-close-button').click(function() {\n        $('#homepage-info').removeClass('active');\n    });\n\n     $('#christmas-times-banner a').click(function() {\n        $('#homepage-promo').addClass('active');\n    });\n\n     $('#hp-promo-banner').click(function() {\n        $('#homepage-promo').addClass('active');\n    });\n\n     $('#hp-promo-close-button').click(function() {\n        $('#homepage-promo').removeClass('active');\n    });\n\n    /**\n     * Open the expandable nav for electric or water if we are looking at a sub page\n     */\n     var electricPages = ['160-w', '161-w', '207-w', '208-w', '13-c', '61-c', '199-w'];\n     var waterPages = ['152-w', '198-w', '98-c', '99-c', '100-c', '181-c', '194-c'];\n\n     var pageId = window.location.pathname.match(/\\d+-[c|w]/);\n\n     if (pageId != null)\n     {\n        pageId = pageId[0];\n\n        if (electricPages.indexOf(pageId) != -1)\n        {\n            $('#electric-nav').addClass('active');\n        }\n\n        if (waterPages.indexOf(pageId) != -1)\n        {\n            $('#water-nav').addClass('active');\n        }\n    }\n\n    /**\n     * Add translation function to flags in main header\n     */\n     $('#flags a').click(function(e) {\n        if ($(this).attr(\"href\") == \"#\")\n        {\n            e.preventDefault();\n\n            var country = $(this).parent('li').attr('rel');\n\n            var loc = window.location;\n            window.location.replace(loc.origin + loc.pathname + \"#googtrans(en|\" + country + \")\");\n            loc.reload();\n        }\n    });\n    /**\n     * Identify tablets for use in isolation styling later\n     */\n     switch (true)\n     {\n        case navigator.userAgent.match(/iPad/i) != null:\n        $('html').addClass('ipad');\n        break;\n        case navigator.userAgent.match(/Tablet/i) != null:\n        $('html').addClass('tablet');\n        break;\n    }\n\n    //snowFall.snow($('#snow').get(0), {image : \"/ekmps/shops/underfloorheat/resources/Design/snow.png\", minSize: 8, maxSize: 26, maxSpeed : 1, flakeIndex: 9998, flakeCount : 50});\n\n    /*\n     $(\"#product-tabs label\").click(function() {\n     \n     $(this).closest('li').addClass('active').siblings().removeClass('active');\n     \n     });\n     */\n\n    /**\n     * Add the main header slideshow navigation functions\n     */\n     $(\"#slideshow nav li\").click(function() {\n\n        $(\"#slideshow ul li, #slideshow > ul li img\").removeClass('active', 500);\n        $li = $(\"#slideshow > ul li\").eq($(this).index());\n        $li.add($('img', $li)).add($(this)).addClass('active', 500);\n\n    });\n\n    /**\n     * Animate the header slideshow\n     */\n     HeaderInterval = setInterval(function()\n     {\n        $(\"#slideshow > ul li img\").add('#slideshow nav li').removeClass('active', 500);\n        $list = $(\"#slideshow > ul li\");\n        $current = $list.filter('.active').removeClass('active', 500);\n        if ($current.index() < $list.length - 1)\n        {\n            $next = $current.next();\n        }\n        else\n        {\n            $next = $list.first();\n        }\n        $next.add($('img', $next)).add($('#slideshow nav li').eq($next.index())).addClass('active', 500);\n    }, 4000);\n\n    /**\n     * Give us standard accordion functionality to any element with an accordion class\n     */\n     $('.accordion a').click(function()\n     {\n        activate_accordion_leaf.call($(this));\n    });\n\n    /*\n     if ($('#video-container').length != 0)\n     {\n     var player;\n     var isiPad = navigator.userAgent.match(/iPad/i) != null;\n     \n     $(\"#video-list a\").click(function(event) {\n     $(\".currently-playing\").parent().removeClass('current');\n     $(this).addClass('current');\n     });\n     }\n     */\n\n    /**\n     * Create a google map block showing the office location\n     */\n     if ($('#map-canvas').length != 0)\n     {\n        var mapOptions = {\n            center: new google.maps.LatLng(51.585923, 0.465803),\n            zoom: 12,\n            disableDefaultUI: true,\n            mapTypeId: google.maps.MapTypeId.ROADMAP,\n            zoomControl: true,\n            streetViewControl: true\n        };\n\n        map = new google.maps.Map(document.getElementById(\"map-canvas\"), mapOptions);\n        var markerPos = new google.maps.LatLng(51.585923, 0.465803);\n\n        var image = new google.maps.MarkerImage('/ekmps/shops/underfloorheat/resources/Design/marker.png',\n            new google.maps.Size(130, 86),\n            new google.maps.Point(0, 0),\n            new google.maps.Point(20, 86));\n\n        marker = new google.maps.Marker({\n            position: markerPos,\n            animation: google.maps.Animation.DROP,\n            map: map,\n            icon: image\n        });\n    }\n\n\n    /**\n     * Mini Cart animation from main navigation\n     */\n     $('#container > nav > div:nth-of-type(2)')\n     .mouseover(function() {\n        $('#mini-cart').toggleClass('hidden');\n    })\n     .mouseout(function() {\n        $('#mini-cart').toggleClass('hidden');\n    });\n\n    /**\n     * Create a Slick object to use as slider for related products and thermostat choices\n     */\n     if ($('.slides').length > 0)\n     {\n        $('.slides').slick({\n            slide: 'li',\n            slidesToShow: 4,\n            autoplay: true,\n            autoplaySpeed: 5000,\n            pauseOnHover: true,\n            slidesToScroll: 4,\n            speed: 1000,\n            onAfterChange: function() {\n                var $index = $('.slides').slickCurrentSlide();\n                $('.slides li').eq($index + 4).css('background-image', 'none');\n            },\n            onBeforeChange: function() {\n                $('.slides li').css('background-image', \"url(/ekmps/shops/underfloorheat/resources/Design/dotted-line-grey-vertical.png)\");\n            }\n        });\n    }\n\n    /**\n     * Check to see if we are being loaded in an iFrame as this will determine \n     * whether the site is being shown on the showroom touchscreens or at a show.\n     * If we are being opened in an iFrame, force all target attributes on links \n     * to be _self and not _parent\n     */\n     if (window.self !== window.top)\n     {\n        if (window.name !== 'shopFrame')\n        {\n            // prevent right click\n            document.addEventListener(\"contextmenu\", function(e) {\n                e.preventDefault();\n            }, false);\n\n            // Hide links in footer\n            var $footerNav = $('footer nav');\n            $('a[href^=\"reviews\"], a[href*=\"blog\"], a[href^=\"recruitment\"]', $footerNav).css('display', 'none');\n            \n            // Hide irrelevant elements on page\n            $('#currency-selector, #flags, #translate_container, #request-a-quote-nav-link').css('display', 'none');\n            \n            // Move the main window up to account for removed flags and currency selector\n            $('header').css('padding-top', 0);\n            \n            // Kill the awards image map in the footer\n            $('#awards-logos-map').remove();\n            \n            // Change all externally opening links to homepage and force them to open in the iframe\n            $('a[target=\"_blank\"], a[rel=\"external\"]').attr({ href: '/', target: '_self' });\n            \n            // Change href of all external links\n            $('a').filter(function() {\n                return this.hostname && this.hostname !== location.hostname;\n            }).attr('href', '/');\n\n            // Redirect pages we shouldn't have access to\n            var pages = [\n            '/request-a-quote-168-w.asp',\n            '/reviews-61-w.asp',\n            '/recruitment-209-w.asp'\n            ];\n            if (pages.indexOf(document.location.pathname) > -1) {\n                document.location.href = '/';\n            }\n        }\n    }\n\n    /**\n     * Category Organiser Page\n     * \n     * This new page gives us a means of changing the order of categories.  \n     * The bits below clean up the EKM markup and provide zip up functions to the lists\n     */\n     if ($('#category-organiser').length > 0) {\n        if ($('a[href^=\"orphaned-products').length > 0) {\n            $('a[href^=\"orphaned-products').closest('li').remove();\n        }\n        $('#category-organiser a').not('a[href*=\"Modal\"]').attr('href', '#');\n\n        // Toggle for category-organiser tools page\n        $('#category-organiser .tier-2 > ul > li > a').click(function(e) {\n            e.preventDefault();\n            var elems;\n            if (e.altKey == true) {\n                elems = $(this).closest('ul').find('div');\n            }\n            else {\n                elems = $(this).next('div');\n            }\n            elems.toggleClass('open');\n        });\n    }\n\n});\n\n\n\n\n\n/**\n * AFFILIATE WINDOW COOKIE FUNCTION\n * Save's any parameters passed through in the URI as cookie values for use on the order confirmation page.\n */\nvar iCookieLength = 30; // Cookie length in days\nvar sCookieName = \"awSource\"; // Name of the first party cookie to utilise for last click referrer de-duplication\nvar sSourceParameterName = \"source\"; // The parameter used by networks and other marketing channels to tell you who drove the traffic\n\nvar _getQueryStringValue = function(sParameterName) {\n    var aQueryStringPairs = document.location.search.substring(1).split(\"&\");\n    for (var i = 0; i < aQueryStringPairs.length; i++) {\n        var aQueryStringParts = aQueryStringPairs[i].split(\"=\");\n        if (sParameterName.toLowerCase() == aQueryStringParts[0].toLowerCase()) {\n            return aQueryStringParts[1];\n        }\n    }\n};\n\nvar _setCookie = function(sCookieName, sCookieContents, iCookieLength) {\n    var dCookieExpires = new Date();\n    dCookieExpires.setTime(dCookieExpires.getTime() + (iCookieLength * 24 * 60 * 60 * 1000));\n    document.cookie = sCookieName + \"=\" + sCookieContents + \"; expires=\" + dCookieExpires.toGMTString() + \"; path=/;\";\n};\n\nif (_getQueryStringValue(sSourceParameterName)) {\n    _setCookie(sCookieName, _getQueryStringValue(sSourceParameterName), iCookieLength);\n}",
+			"settings":
+			{
+				"buffer_size": 13006,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "require 'compass/import-once/activate'\n# Require any additional compass plugins here.\n\n# Set this to the root of your project when deployed:\nhttp_path = \"/\"\ncss_dir = \"/resources/css\"\nsass_dir = \"/resources/scss\"\nimages_dir = \"/resources/img\"\njavascripts_dir = \"/resources/js\"\n\n# You can select your preferred output style here (can be overridden via the command line):\n# output_style = :expanded or :nested or :compact or :compressed\n\n# To enable relative paths to assets via compass helper functions. Uncomment:\n# relative_assets = true\n\n# To disable debugging comments that display the original location of your selectors. Uncomment:\n# line_comments = false\n\n\n# If you prefer the indented syntax, you might want to regenerate this\n# project again passing --syntax sass, or you can uncomment this:\n# preferred_syntax = :sass\n# and then run:\n# sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass\n",
+			"file": "config.rb",
+			"file_size": 924,
+			"file_write_time": 131009095880000000,
+			"settings":
+			{
+				"buffer_size": 924,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "syntajavas",
+		"selected_items":
+		[
+			[
+				"syntajavas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"wrap",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/css",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss"
+	],
+	"file_history":
+	[
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/css/style.css",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/.sassbuilder-config",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Compass/Compass.sublime-build",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Compass/build.sh",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/rsf.sublime-project",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Compass/package-metadata.json",
+		"/Users/touson/Docs/Work/RSF/library/rsficon/variables.scss",
+		"/Users/touson/Docs/Work/RSF/library/rsficon/style.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/mixin/_button.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/mixin/_breakpoint.scss",
+		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/_var.scss",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Git.sublime-settings",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Gist/Gist.sublime-settings",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/User/Gist.sublime-settings",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/Users/touson/Desktop/svg/arrow-down.svg"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"body",
+			"trim",
+			"dgrey"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "htdocs/resources/scss/layout/_nav.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "htdocs/resources/scss/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								978,
+								978
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "htdocs/resources/scss/core/_common.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								424,
+								424
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "htdocs/resources/scss/core/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								572,
+								572
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								459,
+								459
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"default_dir": "/Users/touson/Sites/rsfbathroomdesign.co.uk",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								263
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Compass/Compass.sublime-build",
+	"project": "rsf.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/* ============================================ *
+*  Footer
+* ============================================ */
+
+#sign-up {
+    background: $c-black;
+    padding: 20px;
+    p {
+        color: $c-white;
+        font-size: 14px;
+        text-align:center;
+        strong {
+            color: $c-lblue;
+        }
+        &:before {
+            font-family: rsficon;
+            content: 'n';
+            color: $c-white;
+            font-size: 18px;
+            margin-right: 6px;
+        }
+    }
+    form {
+        font-size: 0;
+        text-align: center;
+        input[type="text"],
+        button {
+            color: $c-white;
+            padding: 6px 12px;
+            font-size: 14px;
+            display: inline-block;
+            border: 1px solid $c-lblue;
+        }
+        input[type="text"] {
+            background: none;
+        }
+        button {
+            background: $c-lblue;
+            &:hover {
+                background: $c-dblue;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $c-dblue;
+    padding: 60px 30px 30px 30px;
+    color:$c-white;
+    .footer-block {
+        display: block;
+        margin-bottom: 50px;
+    }
+    nav {
+        &:before {
+            font-family: rsficon;
+            content: 'b';
+            font-size: 28px;
+            margin-bottom: 20px;
+            display: block;
+            text-align: center;
+        }
+        ul {
+            li {
+                a {
+                    text-align: center;
+                    padding: 6px 0;
+                    color: $c-white;
+                    display: block;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .opening-times {
+        max-width: 75%;
+        margin: 0 auto;
+        h4 {
+            font-size: 16px;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 10px;
+            &:before {
+                font-family: rsficon;
+                content: 'C';
+                font-size:40px;
+                display:block;
+                margin: 0 auto 8px auto;
+            }
+        }
+        ul {
+            
+
+            li {
+                font-size: 0;
+                span {
+                    font-size: 14px;
+                    line-height:18px;
+                    display: inline-block;
+                    width:50%;
+                    text-align:center;
+                }
+                span:nth-of-type(1) {
+                    font-weight: $fw-bold;
+                }
+            }
+        }
+    }
+    .address {
+        text-align: center;
+        h3 {
+            font-size:18px;
+            font-weight: $fw-bold;
+            line-height: 22px;
+        }
+        address {
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0;
+            a {
+                color: $c-white;
+            }
+        }
+    }
+    blockquote {
+        font-family: $f-libre;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+    #social {
+        text-align:center;
+        margin-bottom: 50px;
+        ul {
+            li {
+                display: inline-block;
+                vertical-align: top;
+                a {
+                    font-family: rsficon;
+                    color: $c-white;
+                    font-size: 22px;
+                    padding-left: 4px;
+                    padding-right: 4px;
+                }
+            }
+        }
+    }
+    p {
+        font-size: 12px;
+        color: $c-white;
+    }
+}
