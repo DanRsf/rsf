@@ -4,7 +4,7 @@
 		{
 			"path": ".",
 			"folder_exclude_patterns": ["sys",".sass-cache","hooks","language","logs","third_party","css","cache","config","helpers"],
-			"file_exclude_patterns": [".htaccess","index.html"]
+			"file_exclude_patterns": [".htaccess","index.html",".gitignore","config.rb","README.md"]
 		}
 	]
 }
