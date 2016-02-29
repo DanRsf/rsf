@@ -50,6 +50,59 @@ var breakpoints = {
 };
 
 /**
+ * Calculates the height of the biggest element in the group, then sets the 
+ * min-height property on the rest of the elements in the group so they are 
+ * always at the same height.
+ * 
+ * @param jQuery Object $group
+ */
+var set_max_height = function($group) {
+
+    $group.each(function(index, elem) {
+
+        var selectors = $(elem).data('height-determined-by').split(',');
+
+        $.each(selectors, function(index, selector) {
+
+            // If we're in the mobile view, honour the skip indicator "|" and 
+            // skip over the element
+            if (bp == 'xs' || bp == 'mb') {
+                if (selector.charAt(0) == '|') {
+                    selector = selector.slice(1);
+                    $(selector).css('min-height', 0);
+                    return true;
+                }
+            }
+
+            // Clean up the selector string ready for use
+            selector = selector.charAt(0) == '|' ? selector.slice(1) : selector;
+
+            // Get the height of the biggest element in the group
+            var maxHeight = Math.max.apply(null, $(elem).find(selector).map(function() {
+
+                // We have to wrap text node in span to allow height calculation
+                if ($(this).children().length == 0) {
+                    $(this).wrapInner('<span></span>');
+                }
+
+                totalHeight = 0;
+                $(this).children().each(function() {
+                    totalHeight += $(this).outerHeight(true);
+                });
+                return totalHeight;
+
+            }).get());
+
+            maxHeight = selector == '.image-container' ? maxHeight + 20 : maxHeight;
+
+            // Set the min-height value on all elements in the group
+            $(elem).find(selector).css('height', maxHeight);
+
+        });
+    });
+}
+
+/**
  * Add page scrolling
  * -----------------
  * Add a scrolling animation to all on-page anchors
@@ -153,10 +206,22 @@ $(document).ready(function () {
 
 $(window).load(function () {
     resize_functions();
+
+    // Manage the height of any height managed panels
+    if ($('[data-height-determined-by]').length > 0) {
+        console.log('found switch');
+        set_max_height($('[data-height-determined-by]'));
+    }
 });
 
 $(window).resize(function () {
     resize_functions();
+
+    // Manage the height of any height managed panels
+    if ($('[data-height-determined-by]').length > 0) {
+        console.log('found switch');
+        set_max_height($('[data-height-determined-by]'));
+    }
 });
 
 var resize_functions = function () {

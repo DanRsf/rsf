@@ -1,5 +1,5 @@
 <nav class="mobile">
-    <div id="ellipse">E</div>
+    <div id="ellipse">b</div>
     <ul>
         <li>
             <a href="/">home</a>
