@@ -7,10 +7,12 @@
 #sign-up {
     background: $c-black;
     padding: 20px;
+    overflow: hidden;
     p {
         color: $c-white;
         font-size: 14px;
         text-align:center;
+        margin: 0;
         strong {
             color: $c-lblue;
         }
@@ -29,7 +31,7 @@
         button {
             color: $c-white;
             padding: 6px 12px;
-            font-size: 14px;
+            font-size: 12px;
             display: inline-block;
             border: 1px solid $c-lblue;
         }
@@ -154,7 +156,61 @@ footer {
         }
     }
     p {
+        text-align: center;
         font-size: 12px;
         color: $c-white;
+    }
+}
+
+@include bp('min-width', $bp-small + 1) {
+    #sign-up {
+        p {
+            float: left;
+        }
+        form {
+            float: right;
+        }
+    }
+
+    footer {
+        .footer-block {
+            display: inline-block;
+            vertical-align: top;
+            width: 49%;
+        }
+        blockquote {
+            padding: 0 60px;
+        }
+    }
+}
+
+@include bp('min-width', $bp-large + 1) {
+    #sign-up {
+        p {
+            font-size: 16px;
+        }
+        form {
+            width: 45%;
+            input[type="text"] {
+                width: 60%;
+            }
+        }
+    }
+    footer {
+        .footer-block {
+            display: inline-block;
+            vertical-align: top;
+            width: 24.8%;
+        }
+        .address {
+            address,
+            h3,
+            p {
+                text-align: left;
+            }
+        }
+        blockquote {
+            padding:0;
+        }
     }
 }
