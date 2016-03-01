@@ -6,7 +6,7 @@
 
     <div id="main-container">
 
-        <div id="hp-intro">
+        <div id="hp-intro" class="page-header">
             <div class="copy">
                 <h1>Beautiful Bathrooms<span>Affordable Prices</span></h1>
                 <p>Luxury brands at competitive prices, with outstanding service from start to finish.</p>
@@ -21,7 +21,7 @@
                         <div class="icon">T</div>
                         <div class="content">
                             <h2>Beautiful Products</h2>
-                            <p>Our product range consists of the most beautiful bathroom furniture from the worlds leading brands, offering the quality we know you've come to expect.</p>
+                            <p>Our beautiful range of bathroom furniture from the world’s leading brands provides the quality you’ve come to expect.</p>
                             <a href="/products" class="cta">find out more</a>
                         </div>
                     </li>
@@ -29,7 +29,7 @@
                         <div class="icon">z</div>
                         <div class="content">
                             <h2>Stunning Designs</h2>
-                            <p>We offer a complete bespoke bathroom design service using the extensive knowledge of our creative team and industry leading design software.</p>
+                            <p>Our full bespoke design service draws on the extensive knowledge of our creative team and industry leading design software.</p>
                             <a href="/design" class="cta">find out more</a>
                         </div>
                     </li>
@@ -37,7 +37,7 @@
                         <div class="icon">O</div>
                         <div class="content">
                             <h2>Quality Installations</h2>
-                            <p>Not only can we design and supply your perfect bathroom, we can also carry out the installation to an incredibly high standard to match.</p>
+                            <p>Our high quality installation service is the ideal way to make your dream bathroom design a reality.</p>
                             <a href="/installation" class="cta">find out more</a>
                         </div>
                     </li>
@@ -58,7 +58,7 @@
         <div class="container">
             <div id="hp-video">
                 <h3>Take a look round our showroom</h3>
-                <p>Our bathroom showroom, covering over 300ft2, is unique in that it is one of the only showrooms in the area with fully working bathroom suites, allowing you to see the latest high end gadgets and the beautiful product designs for yourself.  Everyone who visits our showroom comes away inspired and excited.  Take our virtual tour and get some inspiration for your own bathroom.</p>
+                <p>Our large, fully operational showroom demonstrates the latest in high end gadgets and product design.  Visit us in person, or take a sneak peak with our virtual tour.</p>
                 <div class="video-thumb video-wrapper">
                     <div id="player"></div>
                 </div>
@@ -69,7 +69,7 @@
         <div id="hp-product-design">
             <div class="copy">
                 <h2>Stunning<span>Product Design</span></h2>
-                <p>We believe your bathroom should be a place of tranquility and relaxation, which is why we only stock the most beautifully designed products from the worlds leading manufacturers.  The style and eloquent design these products bring to your home make your bathroom an inspirational environment to enjoy. </p>
+                <p>Our beautiful products from the world’s leading manufacturers deliver eloquent, stylish and tranquil bathrooms, designed with relaxation in mind.</p>
                 <a href="/products" class="cta" />View our products</a>
             </div>
         </div>

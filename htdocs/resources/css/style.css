@@ -1010,17 +1010,28 @@ footer p {
 }
 
 /* line 85, ../scss/core/_common.scss */
-#hp-intro {
-  background-image: url(/resources/img/parallax/big-window.jpg);
+.page-header {
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50%;
   background-size: 150%;
   width: 100%;
   height: 210px;
   position: relative;
   margin-bottom: 60px;
 }
-/* line 94, ../scss/core/_common.scss */
+/* line 93, ../scss/core/_common.scss */
+.page-header .section-link {
+  position: absolute;
+  bottom: -50px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 101, ../scss/core/_common.scss */
+#hp-intro {
+  background-image: url(/resources/img/parallax/big-window.jpg);
+}
+/* line 103, ../scss/core/_common.scss */
 #hp-intro .copy {
   position: absolute;
   width: 100%;
@@ -1028,7 +1039,7 @@ footer p {
   left: 0;
   text-align: center;
 }
-/* line 100, ../scss/core/_common.scss */
+/* line 109, ../scss/core/_common.scss */
 #hp-intro .copy h1 {
   font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
   font-style: italic;
@@ -1039,13 +1050,13 @@ footer p {
   margin-bottom: 10px;
   text-shadow: 0 0 9px #000000;
 }
-/* line 109, ../scss/core/_common.scss */
+/* line 118, ../scss/core/_common.scss */
 #hp-intro .copy h1 span {
   display: block;
   font-weight: 100;
   font-size: 75%;
 }
-/* line 115, ../scss/core/_common.scss */
+/* line 124, ../scss/core/_common.scss */
 #hp-intro .copy p {
   max-width: 300px;
   display: block;
@@ -1056,34 +1067,27 @@ footer p {
   text-align: center;
   line-height: 18px;
 }
-/* line 126, ../scss/core/_common.scss */
-#hp-intro .section-link {
-  position: absolute;
-  bottom: -50px;
-  text-align: center;
-  width: 100%;
-}
 
-/* line 134, ../scss/core/_common.scss */
+/* line 138, ../scss/core/_common.scss */
 #hp-info-panels {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 137, ../scss/core/_common.scss */
+/* line 141, ../scss/core/_common.scss */
 #hp-info-panels ul {
   width: 100%;
   text-align: center;
   padding: 0;
   margin-bottom: 50px;
 }
-/* line 142, ../scss/core/_common.scss */
+/* line 146, ../scss/core/_common.scss */
 #hp-info-panels ul li {
   overflow: hidden;
   padding: 20px 0;
   text-align: left;
   display: block;
 }
-/* line 147, ../scss/core/_common.scss */
+/* line 151, ../scss/core/_common.scss */
 #hp-info-panels ul li .icon {
   font-family: rsficon;
   font-size: 90px;
@@ -1092,35 +1096,35 @@ footer p {
   vertical-align: middle;
   margin-right: 20px;
 }
-/* line 155, ../scss/core/_common.scss */
+/* line 159, ../scss/core/_common.scss */
 #hp-info-panels ul li .content {
   width: 61%;
   overflow: hidden;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 160, ../scss/core/_common.scss */
+/* line 164, ../scss/core/_common.scss */
 #hp-info-panels ul li .content h2 {
   margin-bottom: 6px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 300;
 }
-/* line 166, ../scss/core/_common.scss */
+/* line 170, ../scss/core/_common.scss */
 #hp-info-panels ul li .content p {
   margin-bottom: 6px;
 }
-/* line 169, ../scss/core/_common.scss */
+/* line 173, ../scss/core/_common.scss */
 #hp-info-panels ul li .content a {
   font-size: 14px;
   line-height: 20px;
 }
-/* line 176, ../scss/core/_common.scss */
+/* line 180, ../scss/core/_common.scss */
 #hp-info-panels .section-link {
   display: none;
 }
 
-/* line 181, ../scss/core/_common.scss */
+/* line 185, ../scss/core/_common.scss */
 #hp-product-design {
   background-image: url(/resources/img/parallax/pale-blue.jpg);
   background-repeat: no-repeat;
@@ -1130,7 +1134,7 @@ footer p {
   padding: 20px;
   position: relative;
 }
-/* line 189, ../scss/core/_common.scss */
+/* line 193, ../scss/core/_common.scss */
 #hp-product-design .copy {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -1138,7 +1142,7 @@ footer p {
   background: rgba(0, 0, 0, 0.6);
   position: relative;
 }
-/* line 195, ../scss/core/_common.scss */
+/* line 199, ../scss/core/_common.scss */
 #hp-product-design .copy h2 {
   color: #ffffff;
   font-size: 19px;
@@ -1148,36 +1152,36 @@ footer p {
   font-weight: 600;
   margin-bottom: 14px;
 }
-/* line 203, ../scss/core/_common.scss */
+/* line 207, ../scss/core/_common.scss */
 #hp-product-design .copy h2 span {
   font-size: 75%;
   display: block;
   font-weight: 100;
 }
-/* line 209, ../scss/core/_common.scss */
+/* line 213, ../scss/core/_common.scss */
 #hp-product-design .copy p {
   color: #ffffff;
   text-align: right;
 }
-/* line 213, ../scss/core/_common.scss */
+/* line 217, ../scss/core/_common.scss */
 #hp-product-design .copy a {
   float: right;
   font-size: 14px;
   color: #ffffff;
 }
-/* line 217, ../scss/core/_common.scss */
+/* line 221, ../scss/core/_common.scss */
 #hp-product-design .copy a:after {
   color: #ffffff;
 }
-/* line 220, ../scss/core/_common.scss */
+/* line 224, ../scss/core/_common.scss */
 #hp-product-design .copy a:hover {
   color: #53B2E0;
 }
-/* line 222, ../scss/core/_common.scss */
+/* line 226, ../scss/core/_common.scss */
 #hp-product-design .copy a:hover:after {
   color: #53B2E0;
 }
-/* line 228, ../scss/core/_common.scss */
+/* line 232, ../scss/core/_common.scss */
 #hp-product-design .section-link {
   display: none;
   position: absolute;
@@ -1185,26 +1189,26 @@ footer p {
   bottom: 3%;
   color: #ffffff;
 }
-/* line 234, ../scss/core/_common.scss */
+/* line 238, ../scss/core/_common.scss */
 #hp-product-design .section-link:after {
   color: #ffffff;
 }
 
-/* line 240, ../scss/core/_common.scss */
+/* line 244, ../scss/core/_common.scss */
 #hp-video {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* line 243, ../scss/core/_common.scss */
+/* line 247, ../scss/core/_common.scss */
 #hp-video h3 {
   text-align: center;
 }
-/* line 246, ../scss/core/_common.scss */
+/* line 250, ../scss/core/_common.scss */
 #hp-video p {
   text-align: center;
   margin-bottom: 24px;
 }
-/* line 250, ../scss/core/_common.scss */
+/* line 254, ../scss/core/_common.scss */
 #hp-video .video-wrapper {
   position: relative;
   padding-bottom: 49.8%;
@@ -1215,7 +1219,7 @@ footer p {
   display: block;
   margin-bottom: 20px;
 }
-/* line 259, ../scss/core/_common.scss */
+/* line 263, ../scss/core/_common.scss */
 #hp-video .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -1225,73 +1229,73 @@ footer p {
   border: 0;
 }
 
-/* line 270, ../scss/core/_common.scss */
+/* line 274, ../scss/core/_common.scss */
 #hp-montage {
   overflow: hidden;
 }
-/* line 272, ../scss/core/_common.scss */
+/* line 276, ../scss/core/_common.scss */
 #hp-montage div {
   position: relative;
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: 101%;
 }
-/* line 278, ../scss/core/_common.scss */
+/* line 282, ../scss/core/_common.scss */
 #hp-montage .sink {
   background-image: url("/resources/img/general/hp-montage-basin.jpg");
 }
-/* line 281, ../scss/core/_common.scss */
+/* line 285, ../scss/core/_common.scss */
 #hp-montage .chrome-tap {
   background-image: url("/resources/img/general/hp-montage-small-shower.jpg");
 }
-/* line 284, ../scss/core/_common.scss */
+/* line 288, ../scss/core/_common.scss */
 #hp-montage .chrome-shower {
   background-image: url("/resources/img/general/hp-montage-tap.jpg");
 }
-/* line 287, ../scss/core/_common.scss */
+/* line 291, ../scss/core/_common.scss */
 #hp-montage .drencher {
   background-image: url("/resources/img/general/hp-montage-big-shower.jpg");
 }
-/* line 290, ../scss/core/_common.scss */
+/* line 294, ../scss/core/_common.scss */
 #hp-montage .left {
   width: 100%;
 }
-/* line 293, ../scss/core/_common.scss */
+/* line 297, ../scss/core/_common.scss */
 #hp-montage .right {
   float: right;
 }
-/* line 295, ../scss/core/_common.scss */
+/* line 299, ../scss/core/_common.scss */
 #hp-montage .right.small {
   width: 50%;
 }
-/* line 298, ../scss/core/_common.scss */
+/* line 302, ../scss/core/_common.scss */
 #hp-montage .right.big {
   width: 100%;
 }
 
-/* line 304, ../scss/core/_common.scss */
+/* line 308, ../scss/core/_common.scss */
 #hp-gallery {
   padding: 40px 10%;
 }
-/* line 306, ../scss/core/_common.scss */
+/* line 310, ../scss/core/_common.scss */
 #hp-gallery .content {
   margin-bottom: 30px;
 }
-/* line 308, ../scss/core/_common.scss */
+/* line 312, ../scss/core/_common.scss */
 #hp-gallery .content img {
   margin: 0 auto 10px auto;
 }
-/* line 311, ../scss/core/_common.scss */
+/* line 315, ../scss/core/_common.scss */
 #hp-gallery .content p {
   text-align: center;
   font-size: 14px;
   line-height: 18px;
 }
-/* line 318, ../scss/core/_common.scss */
+/* line 322, ../scss/core/_common.scss */
 #hp-gallery #gallery-viewer {
   width: 100%;
 }
-/* line 322, ../scss/core/_common.scss */
+/* line 326, ../scss/core/_common.scss */
 #hp-gallery #gallery-thumbs {
   width: 100%;
   border-top: 1px solid #444444;
@@ -1299,32 +1303,32 @@ footer p {
   padding-top: 20px;
   font-size: 0;
 }
-/* line 328, ../scss/core/_common.scss */
+/* line 332, ../scss/core/_common.scss */
 #hp-gallery #gallery-thumbs li {
   display: inline-block;
   width: 25%;
 }
-/* line 331, ../scss/core/_common.scss */
+/* line 335, ../scss/core/_common.scss */
 #hp-gallery #gallery-thumbs li img {
   width: 90%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 340, ../scss/core/_common.scss */
+/* line 344, ../scss/core/_common.scss */
 #hp-testimonials {
   padding-top: 60px;
   padding-bottom: 50px;
 }
-/* line 343, ../scss/core/_common.scss */
+/* line 347, ../scss/core/_common.scss */
 #hp-testimonials h3 {
   margin-left: 4%;
 }
-/* line 346, ../scss/core/_common.scss */
+/* line 350, ../scss/core/_common.scss */
 #hp-testimonials ul {
   font-size: 0;
 }
-/* line 348, ../scss/core/_common.scss */
+/* line 352, ../scss/core/_common.scss */
 #hp-testimonials ul li {
   display: inline-block;
   vertical-align: top;
@@ -1332,7 +1336,7 @@ footer p {
   margin: 35px 4%;
   position: relative;
 }
-/* line 354, ../scss/core/_common.scss */
+/* line 358, ../scss/core/_common.scss */
 #hp-testimonials ul li:before, #hp-testimonials ul li:after {
   font-family: rsficon;
   display: block;
@@ -1342,23 +1346,23 @@ footer p {
   opacity: 0.1;
   color: #53B2E0;
 }
-/* line 364, ../scss/core/_common.scss */
+/* line 368, ../scss/core/_common.scss */
 #hp-testimonials ul li:before {
   content: 'o';
   top: 0;
   left: -14px;
 }
-/* line 369, ../scss/core/_common.scss */
+/* line 373, ../scss/core/_common.scss */
 #hp-testimonials ul li:after {
   content: 'q';
   bottom: 50px;
   right: 0;
 }
-/* line 374, ../scss/core/_common.scss */
+/* line 378, ../scss/core/_common.scss */
 #hp-testimonials ul li p {
   margin-bottom: 4px;
 }
-/* line 377, ../scss/core/_common.scss */
+/* line 381, ../scss/core/_common.scss */
 #hp-testimonials ul li .customer {
   font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
   font-style: italic;
@@ -1366,7 +1370,7 @@ footer p {
   line-height: 18px;
   color: #0E5A94;
 }
-/* line 383, ../scss/core/_common.scss */
+/* line 387, ../scss/core/_common.scss */
 #hp-testimonials ul li .customer span {
   margin-top: 4px;
   font-size: 12px;
@@ -1375,93 +1379,176 @@ footer p {
   color: #949CA1;
 }
 
+/* line 400, ../scss/core/_common.scss */
+#pp-intro {
+  background-image: url(/resources/img/parallax/towels-on-wooden-shelf.jpg);
+}
+
+/* line 409, ../scss/core/_common.scss */
+#pp-copy-and-brands {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+/* line 412, ../scss/core/_common.scss */
+#pp-copy-and-brands .left-column {
+  margin-bottom: 40px;
+}
+/* line 418, ../scss/core/_common.scss */
+#pp-copy-and-brands .brand-logos {
+  font-size: 0;
+  text-align: center;
+}
+/* line 421, ../scss/core/_common.scss */
+#pp-copy-and-brands .brand-logos li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 8px;
+}
+
+/* line 429, ../scss/core/_common.scss */
+#products {
+  font-size: 0;
+}
+/* line 431, ../scss/core/_common.scss */
+#products ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 47.5%;
+  margin-right: 5%;
+}
+/* line 436, ../scss/core/_common.scss */
+#products ul:nth-of-type(2n+2) {
+  margin-right: 0;
+}
+/* line 439, ../scss/core/_common.scss */
+#products ul li {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #444444;
+}
+/* line 444, ../scss/core/_common.scss */
+#products ul li > img {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+}
+/* line 450, ../scss/core/_common.scss */
+#products ul li span {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  max-height: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.7);
+  display: block;
+  width: 100%;
+  transition: max-height 0.2s ease-in;
+  -webkit-transition: max-height 0.2s ease-in;
+}
+/* line 461, ../scss/core/_common.scss */
+#products ul li span img {
+  float: right;
+  margin: 20px;
+}
+/* line 467, ../scss/core/_common.scss */
+#products ul li.show span {
+  max-height: 100px;
+}
+/* line 472, ../scss/core/_common.scss */
+#products ul li.dark > img {
+  opacity: 0.5;
+}
+
 @media only screen and (min-width: 480px) {
-  /* line 400, ../scss/core/_common.scss */
+  /* line 483, ../scss/core/_common.scss */
   #hp-intro h1 {
     margin-bottom: 26px;
   }
 
-  /* line 407, ../scss/core/_common.scss */
+  /* line 490, ../scss/core/_common.scss */
   #hp-info-panels ul li {
     padding: 20px 7%;
   }
-  /* line 409, ../scss/core/_common.scss */
+  /* line 492, ../scss/core/_common.scss */
   #hp-info-panels ul li .image {
     width: 31%;
   }
-  /* line 411, ../scss/core/_common.scss */
+  /* line 494, ../scss/core/_common.scss */
   #hp-info-panels ul li .image img {
     max-width: 100%;
   }
-  /* line 415, ../scss/core/_common.scss */
+  /* line 498, ../scss/core/_common.scss */
   #hp-info-panels ul li .content {
     width: 68%;
   }
-  /* line 417, ../scss/core/_common.scss */
+  /* line 500, ../scss/core/_common.scss */
   #hp-info-panels ul li .content h2 {
     margin-bottom: 6px;
     font-size: 18px;
     line-height: 23px;
   }
-  /* line 422, ../scss/core/_common.scss */
+  /* line 505, ../scss/core/_common.scss */
   #hp-info-panels ul li .content p {
     font-size: 13px;
   }
-  /* line 425, ../scss/core/_common.scss */
+  /* line 508, ../scss/core/_common.scss */
   #hp-info-panels ul li .content a {
     font-size: 13px;
   }
 
-  /* line 434, ../scss/core/_common.scss */
+  /* line 517, ../scss/core/_common.scss */
   #hp-montage .left {
     float: left;
     width: 50%;
   }
-  /* line 438, ../scss/core/_common.scss */
+  /* line 521, ../scss/core/_common.scss */
   #hp-montage .right {
     float: right;
   }
-  /* line 440, ../scss/core/_common.scss */
+  /* line 523, ../scss/core/_common.scss */
   #hp-montage .right.small {
     width: 25%;
   }
-  /* line 443, ../scss/core/_common.scss */
+  /* line 526, ../scss/core/_common.scss */
   #hp-montage .right.big {
     width: 50%;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 455, ../scss/core/_common.scss */
-  #hp-intro {
+  /* line 535, ../scss/core/_common.scss */
+  .page-header {
     background-size: 100%;
     height: 300px;
   }
-  /* line 459, ../scss/core/_common.scss */
+
+  /* line 542, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     margin-bottom: 20px;
     font-size: 40px;
   }
-  /* line 462, ../scss/core/_common.scss */
+  /* line 545, ../scss/core/_common.scss */
   #hp-intro .copy h1 span {
     margin-top: 6px;
   }
-  /* line 466, ../scss/core/_common.scss */
+  /* line 549, ../scss/core/_common.scss */
   #hp-intro .copy p {
     margin-bottom: 50px;
   }
 
-  /* line 472, ../scss/core/_common.scss */
+  /* line 555, ../scss/core/_common.scss */
   #hp-info-panels {
     padding: 30px 0;
   }
-  /* line 474, ../scss/core/_common.scss */
+  /* line 557, ../scss/core/_common.scss */
   #hp-info-panels ul {
     width: 100%;
     text-align: center;
     padding: 0;
     margin-bottom: 40px;
   }
-  /* line 479, ../scss/core/_common.scss */
+  /* line 562, ../scss/core/_common.scss */
   #hp-info-panels ul li {
     width: 33%;
     padding: 0;
@@ -1470,47 +1557,47 @@ footer p {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 486, ../scss/core/_common.scss */
+  /* line 569, ../scss/core/_common.scss */
   #hp-info-panels ul li .icon {
     line-height: 106px;
     margin: 0;
   }
-  /* line 490, ../scss/core/_common.scss */
+  /* line 573, ../scss/core/_common.scss */
   #hp-info-panels ul li .content {
     width: 80%;
   }
-  /* line 492, ../scss/core/_common.scss */
+  /* line 575, ../scss/core/_common.scss */
   #hp-info-panels ul li .content h2 {
     font-size: 17px;
   }
 
-  /* line 500, ../scss/core/_common.scss */
+  /* line 583, ../scss/core/_common.scss */
   #hp-product-design {
     overflow: hidden;
   }
-  /* line 502, ../scss/core/_common.scss */
+  /* line 585, ../scss/core/_common.scss */
   #hp-product-design .copy {
     width: 400px;
     float: right;
   }
-  /* line 505, ../scss/core/_common.scss */
+  /* line 588, ../scss/core/_common.scss */
   #hp-product-design .copy h2 {
     font-size: 24px;
     line-height: 24px;
   }
 
-  /* line 513, ../scss/core/_common.scss */
+  /* line 596, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     padding-bottom: 51%;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 523, ../scss/core/_common.scss */
+  /* line 606, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     font-size: 5vw;
     margin-bottom: 20px;
   }
-  /* line 527, ../scss/core/_common.scss */
+  /* line 610, ../scss/core/_common.scss */
   #hp-intro .copy p {
     max-width: 370px;
     font-size: 18px;
@@ -1518,46 +1605,46 @@ footer p {
     font-weight: 100;
   }
 
-  /* line 536, ../scss/core/_common.scss */
+  /* line 619, ../scss/core/_common.scss */
   #hp-gallery {
     padding: 60px 10%;
   }
-  /* line 538, ../scss/core/_common.scss */
+  /* line 621, ../scss/core/_common.scss */
   #hp-gallery .content {
     float: right;
     margin-left: 5%;
     width: 43%;
   }
-  /* line 542, ../scss/core/_common.scss */
+  /* line 625, ../scss/core/_common.scss */
   #hp-gallery .content img {
     margin: 0;
     height: 80px;
   }
-  /* line 546, ../scss/core/_common.scss */
+  /* line 629, ../scss/core/_common.scss */
   #hp-gallery .content p {
     text-align: left;
     font-size: 13px;
     line-height: 17px;
   }
-  /* line 552, ../scss/core/_common.scss */
+  /* line 635, ../scss/core/_common.scss */
   #hp-gallery #gallery-viewer {
     width: 52%;
   }
-  /* line 556, ../scss/core/_common.scss */
+  /* line 639, ../scss/core/_common.scss */
   #hp-gallery #gallery-thumbs {
     clear: both;
   }
-  /* line 558, ../scss/core/_common.scss */
+  /* line 641, ../scss/core/_common.scss */
   #hp-gallery #gallery-thumbs li {
     width: 14.28%;
   }
 
-  /* line 564, ../scss/core/_common.scss */
+  /* line 647, ../scss/core/_common.scss */
   #hp-product-design {
     background-size: 100%;
   }
 
-  /* line 569, ../scss/core/_common.scss */
+  /* line 652, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     width: 80%;
     padding-bottom: 41.2%;
@@ -1565,79 +1652,112 @@ footer p {
     margin-left: auto;
   }
 
-  /* line 579, ../scss/core/_common.scss */
+  /* line 662, ../scss/core/_common.scss */
   #hp-testimonials ul li {
     width: 25%;
   }
+
+  /* line 669, ../scss/core/_common.scss */
+  #products ul {
+    width: 23%;
+    margin-right: 2.5%;
+  }
+  /* line 672, ../scss/core/_common.scss */
+  #products ul:nth-of-type(2n+2) {
+    margin-right: 2.5%;
+  }
+  /* line 675, ../scss/core/_common.scss */
+  #products ul:nth-of-type(4) {
+    margin-right: 0;
+  }
 }
 @media only screen and (min-width: 960px) {
-  /* line 588, ../scss/core/_common.scss */
-  #hp-intro {
+  /* line 689, ../scss/core/_common.scss */
+  .page-header {
     height: 440px;
     background-size: 100%;
   }
-  /* line 592, ../scss/core/_common.scss */
+
+  /* line 696, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     font-size: 64px;
   }
-  /* line 594, ../scss/core/_common.scss */
+  /* line 698, ../scss/core/_common.scss */
   #hp-intro .copy h1 span {
     font-size: 65%;
   }
-  /* line 598, ../scss/core/_common.scss */
+  /* line 702, ../scss/core/_common.scss */
   #hp-intro .copy p {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 70px;
   }
-  /* line 604, ../scss/core/_common.scss */
+  /* line 708, ../scss/core/_common.scss */
   #hp-intro .section-link {
     bottom: -70px;
   }
 
-  /* line 609, ../scss/core/_common.scss */
+  /* line 713, ../scss/core/_common.scss */
   #hp-info-panels {
     padding: 60px 0;
   }
-  /* line 614, ../scss/core/_common.scss */
+  /* line 718, ../scss/core/_common.scss */
   #hp-info-panels ul li .content h2 {
     font-size: 22px;
   }
 
-  /* line 623, ../scss/core/_common.scss */
+  /* line 727, ../scss/core/_common.scss */
   #hp-product-design .copy {
     margin-top: 70px;
     width: 480px;
   }
-  /* line 626, ../scss/core/_common.scss */
+  /* line 730, ../scss/core/_common.scss */
   #hp-product-design .copy h2 {
     font-size: 28px;
     line-height: 28px;
   }
-  /* line 630, ../scss/core/_common.scss */
+  /* line 734, ../scss/core/_common.scss */
   #hp-product-design .copy .cta {
     margin-top: 16px;
     font-size: 14px;
   }
 
-  /* line 637, ../scss/core/_common.scss */
+  /* line 741, ../scss/core/_common.scss */
   #hp-video {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  /* line 640, ../scss/core/_common.scss */
+  /* line 744, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42%;
   }
+
+  /* line 750, ../scss/core/_common.scss */
+  #pp-copy-and-brands .left-column {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48.5%;
+    padding: 0 40px;
+  }
+  /* line 756, ../scss/core/_common.scss */
+  #pp-copy-and-brands .brand-logos {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+  /* line 760, ../scss/core/_common.scss */
+  #pp-copy-and-brands .brand-logos li {
+    padding: 0 8px;
+  }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 649, ../scss/core/_common.scss */
+  /* line 770, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     font-size: 56px;
     margin-bottom: 30px;
   }
 
-  /* line 656, ../scss/core/_common.scss */
+  /* line 777, ../scss/core/_common.scss */
   #hp-montage {
     max-width: 1200px;
     padding: 0 30px;
@@ -1645,12 +1765,12 @@ footer p {
     overflow: hidden;
   }
 
-  /* line 664, ../scss/core/_common.scss */
+  /* line 785, ../scss/core/_common.scss */
   #hp-product-design .copy {
     margin-right: 40px;
   }
 
-  /* line 670, ../scss/core/_common.scss */
+  /* line 791, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42.6%;
   }

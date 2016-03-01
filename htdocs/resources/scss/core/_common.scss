@@ -64,7 +64,7 @@
     width: 100%;
     padding-bottom: 75%;
     position: relative;
-    img {
+    img { 
         width: 100%;
         position: absolute;
         top: 0;
@@ -82,15 +82,24 @@
     }
 }
 
-#hp-intro {
-    background-image: url(/resources/img/parallax/big-window.jpg);
+.page-header {
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50%;
     background-size: 150%;
     width: 100%;
     height: 210px; 
     position: relative;
     margin-bottom:60px;
+    .section-link {
+        position: absolute;
+        bottom: -50px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+#hp-intro {
+    background-image: url(/resources/img/parallax/big-window.jpg);
     .copy {
         position: absolute;
         width: 100%;
@@ -123,12 +132,7 @@
             line-height: 18px;
         }
     }
-    .section-link {
-        position: absolute;
-        bottom: -50px;
-        text-align: center;
-        width: 100%;
-    }
+    
 }
 
 #hp-info-panels {
@@ -393,6 +397,85 @@
 }
 
 
+#pp-intro {
+    background-image: url(/resources/img/parallax/towels-on-wooden-shelf.jpg);
+    .copy {
+        h1 {
+
+        }
+    }
+}
+
+#pp-copy-and-brands {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    .left-column {
+        margin-bottom: 40px;
+        h2 {
+            
+        }
+    }
+    .brand-logos {
+        font-size: 0;
+        text-align: center;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 4px 8px;
+        }
+    }
+}
+
+#products {
+    font-size: 0;
+    ul {
+        display: inline-block;
+        vertical-align: top;
+        width: 47.5%;
+        margin-right: 5%;
+        &:nth-of-type(2n+2) {
+            margin-right: 0;
+        }
+        li {
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+            background-color: $c-dgrey;
+            & > img {
+                width: 100%;
+                opacity: 1;
+                transition: opacity 0.4s;
+                -webkit-transition: opacity 0.4s;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                z-index:100;
+                max-height: 0;
+                overflow: hidden;
+                background: rgba(255, 255, 255, 0.7);
+                display: block;
+                width: 100%;
+                transition: max-height 0.2s ease-in;
+                -webkit-transition: max-height 0.2s ease-in;
+                img {
+                    float: right;
+                    margin: 20px;
+                }
+            }
+            &.show {
+                span {
+                    max-height: 100px;
+                }
+            }
+            &.dark {
+                & > img {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
 
 @include bp(min-width, $bp-xsmall + 1) {
 
@@ -445,16 +528,16 @@
             }
         }
     }
-
-
-
 }
 
 @include bp(min-width, $bp-small + 1) {
 
-    #hp-intro {
+    .page-header {
         background-size: 100%;
         height: 300px;
+    }
+
+    #hp-intro {
         .copy {
             h1 {
                 margin-bottom: 20px;
@@ -581,13 +664,34 @@
             }
         }
     }
+
+    #products {
+        ul {
+            width: 23%;
+            margin-right: 2.5%;
+            &:nth-of-type(2n+2) {
+                margin-right: 2.5%;
+            }
+            &:nth-of-type(4) {
+                margin-right: 0;
+            }
+            li {
+                img {
+
+                }
+            }
+        }
+    }
 }
 
 @include bp(min-width, $bp-large + 1) {
 
-    #hp-intro {
+    .page-header {
         height: 440px;
         background-size: 100%;
+    }
+
+    #hp-intro {
         .copy {
             h1 {
                 font-size: 64px;
@@ -639,6 +743,23 @@
         padding-bottom: 60px;
         .video-wrapper {
             padding-bottom: 42%;
+        }
+    }
+
+    #pp-copy-and-brands {
+        .left-column {
+            display: inline-block;
+            vertical-align: middle;
+            width: 48.5%;
+            padding: 0 40px;
+        }
+        .brand-logos {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+            li {
+                padding: 0 8px;
+            }
         }
     }
 }

@@ -153,13 +153,16 @@ $(document).ready(function () {
 
     set_breakpoint();
 
-    var scrollorama = $.scrollorama({
+    /*var scrollorama = $.scrollorama({
         blocks: '.scroll-block',
         enablePin: false
     });
 
     if(!mobile_device()) {
-        $('#hp-intro').parallax("50%", -0.5, true);
+
+        var windowWidth = $(window).width();
+
+        $('.page-header').parallax("50%", -0.5, true, (windowWidth > breakpoints.xlarge ? Math.abs(windowWidth / 2) * -1 : 0));
         $('#hp-product-design').parallax("50%", -0.2, true);
     
         scrollorama
@@ -177,7 +180,7 @@ $(document).ready(function () {
         .animate('#hp-info-panels li:first-of-type', {duration: 400, delay: intro_block_delay(), property: 'left', start: '-10%', end: 0, easing: 'easeInOutCubic'})
         .animate('#hp-info-panels li:last-of-type', {duration: 100, delay: intro_block_delay(), property: 'opacity', start: 0, end: 1})
         .animate('#hp-info-panels li:last-of-type', {duration: 400, delay: intro_block_delay(), property: 'right', start: '-10%', end: 0, easing: 'easeInOutCubic'});
-    }
+    }*/
 
     $('#ellipse').click(function () {
         $(this).next('ul').toggleClass('active');
@@ -198,6 +201,17 @@ $(document).ready(function () {
         var iframe = $('<iframe src="' + $(this).data('video') + '?fs=0&modestbranding=1&rel=0&showinfo=0"></iframe>')
         $(this).html(iframe);
     });
+
+     $('#products li')
+        .mouseover(function(){
+            $('#products li').not($(this)).addClass('dark');
+            $(this).addClass('show');
+        })
+        .mouseout(function(){
+            $('#products li').removeClass('dark');
+            $(this).removeClass('show');
+        });
+
 
  });
 

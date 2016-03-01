@@ -14,5 +14,9 @@ class Page extends MY_Controller
     {
         $this->load->view('home');
     }
+    public function products()
+    {
+        $this->load->view('products');
+    }
 
 }
