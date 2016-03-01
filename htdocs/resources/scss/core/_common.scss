@@ -85,7 +85,6 @@
 #hp-intro {
     background-image: url(/resources/img/parallax/big-window.jpg);
     background-repeat: no-repeat;
-    //background-attachment: fixed;
     background-position: 50% 0;
     background-size: 150%;
     width: 100%;
@@ -532,7 +531,7 @@
                 font-weight: 100;
             }
         }
-    }
+    } 
 
     #hp-gallery {
         padding: 60px 10%;
@@ -565,7 +564,7 @@
     #hp-product-design {
         background-size: 100%;
     }
-    
+
     #hp-video {
         .video-wrapper {
             width: 80%;

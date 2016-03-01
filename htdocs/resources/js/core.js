@@ -121,12 +121,12 @@ var set_max_height = function($group) {
  * Returns true or false if the current breakpoint is considered to be a mobile device.
  * @returns bool
  */
- var are_we_on_a_mobile_device = function () {
+ var mobile_device = function () {
     return $(window).width() < breakpoints.small ? true : false;
 };
 
 var intro_block_delay = function () {
-    var multiplier = 7;
+    var multiplier = 6;
     return ($('html').height() / multiplier) * -1;
 };
 
@@ -158,23 +158,20 @@ $(document).ready(function () {
         enablePin: false
     });
 
-    //.parallax(xPosition, speedFactor, outerHeight) options:
-    //  xPosition - Horizontal position of the element
-    //  inertia - speed to move relative to vertical scroll.
-    //  outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-    //$('#hp-intro').parallax("50%", 0.8, true);
+    if(!mobile_device()) {
+        $('#hp-intro').parallax("50%", -0.5, true);
+        $('#hp-product-design').parallax("50%", -0.2, true);
+    
+        scrollorama
+        .animate('#hp-montage div', {
+            delay: positions.montage[bp].delay,
+            start: positions.montage[bp].start,
+            end: positions.montage[bp].end,
+            duration: positions.montage[bp].duration,
+            property: 'background-size',
+            easing: 'easeInOutQuad'
+        });
 
-    scrollorama
-    .animate('#hp-montage div', {
-        delay: positions.montage[bp].delay,
-        start: positions.montage[bp].start,
-        end: positions.montage[bp].end,
-        duration: positions.montage[bp].duration,
-        property: 'background-size',
-        easing: 'easeInOutQuad'
-    });
-
-    if ($(window).width() >= breakpoints.medium) {
         scrollorama
         .animate('#hp-info-panels li:first-of-type', {duration: 100, delay: intro_block_delay(), property: 'opacity', start: 0, end: 1})
         .animate('#hp-info-panels li:first-of-type', {duration: 400, delay: intro_block_delay(), property: 'left', start: '-10%', end: 0, easing: 'easeInOutCubic'})
@@ -209,7 +206,6 @@ $(window).load(function () {
 
     // Manage the height of any height managed panels
     if ($('[data-height-determined-by]').length > 0) {
-        console.log('found switch');
         set_max_height($('[data-height-determined-by]'));
     }
 });
@@ -219,7 +215,6 @@ $(window).resize(function () {
 
     // Manage the height of any height managed panels
     if ($('[data-height-determined-by]').length > 0) {
-        console.log('found switch');
         set_max_height($('[data-height-determined-by]'));
     }
 });
