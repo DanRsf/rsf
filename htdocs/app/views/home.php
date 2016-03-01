@@ -129,5 +129,39 @@
 
     <?php $this->load->view('includes/scripts', $this->data); ?>
 
+    <script>
+        $(document).ready(function(){
+            var scrollorama = $.scrollorama({
+                blocks: '.scroll-block',
+                enablePin: false
+            });
+
+            if(!mobile_device()) {
+
+                var windowWidth = $(window).width();
+
+                $('.page-header').parallax("50%", -0.5, true, (windowWidth > breakpoints.xlarge ? Math.abs(windowWidth / 2) * -1 : 0));
+                $('#hp-product-design').parallax("50%", -0.2, true);
+                
+                scrollorama
+                .animate('#hp-montage div', {
+                    delay: positions.montage[bp].delay,
+                    start: positions.montage[bp].start,
+                    end: positions.montage[bp].end,
+                    duration: positions.montage[bp].duration,
+                    property: 'background-size',
+                    easing: 'easeInOutQuad'
+                });
+
+                scrollorama
+                .animate('#hp-info-panels li:first-of-type', {duration: 100, delay: intro_block_delay(), property: 'opacity', start: 0, end: 1})
+                .animate('#hp-info-panels li:first-of-type', {duration: 400, delay: intro_block_delay(), property: 'left', start: '-10%', end: 0, easing: 'easeInOutCubic'})
+                .animate('#hp-info-panels li:last-of-type', {duration: 100, delay: intro_block_delay(), property: 'opacity', start: 0, end: 1})
+                .animate('#hp-info-panels li:last-of-type', {duration: 400, delay: intro_block_delay(), property: 'right', start: '-10%', end: 0, easing: 'easeInOutCubic'});
+            }
+
+        });
+    </script>
+
 </body>
 </html>

@@ -3,5 +3,6 @@
 
 <script src="<?php echo JS;?>/jquery.scrollorama.js"></script>
 <script src="<?php echo JS;?>/jquery.parallax-1.1.3.js"></script>
+<script src="<?php echo JS;?>/magnific-popup-1.1.js"></script>
 <script src="<?php echo JS;?>/core.js"></script>
 <script src="<?php echo JS;?>/video.js"></script>
