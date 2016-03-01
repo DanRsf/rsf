@@ -12,7 +12,7 @@
         color: $c-white;
         font-size: 14px;
         text-align:center;
-        margin: 0;
+        margin: 0 0 20px 0;
         strong {
             color: $c-lblue;
         }
@@ -77,7 +77,7 @@ footer {
         }
     }
     .opening-times {
-        max-width: 75%;
+        max-width: 160px;
         margin: 0 auto;
         h4 {
             font-size: 16px;
@@ -88,8 +88,9 @@ footer {
                 font-family: rsficon;
                 content: 'C';
                 font-size:40px;
+                line-height: 43px;
                 display:block;
-                margin: 0 auto 8px auto;
+                margin: 0 auto;
             }
         }
         ul {
@@ -162,13 +163,21 @@ footer {
     }
 }
 
-@include bp('min-width', $bp-small + 1) {
+@include bp(min-width, $bp-small + 1) {
     #sign-up {
         p {
             float: left;
+            margin: 0;
+            line-height: 27px;
+            font-size: 14px;
         }
         form {
+            text-align:right;
             float: right;
+            width: 57%;
+            input[type="text"] {
+                width: 65%;
+            }
         }
     }
 
@@ -184,7 +193,7 @@ footer {
     }
 }
 
-@include bp('min-width', $bp-large + 1) {
+@include bp(min-width, $bp-large + 1) {
     #sign-up {
         p {
             font-size: 16px;
@@ -200,7 +209,7 @@ footer {
         .footer-block {
             display: inline-block;
             vertical-align: top;
-            width: 24.8%;
+            width: 24.7%;
         }
         .address {
             address,
@@ -211,6 +220,8 @@ footer {
         }
         blockquote {
             padding:0;
+            width: 180px;
+            margin: 0 auto;
         }
     }
 }

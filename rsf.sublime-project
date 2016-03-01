@@ -3,7 +3,7 @@
 	[
 		{
 			"path": ".",
-			"folder_exclude_patterns": ["sys",".sass-cache","hooks","language","logs","third_party","cache","config","helpers"],
+			"folder_exclude_patterns": ["sys","*cache*","hooks","language","logs","third_party","cache","config","helpers"],
 			"file_exclude_patterns": [".htaccess","index.html",".gitignore","README.md"]
 		}
 	]
