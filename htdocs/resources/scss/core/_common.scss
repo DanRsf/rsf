@@ -46,6 +46,9 @@
     padding: 0 30px;
     margin: 0 auto;
     overflow: hidden;
+    img {
+        max-width: 100%;
+    }
 }
 
 .full {
@@ -70,6 +73,15 @@
         top: 0;
         left: 0;
     }
+}
+
+.left-column {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.right-column {
+    display: block;
 }
 
 .cta {
@@ -305,35 +317,26 @@
     }
 }
 
-#hp-gallery {
-    padding: 40px 10%;
-    .content {
-        margin-bottom: 30px;
-        img {
-            margin: 0 auto 10px auto;
-        }
-        p {
-            text-align: center;
-            font-size: 14px;
-            line-height:18px;
-        }
-    }
+#gallery-container {
 
     #gallery-viewer {
-        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $c-grey;
     }
 
     #gallery-thumbs {
-        width: 100%;
-        border-top: 1px solid $c-border;
-        margin-top: 20px;
-        padding-top: 20px;
         font-size: 0;
         li {
             display: inline-block;
-            width: 25%;
+            width: 23.5%;
+            margin-left: 2%;
+            &:first-of-type,
+            &:nth-of-type(5n) {
+                margin-left: 0; 
+            }
             img {
-                width: 90%;
+                width: 100%;
                 display: block;
                 margin: 0 auto;
             }
@@ -589,6 +592,15 @@
     margin:0;
 }
 
+
+#dn-intro {
+    background: url(/resources/img/parallax/bright-red.jpg);
+}
+
+#dn-info {
+    
+}
+
 @include bp(min-width, $bp-xsmall + 1) {
 
     #hp-intro {
@@ -713,6 +725,14 @@
 
 @include bp(min-width, $bp-medium + 1) {
 
+    .left-column,
+    .right-column {
+        display: inline-block;
+        width: 49.8%;
+        vertical-align: top;
+        margin-bottom: 0;
+    }
+
     #hp-intro {
         .copy {
             h1 {
@@ -816,6 +836,16 @@
             display: inline-block;
             width: 45%;
             vertical-align: top;
+        }
+    }
+
+    #dn-info {
+        .left-column {
+            padding: 0 50px 0 30px;
+        }
+        .left-column,
+        .right-column {
+            vertical-align: middle;
         }
     }
 }

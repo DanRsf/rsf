@@ -24,4 +24,9 @@ class Page extends MY_Controller
     {
         $this->load->view('contact');
     }
+
+    public function design()
+    {
+        $this->load->view('design');
+    }
 }
