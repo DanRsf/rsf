@@ -67,10 +67,12 @@
         </div>
 
         <div id="hp-product-design">
-            <div class="copy">
-                <h2>Stunning<span>Product Design</span></h2>
-                <p>Our beautiful products from the world’s leading manufacturers deliver eloquent, stylish and tranquil bathrooms, designed with relaxation in mind.</p>
-                <a href="/products" class="cta" />View our products</a>
+            <div class="lg-container">
+                <div class="copy">
+                    <h2>Stunning<span>Product Design</span></h2>
+                    <p>Our beautiful products from the world’s leading manufacturers deliver eloquent, stylish and tranquil bathrooms, designed with relaxation in mind.</p>
+                    <a href="/products" class="cta" />View our products</a>
+                </div>
             </div>
         </div>
 
@@ -105,23 +107,6 @@
                 </ul>
             </div>
         </div>
-        <!-- <div id="hp-gallery">
-            <div class="content">
-                <img src="<?php echo IMG; ?>/general/virtual-worlds-logo.jpg" />
-                <p>Using the latest 3D modeling software, our highly experienced design team can visualise your dream bathroom completely free of charge.  Experiment with different design styles and try alternate colour schemes without lifting a finger.</p>
-                <p>Every one of the high quality products we hold in stock are available as 3D models within Virtual Worlds, so experimenting with different design ideas couldn't be easier.</p>
-            </div>
-            <img src="<?php echo IMG; ?>/gallery/images/1.jpg" id="gallery-viewer"/>
-            <ul id="gallery-thumbs">
-                <li><img src="<?php echo IMG; ?>/gallery/thumbs/2.jpg" data-image="2.jpg" /></li>
-                <li><img src="<?php echo IMG; ?>/gallery/thumbs/3.jpg" data-image="3.jpg" /></li>
-                <li><img src="<?php echo IMG; ?>/gallery/thumbs/4.jpg" data-image="4.jpg" /></li>
-                <li><img src="<?php echo IMG; ?>/gallery/thumbs/5.jpg" data-image="5.jpg" /></li>
-                <li><img src="<?php echo IMG; ?>/gallery/thumbs/6.jpg" data-image="6.jpg" /></li>
-                <li><img src="<?php echo IMG; ?>/gallery/thumbs/7.jpg" data-image="7.jpg" /></li>
-                <li><img src="<?php echo IMG; ?>/gallery/thumbs/1.jpg" data-image="1.jpg" /></li>
-            </ul>
-        </div> -->
 
         <?php $this->load->view('includes/footer', $this->data); ?>
 
@@ -131,7 +116,26 @@
 
     <script>
         $(document).ready(function(){
-            var scrollorama = $.scrollorama({
+
+            if(!mobile_device()) {
+                $('#hp-product-design').parallax("50%", -0.4);
+
+                var scrollorama = $.scrollorama({
+                    blocks: '.scroll-block',
+                    enablePin: false
+                });
+
+                scrollorama
+                .animate('#hp-montage div', {
+                    delay: positions.montage[bp].delay,
+                    start: positions.montage[bp].start,
+                    end: positions.montage[bp].end,
+                    duration: positions.montage[bp].duration,
+                    property: 'background-size',
+                    easing: 'easeInOutQuad'
+                });
+            }
+            /*var scrollorama = $.scrollorama({
                 blocks: '.scroll-block',
                 enablePin: false
             });
@@ -158,7 +162,7 @@
                 .animate('#hp-info-panels li:first-of-type', {duration: 400, delay: intro_block_delay(), property: 'left', start: '-10%', end: 0, easing: 'easeInOutCubic'})
                 .animate('#hp-info-panels li:last-of-type', {duration: 100, delay: intro_block_delay(), property: 'opacity', start: 0, end: 1})
                 .animate('#hp-info-panels li:last-of-type', {duration: 400, delay: intro_block_delay(), property: 'right', start: '-10%', end: 0, easing: 'easeInOutCubic'});
-            }
+            }*/
 
         });
     </script>

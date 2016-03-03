@@ -19,7 +19,7 @@ http://www.gnu.org/licenses/gpl.html
 		windowHeight = $window.height();
 	});
 
-	$.fn.parallax = function(xpos, speedFactor, outerHeight, extraDistance) {
+	$.fn.parallax = function(xpos, speedFactor, outerHeight) {
 		var $this = $(this);
 		var getHeight;
 		var firstTop;
@@ -60,7 +60,11 @@ http://www.gnu.org/licenses/gpl.html
 					return;
 				}
 
-				$this.css('backgroundPosition', xpos + " " + Math.round((firstTop - extraDistance - pos) * speedFactor) + "px");
+				// Add some extra space to prevent white chunk from showing
+				extraPixels = ($(window).width() / 1.8) * speedFactor;
+
+				var ypos = Math.round((firstTop - pos) * speedFactor) + extraPixels;
+				$this.css('backgroundPosition', xpos + " " + ypos + "px");
 			});
 		}		
 

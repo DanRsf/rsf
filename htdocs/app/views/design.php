@@ -7,18 +7,20 @@
     <div id="main-container">
 
         <div id="dn-intro" class="page-header">
-            <div class="copy">
-                <h1>designing in virtual reality<span>the ultimate consumer experience</span></h1>
-                <a href="#hp-info-panels" class="section-link">find out more</a>
+            <div class="lg-container">
+                <div class="copy">
+                    <h1>designing in virtual reality<span>the ultimate consumer experience</span></h1>
+                </div>
             </div>
+                <a href="#dn-info" class="section-link">find out more</a>
         </div>
 
         <div id="dn-info" class="container">
-            <div class="left-column">
-                <p>Using the latest 3D modelling software, our highly experienced design team can visualise your dream bathroom completely free of charge.  Experiment with different design styles and try alternate colour schemes without lifting a finger.</p>
-            </div>
             <div class="right-column">
                 <img src="<?php echo IMG;?>/general/virtual-worlds-logo.jpg" alt="virtual worlds logo">
+            </div>
+            <div class="left-column">
+                <p>Using the latest 3D modelling software, our highly experienced design team can visualise your dream bathroom completely free of charge.  Experiment with different design styles and try alternate colour schemes without lifting a finger.</p>
             </div>
         </div>
 
@@ -47,11 +49,11 @@
         </div>
 
         <div  id="dn-rendering-dark" class="container">
-            <div class="left-column">
-                <p>Every one of the high quality products we hold in stock are available as 3D models within Virtual Worlds, so experimenting with different design ideas couldn’t be easier.</p>
-            </div>
             <div class="right-column">
                 <img src="<?php echo IMG;?>/general/3d-rendering-dark.jpg" alt="virtual worlds logo">
+            </div>
+            <div class="left-column">
+                <p>Every one of the high quality products we hold in stock are available as 3D models within Virtual Worlds, so experimenting with different design ideas couldn’t be easier.</p>
             </div>
         </div>
 
