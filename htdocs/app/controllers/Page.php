@@ -24,4 +24,9 @@ class Page extends MY_Controller
     {
         $this->load->view('contact');
     }
+
+    public function installation()
+    {
+        $this->load->view('installation');
+    }
 }
