@@ -2088,11 +2088,11 @@ footer p {
   margin: 0;
 }
 
-/* line 569, ../scss/core/_common.scss */
+/* line 568, ../scss/core/_common.scss */
 #dn-intro {
   background-image: url(/resources/img/parallax/bright-red.jpg);
 }
-/* line 571, ../scss/core/_common.scss */
+/* line 570, ../scss/core/_common.scss */
 #dn-intro .copy {
   position: absolute;
   bottom: 20px;
@@ -2101,7 +2101,7 @@ footer p {
   padding: 20px;
   color: #ffffff;
 }
-/* line 578, ../scss/core/_common.scss */
+/* line 577, ../scss/core/_common.scss */
 #dn-intro .copy h1 {
   text-align: right;
   text-transform: uppercase;
@@ -2110,7 +2110,7 @@ footer p {
   margin: 0;
   padding: 0;
 }
-/* line 585, ../scss/core/_common.scss */
+/* line 584, ../scss/core/_common.scss */
 #dn-intro .copy h1 span {
   display: block;
   font-weight: 700;
@@ -2171,94 +2171,148 @@ footer p {
   margin-bottom: 30px;
 }
 
+/* line 649, ../scss/core/_common.scss */
+#ins-intro {
+  background-image: url("/resources/img/parallax/glass-wall.jpg");
+  margin-bottom: 80px;
+}
+/* line 652, ../scss/core/_common.scss */
+#ins-intro .copy {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: #ffffff;
+}
+/* line 659, ../scss/core/_common.scss */
+#ins-intro .copy h1 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0 30px 30px 0;
+  font-weight: 300;
+}
+/* line 666, ../scss/core/_common.scss */
+#ins-intro .copy h1 strong {
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+}
+
+/* line 675, ../scss/core/_common.scss */
+#ins-copy {
+  margin-bottom: 50px;
+}
+/* line 677, ../scss/core/_common.scss */
+#ins-copy .contact-details {
+  margin-top: 30px;
+}
+/* line 679, ../scss/core/_common.scss */
+#ins-copy .contact-details p {
+  color: #0E5A94;
+  font-size: 16px;
+}
+/* line 682, ../scss/core/_common.scss */
+#ins-copy .contact-details p strong {
+  color: #0E5A94;
+  font-size: 24px;
+}
+/* line 687, ../scss/core/_common.scss */
+#ins-copy .contact-details a {
+  color: #0E5A94;
+  font-size: 18px;
+}
+
 @media only screen and (min-width: 480px) {
-  /* line 652, ../scss/core/_common.scss */
+  /* line 700, ../scss/core/_common.scss */
   #hp-intro h1 {
     margin-bottom: 26px;
   }
 
-  /* line 659, ../scss/core/_common.scss */
+  /* line 707, ../scss/core/_common.scss */
   #hp-info-panels ul li {
     padding: 20px 7%;
   }
-  /* line 661, ../scss/core/_common.scss */
+  /* line 709, ../scss/core/_common.scss */
   #hp-info-panels ul li .image {
     width: 31%;
   }
-  /* line 663, ../scss/core/_common.scss */
+  /* line 711, ../scss/core/_common.scss */
   #hp-info-panels ul li .image img {
     max-width: 100%;
   }
-  /* line 667, ../scss/core/_common.scss */
+  /* line 715, ../scss/core/_common.scss */
   #hp-info-panels ul li .content {
     width: 68%;
   }
-  /* line 669, ../scss/core/_common.scss */
+  /* line 717, ../scss/core/_common.scss */
   #hp-info-panels ul li .content h2 {
     margin-bottom: 6px;
     font-size: 18px;
     line-height: 23px;
   }
-  /* line 674, ../scss/core/_common.scss */
+  /* line 722, ../scss/core/_common.scss */
   #hp-info-panels ul li .content p {
     font-size: 13px;
   }
-  /* line 677, ../scss/core/_common.scss */
+  /* line 725, ../scss/core/_common.scss */
   #hp-info-panels ul li .content a {
     font-size: 13px;
   }
 
-  /* line 686, ../scss/core/_common.scss */
+  /* line 734, ../scss/core/_common.scss */
   #hp-montage .left {
     float: left;
     width: 50%;
   }
-  /* line 690, ../scss/core/_common.scss */
+  /* line 738, ../scss/core/_common.scss */
   #hp-montage .right {
     float: right;
   }
-  /* line 692, ../scss/core/_common.scss */
+  /* line 740, ../scss/core/_common.scss */
   #hp-montage .right.small {
     width: 25%;
   }
-  /* line 695, ../scss/core/_common.scss */
+  /* line 743, ../scss/core/_common.scss */
   #hp-montage .right.big {
     width: 50%;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 704, ../scss/core/_common.scss */
+  /* line 752, ../scss/core/_common.scss */
   .page-header {
     background-size: 100%;
     height: 300px;
   }
 
-  /* line 711, ../scss/core/_common.scss */
+  /* line 759, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     margin-bottom: 20px;
     font-size: 40px;
   }
-  /* line 714, ../scss/core/_common.scss */
+  /* line 762, ../scss/core/_common.scss */
   #hp-intro .copy h1 span {
     margin-top: 6px;
   }
-  /* line 718, ../scss/core/_common.scss */
+  /* line 766, ../scss/core/_common.scss */
   #hp-intro .copy p {
     margin-bottom: 50px;
   }
 
-  /* line 724, ../scss/core/_common.scss */
+  /* line 772, ../scss/core/_common.scss */
   #hp-info-panels {
     padding: 30px 0;
   }
-  /* line 726, ../scss/core/_common.scss */
+  /* line 774, ../scss/core/_common.scss */
   #hp-info-panels ul {
     width: 100%;
     text-align: center;
     padding: 0;
     margin-bottom: 40px;
   }
-  /* line 731, ../scss/core/_common.scss */
+  /* line 779, ../scss/core/_common.scss */
   #hp-info-panels ul li {
     width: 33%;
     padding: 0;
@@ -2267,87 +2321,87 @@ footer p {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 738, ../scss/core/_common.scss */
+  /* line 786, ../scss/core/_common.scss */
   #hp-info-panels ul li .icon {
     line-height: 106px;
     margin: 0;
   }
-  /* line 742, ../scss/core/_common.scss */
+  /* line 790, ../scss/core/_common.scss */
   #hp-info-panels ul li .content {
     width: 80%;
   }
-  /* line 744, ../scss/core/_common.scss */
+  /* line 792, ../scss/core/_common.scss */
   #hp-info-panels ul li .content h2 {
     font-size: 17px;
   }
 
-  /* line 752, ../scss/core/_common.scss */
+  /* line 800, ../scss/core/_common.scss */
   #hp-product-design {
     overflow: hidden;
   }
-  /* line 754, ../scss/core/_common.scss */
+  /* line 802, ../scss/core/_common.scss */
   #hp-product-design .copy {
     width: 400px;
     float: right;
   }
-  /* line 757, ../scss/core/_common.scss */
+  /* line 805, ../scss/core/_common.scss */
   #hp-product-design .copy h2 {
     font-size: 24px;
     line-height: 24px;
   }
 
-  /* line 765, ../scss/core/_common.scss */
+  /* line 813, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     padding-bottom: 51%;
   }
 
-  /* line 772, ../scss/core/_common.scss */
+  /* line 820, ../scss/core/_common.scss */
   #dn-intro .copy h1 {
     font-size: 18px;
     line-height: 25px;
     margin: 30px 0 0 30px;
   }
 
-  /* line 780, ../scss/core/_common.scss */
+  /* line 828, ../scss/core/_common.scss */
   #dn-info {
     margin-bottom: 30px;
   }
-  /* line 782, ../scss/core/_common.scss */
+  /* line 830, ../scss/core/_common.scss */
   #dn-info .right-column {
     float: right;
     width: 50%;
     margin-left: 30px;
   }
 
-  /* line 790, ../scss/core/_common.scss */
+  /* line 838, ../scss/core/_common.scss */
   #gallery-container h2 {
     font-size: 24px;
   }
-  /* line 794, ../scss/core/_common.scss */
+  /* line 842, ../scss/core/_common.scss */
   #gallery-container #gallery-thumbs li {
     width: 12.5%;
     margin-left: 2%;
   }
-  /* line 797, ../scss/core/_common.scss */
+  /* line 845, ../scss/core/_common.scss */
   #gallery-container #gallery-thumbs li:nth-of-type(5) {
     margin-left: 2%;
   }
-  /* line 800, ../scss/core/_common.scss */
+  /* line 848, ../scss/core/_common.scss */
   #gallery-container #gallery-thumbs li:first-child {
     margin-left: 0px;
   }
 
-  /* line 807, ../scss/core/_common.scss */
+  /* line 855, ../scss/core/_common.scss */
   #dn-rendering-light {
     margin-bottom: 40px;
   }
-  /* line 809, ../scss/core/_common.scss */
+  /* line 857, ../scss/core/_common.scss */
   #dn-rendering-light .left-column {
     display: inline-block;
     vertical-align: middle;
     width: 60%;
   }
-  /* line 814, ../scss/core/_common.scss */
+  /* line 862, ../scss/core/_common.scss */
   #dn-rendering-light .right-column {
     display: inline-block;
     vertical-align: middle;
@@ -2355,25 +2409,31 @@ footer p {
     margin-left: 4.5%;
   }
 
-  /* line 822, ../scss/core/_common.scss */
+  /* line 870, ../scss/core/_common.scss */
   #dn-rendering-dark {
     margin-bottom: 70px;
   }
-  /* line 824, ../scss/core/_common.scss */
+  /* line 872, ../scss/core/_common.scss */
   #dn-rendering-dark .left-column {
     width: 35%;
     margin-right: 4.5%;
     margin-top: 30px;
   }
-  /* line 829, ../scss/core/_common.scss */
+  /* line 877, ../scss/core/_common.scss */
   #dn-rendering-dark .right-column {
     margin-bottom: 0;
     float: right;
     width: 60%;
   }
+
+  /* line 885, ../scss/core/_common.scss */
+  #ins-intro .copy {
+    top: 40px;
+    left: 40px;
+  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 839, ../scss/core/_common.scss */
+  /* line 894, ../scss/core/_common.scss */
   .left-column,
   .right-column {
     display: inline-block;
@@ -2382,12 +2442,12 @@ footer p {
     margin-bottom: 0;
   }
 
-  /* line 849, ../scss/core/_common.scss */
+  /* line 904, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     font-size: 5vw;
     margin-bottom: 20px;
   }
-  /* line 853, ../scss/core/_common.scss */
+  /* line 908, ../scss/core/_common.scss */
   #hp-intro .copy p {
     max-width: 370px;
     font-size: 18px;
@@ -2395,46 +2455,46 @@ footer p {
     font-weight: 100;
   }
 
-  /* line 862, ../scss/core/_common.scss */
+  /* line 917, ../scss/core/_common.scss */
   #hp-gallery {
     padding: 60px 10%;
   }
-  /* line 864, ../scss/core/_common.scss */
+  /* line 919, ../scss/core/_common.scss */
   #hp-gallery .content {
     float: right;
     margin-left: 5%;
     width: 43%;
   }
-  /* line 868, ../scss/core/_common.scss */
+  /* line 923, ../scss/core/_common.scss */
   #hp-gallery .content img {
     margin: 0;
     height: 80px;
   }
-  /* line 872, ../scss/core/_common.scss */
+  /* line 927, ../scss/core/_common.scss */
   #hp-gallery .content p {
     text-align: left;
     font-size: 13px;
     line-height: 17px;
   }
-  /* line 878, ../scss/core/_common.scss */
+  /* line 933, ../scss/core/_common.scss */
   #hp-gallery #gallery-viewer {
     width: 52%;
   }
-  /* line 882, ../scss/core/_common.scss */
+  /* line 937, ../scss/core/_common.scss */
   #hp-gallery #gallery-thumbs {
     clear: both;
   }
-  /* line 884, ../scss/core/_common.scss */
+  /* line 939, ../scss/core/_common.scss */
   #hp-gallery #gallery-thumbs li {
     width: 14.28%;
   }
 
-  /* line 890, ../scss/core/_common.scss */
+  /* line 945, ../scss/core/_common.scss */
   #hp-product-design {
     background-size: 100%;
   }
 
-  /* line 895, ../scss/core/_common.scss */
+  /* line 950, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     width: 80%;
     padding-bottom: 41.2%;
@@ -2442,92 +2502,92 @@ footer p {
     margin-left: auto;
   }
 
-  /* line 905, ../scss/core/_common.scss */
+  /* line 960, ../scss/core/_common.scss */
   #hp-testimonials ul li {
     width: 25%;
   }
 
-  /* line 912, ../scss/core/_common.scss */
+  /* line 967, ../scss/core/_common.scss */
   #products ul {
     width: 23%;
     margin-right: 2.5%;
   }
-  /* line 915, ../scss/core/_common.scss */
+  /* line 970, ../scss/core/_common.scss */
   #products ul:nth-of-type(2n+2) {
     margin-right: 2.5%;
   }
-  /* line 918, ../scss/core/_common.scss */
+  /* line 973, ../scss/core/_common.scss */
   #products ul:nth-of-type(4) {
     margin-right: 0;
   }
 
-  /* line 931, ../scss/core/_common.scss */
+  /* line 986, ../scss/core/_common.scss */
   #pp-intro .copy h1 {
     font-size: 24px;
     line-height: 25px;
     margin: 50px 0 0 110px;
   }
 
-  /* line 940, ../scss/core/_common.scss */
+  /* line 995, ../scss/core/_common.scss */
   #form-container .left-column {
     display: inline-block;
     width: 45%;
     vertical-align: top;
     margin-right: 9%;
   }
-  /* line 946, ../scss/core/_common.scss */
+  /* line 1001, ../scss/core/_common.scss */
   #form-container .form {
     display: inline-block;
     width: 45%;
     vertical-align: top;
   }
 
-  /* line 953, ../scss/core/_common.scss */
+  /* line 1008, ../scss/core/_common.scss */
   #dn-info {
     margin-bottom: 30px;
   }
-  /* line 955, ../scss/core/_common.scss */
+  /* line 1010, ../scss/core/_common.scss */
   #dn-info .left-column {
     width: 42.8%;
     display: block;
     margin-top: 50px;
   }
-  /* line 960, ../scss/core/_common.scss */
+  /* line 1015, ../scss/core/_common.scss */
   #dn-info .right-column {
     float: right;
     width: 50%;
     margin-left: 7%;
   }
 
-  /* line 968, ../scss/core/_common.scss */
+  /* line 1023, ../scss/core/_common.scss */
   #gallery-container h2 {
     font-size: 24px;
   }
-  /* line 972, ../scss/core/_common.scss */
+  /* line 1027, ../scss/core/_common.scss */
   #gallery-container #gallery-thumbs li {
     width: 12.5%;
     margin-left: 2%;
   }
-  /* line 975, ../scss/core/_common.scss */
+  /* line 1030, ../scss/core/_common.scss */
   #gallery-container #gallery-thumbs li:nth-of-type(5) {
     margin-left: 2%;
   }
-  /* line 978, ../scss/core/_common.scss */
+  /* line 1033, ../scss/core/_common.scss */
   #gallery-container #gallery-thumbs li:first-child {
     margin-left: 0px;
   }
 
-  /* line 985, ../scss/core/_common.scss */
+  /* line 1040, ../scss/core/_common.scss */
   #dn-rendering-light {
     margin-bottom: 40px;
   }
-  /* line 987, ../scss/core/_common.scss */
+  /* line 1042, ../scss/core/_common.scss */
   #dn-rendering-light .left-column {
     display: inline-block;
     vertical-align: middle;
     width: 60%;
   }
-  /* line 992, ../scss/core/_common.scss */
+  /* line 1047, ../scss/core/_common.scss */
   #dn-rendering-light .right-column {
     display: inline-block;
     vertical-align: middle;
@@ -2535,89 +2595,95 @@ footer p {
     margin-left: 4.5%;
   }
 
-  /* line 1000, ../scss/core/_common.scss */
+  /* line 1055, ../scss/core/_common.scss */
   #dn-rendering-dark {
     margin-bottom: 70px;
   }
-  /* line 1002, ../scss/core/_common.scss */
+  /* line 1057, ../scss/core/_common.scss */
   #dn-rendering-dark .left-column {
     width: 35%;
     margin-right: 4.5%;
     margin-top: 30px;
   }
-  /* line 1007, ../scss/core/_common.scss */
+  /* line 1062, ../scss/core/_common.scss */
   #dn-rendering-dark .right-column {
     margin-bottom: 0;
     float: right;
     width: 60%;
   }
+
+  /* line 1070, ../scss/core/_common.scss */
+  #ins-copy .left-column {
+    width: 47.8%;
+    margin-right: 2%;
+  }
 }
 @media only screen and (min-width: 960px) {
-  /* line 1017, ../scss/core/_common.scss */
+  /* line 1082, ../scss/core/_common.scss */
   .page-header {
     height: 440px;
     background-size: 100%;
   }
 
-  /* line 1024, ../scss/core/_common.scss */
+  /* line 1089, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     font-size: 64px;
   }
-  /* line 1026, ../scss/core/_common.scss */
+  /* line 1091, ../scss/core/_common.scss */
   #hp-intro .copy h1 span {
     font-size: 65%;
   }
-  /* line 1030, ../scss/core/_common.scss */
+  /* line 1095, ../scss/core/_common.scss */
   #hp-intro .copy p {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 70px;
   }
-  /* line 1036, ../scss/core/_common.scss */
+  /* line 1101, ../scss/core/_common.scss */
   #hp-intro .section-link {
     bottom: -70px;
   }
 
-  /* line 1041, ../scss/core/_common.scss */
+  /* line 1106, ../scss/core/_common.scss */
   #hp-info-panels {
     padding: 60px 0;
   }
-  /* line 1046, ../scss/core/_common.scss */
+  /* line 1111, ../scss/core/_common.scss */
   #hp-info-panels ul li .content h2 {
     font-size: 22px;
   }
 
-  /* line 1055, ../scss/core/_common.scss */
+  /* line 1120, ../scss/core/_common.scss */
   #hp-product-design .copy {
     margin-top: 70px;
     width: 480px;
   }
-  /* line 1058, ../scss/core/_common.scss */
+  /* line 1123, ../scss/core/_common.scss */
   #hp-product-design .copy h2 {
     font-size: 28px;
     line-height: 28px;
   }
-  /* line 1062, ../scss/core/_common.scss */
+  /* line 1127, ../scss/core/_common.scss */
   #hp-product-design .copy .cta {
     margin-top: 16px;
     font-size: 14px;
   }
 
-  /* line 1069, ../scss/core/_common.scss */
+  /* line 1134, ../scss/core/_common.scss */
   #hp-video {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  /* line 1072, ../scss/core/_common.scss */
+  /* line 1137, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42%;
   }
 
-  /* line 1077, ../scss/core/_common.scss */
+  /* line 1142, ../scss/core/_common.scss */
   #pp-copy-and-brands {
     margin-top: 120px;
   }
-  /* line 1079, ../scss/core/_common.scss */
+  /* line 1144, ../scss/core/_common.scss */
   #pp-copy-and-brands .left-column {
     display: inline-block;
     vertical-align: middle;
@@ -2625,35 +2691,35 @@ footer p {
     padding: 0 40px;
     margin-bottom: 0;
   }
-  /* line 1086, ../scss/core/_common.scss */
+  /* line 1151, ../scss/core/_common.scss */
   #pp-copy-and-brands .brand-logos {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
   }
-  /* line 1090, ../scss/core/_common.scss */
+  /* line 1155, ../scss/core/_common.scss */
   #pp-copy-and-brands .brand-logos li {
     padding: 0 8px;
   }
 
-  /* line 1097, ../scss/core/_common.scss */
+  /* line 1162, ../scss/core/_common.scss */
   #pp-intro .copy {
     top: 40px;
     right: 40px;
   }
-  /* line 1100, ../scss/core/_common.scss */
+  /* line 1165, ../scss/core/_common.scss */
   #pp-intro .copy h1 {
     font-size: 26px;
     line-height: 27px;
     margin: 70px 0 0 150px;
   }
 
-  /* line 1109, ../scss/core/_common.scss */
+  /* line 1174, ../scss/core/_common.scss */
   .page-header .section-link {
     bottom: -70px;
   }
 
-  /* line 1114, ../scss/core/_common.scss */
+  /* line 1179, ../scss/core/_common.scss */
   #form-container .left-column {
     display: inline-block;
     width: 40%;
@@ -2661,43 +2727,43 @@ footer p {
     margin-right: 9.5%;
     margin-left: 5%;
   }
-  /* line 1121, ../scss/core/_common.scss */
+  /* line 1186, ../scss/core/_common.scss */
   #form-container .form {
     display: inline-block;
     width: 40%;
     vertical-align: top;
   }
 
-  /* line 1128, ../scss/core/_common.scss */
+  /* line 1193, ../scss/core/_common.scss */
   #dn-intro {
     margin-bottom: 80px;
   }
-  /* line 1131, ../scss/core/_common.scss */
+  /* line 1196, ../scss/core/_common.scss */
   #dn-intro .copy h1 {
     font-size: 21px;
     line-height: 28px;
     margin: 40px 0 0 40px;
   }
 
-  /* line 1139, ../scss/core/_common.scss */
+  /* line 1204, ../scss/core/_common.scss */
   #dn-info {
     margin-bottom: 30px;
   }
-  /* line 1141, ../scss/core/_common.scss */
+  /* line 1206, ../scss/core/_common.scss */
   #dn-info .left-column {
     width: 38.8%;
     display: block;
     margin-top: 50px;
     margin-left: 4%;
   }
-  /* line 1147, ../scss/core/_common.scss */
+  /* line 1212, ../scss/core/_common.scss */
   #dn-info .right-column {
     float: right;
     width: 50%;
     margin-left: 7%;
   }
 
-  /* line 1156, ../scss/core/_common.scss */
+  /* line 1221, ../scss/core/_common.scss */
   #dn-rendering-light p,
   #dn-rendering-dark p {
     font-size: 16px;
@@ -2705,7 +2771,7 @@ footer p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 1165, ../scss/core/_common.scss */
+  /* line 1230, ../scss/core/_common.scss */
   .lg-container {
     max-width: 1200px;
     padding: 0 30px;
@@ -2715,13 +2781,13 @@ footer p {
     height: 100%;
   }
 
-  /* line 1176, ../scss/core/_common.scss */
+  /* line 1241, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     font-size: 56px;
     margin-bottom: 30px;
   }
 
-  /* line 1183, ../scss/core/_common.scss */
+  /* line 1248, ../scss/core/_common.scss */
   #hp-montage {
     max-width: 1200px;
     padding: 0 30px;
@@ -2729,17 +2795,17 @@ footer p {
     overflow: hidden;
   }
 
-  /* line 1191, ../scss/core/_common.scss */
+  /* line 1256, ../scss/core/_common.scss */
   #hp-product-design .copy {
     margin: 70px 40px 70px 0;
   }
 
-  /* line 1197, ../scss/core/_common.scss */
+  /* line 1262, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42.6%;
   }
 
-  /* line 1203, ../scss/core/_common.scss */
+  /* line 1268, ../scss/core/_common.scss */
   #pp-intro .copy {
     top: 60px;
     right: 110px;

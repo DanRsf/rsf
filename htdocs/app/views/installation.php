@@ -13,7 +13,7 @@
             <a href="#form-container" class="section-link">find out more</a>
         </div>
 
-        <div class="container">
+        <div class="container" id="ins-copy">
             <div class="left-column">
                 <p>Our RSF Bathroom Designs Sales Advisors can provide you with a list of recommended bathroom installers or our direct installers (please note our direct installers get booked weeks in advance) should you require it. Whichever option you choose you will be assured your bathroom installation is in qualified hands.</p>
                 <p>We regularly monitor the performance of all our bathroom installers and verify they are all familiar with the quality name brands we install.</p>

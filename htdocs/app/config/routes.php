@@ -55,5 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['products'] = 'page/products';
 $route['contact'] = 'page/contact';
-$route['installation'] = 'page/installation';
 $route['design'] = 'page/design';
+$route['installation'] = 'page/installation';
