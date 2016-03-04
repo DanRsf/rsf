@@ -26,13 +26,30 @@
             </div>
             <div class="form">
                 <h2>Drop us an email</h2>
-                <?php echo form_open();?>
-                <input type="text" name="name" placeholder="name" />
-                <input type="text" name="email" placeholder="email" />
-                <input type="text" name="phone" placeholder="telephone" />
-                <textarea name="enquiry" placeholder="enquiry" ></textarea>
-                <button>submit</button>
-                <?php echo form_close();?>
+                <?php
+                if($success)
+                {
+                    ?>
+                    <p>Thank you for your enquiry.</p>
+                    <p>Your details have been sent to our customer servers team who will contact you shortly to discuss your requirements further.</p>
+                    <p>If you enquiry is urgent, feel free to give us a call.</p>
+                    <?php
+                }
+                else
+                {
+                    ?>
+                    <?php echo form_open('contact');?>
+                    <input type="text" name="name" placeholder="name *" value="<?php echo set_value('name') ? set_value('name') : '';?>" class="<?php echo form_error('name') ? 'error' : ''?>" />
+                    <input type="text" name="email" placeholder="email *" value="<?php echo set_value('email') ? set_value('email') : '';?>" class="<?php echo form_error('email') ? 'error' : ''?>" />
+                    <input type="text" name="phone" placeholder="telephone" value="<?php echo set_value('phone') ? set_value('phone') : '';?>" class="<?php echo form_error('telephone') ? 'error' : ''?>" />
+                    <textarea name="enquiry" placeholder="enquiry *"  class="<?php echo form_error('enquiry') ? 'error' : ''?>" ><?php echo set_value('enquiry') ? set_value('enquiry') : '';?></textarea>
+                    <button>submit</button>
+                    <?php echo validation_errors();?>
+                    <?php echo form_close();?>
+                    <?php
+                }
+                ?>
+                
             </div>
         </div>
 
@@ -49,35 +66,35 @@
 
             // Specify features and elements to define styles.
             var styleArray = [
-                {
-                    featureType: "all",
-                    stylers: [
-                        { saturation: -80 }
-                    ]
-                },
-                {
-                    featureType: "road.arterial",
-                    elementType: 'geometry',
-                    stylers: [
-                        { hue: "#0a3e65" },
-                        { saturation: 50 }
-                    ]
-                },
-                {
-                    featureType: "road.highway",
-                    elementType: 'geometry',
-                    stylers: [
-                        { hue: "#0E5A94" },
-                        { saturation: 10 }
-                    ]
-                },
-                {
-                    featureType: "water",
-                    stylers: [
-                        { hue: "#949CA1" },
-                        { saturation: 50 }
-                    ]
-                }
+            {
+                featureType: "all",
+                stylers: [
+                { saturation: -80 }
+                ]
+            },
+            {
+                featureType: "road.arterial",
+                elementType: 'geometry',
+                stylers: [
+                { hue: "#0a3e65" },
+                { saturation: 50 }
+                ]
+            },
+            {
+                featureType: "road.highway",
+                elementType: 'geometry',
+                stylers: [
+                { hue: "#0E5A94" },
+                { saturation: 10 }
+                ]
+            },
+            {
+                featureType: "water",
+                stylers: [
+                { hue: "#949CA1" },
+                { saturation: 50 }
+                ]
+            }
             ];
 
             var myLatLng = {lat: 51.5692418, lng: 0.2173086};

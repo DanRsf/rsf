@@ -7,18 +7,20 @@
     <div id="main-container">
 
         <div id="ins-intro" class="page-header">
-            <div class="copy">
-                <h1>High quality<br />installations from<br /><strong>a team you can trust</strong></h1>
+            <div class="lg-container">
+                <div class="copy">
+                    <h1>High quality<br />installations from<br /><strong>a team you can trust</strong></h1>
+                </div>
             </div>
-            <a href="#form-container" class="section-link">find out more</a>
+                <a href="#form-container" class="section-link">find out more</a>
         </div>
 
         <div class="container" id="ins-copy">
             <div class="left-column">
-                <p>Our RSF Bathroom Designs Sales Advisors can provide you with a list of recommended bathroom installers or our direct installers (please note our direct installers get booked weeks in advance) should you require it. Whichever option you choose you will be assured your bathroom installation is in qualified hands.</p>
-                <p>We regularly monitor the performance of all our bathroom installers and verify they are all familiar with the quality name brands we install.</p>
-                <p>All our work comes with our installation guarantees and manufactured guarantees.</p>
-                <p>Finding the right installer is as important as finding the right bathroom. You'll need someone who you feel you are absolutely confident with. Please feel free to peruse our extensive portfolio of references and site/home visits. We'll happily provide them over email, or on your showroom visit!</p>
+                <p>Finding the right installer is as important as finding the right bathroom, and you can be confident of a trouble-free installation with RSF Bathroom Designs.</p>
+                <p>Our professionally qualified in-house and recommended bathroom installers are performance-monitored to the highest quality standards, and our installation guarantees ensure your peace of mind.</p>
+                <p>Our entire product range is covered by manufacturer guarantees, and we ensure all installers are familiar with the quality brand names we supply.</p>
+                <p>Ask to see our portfolio of references and site visits when visiting our showroom, or contact us to receive it by email.</p>
                 <div class="contact-details">
                     <p>call us now <strong>01708 444355</strong></p>
                     <a href="mailto:info@rsfbathroomdesigns.com">info@rsfbathroomdesigns.com</a>

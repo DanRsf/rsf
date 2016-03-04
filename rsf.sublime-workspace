@@ -12,34 +12,26 @@
 	"buffers":
 	[
 		{
-			"file": "htdocs/app/views/products.php",
-			"settings":
-			{
-				"buffer_size": 7870,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "rsf.sublime-project",
-			"settings":
-			{
-				"buffer_size": 242,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "htdocs/app/views/includes/scripts.php",
-			"settings":
-			{
-				"buffer_size": 476,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "htdocs/resources/scss/core/_common.scss",
 			"settings":
 			{
-				"buffer_size": 17679,
+				"buffer_size": 25441,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/resources/scss/core/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 1745,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/app/views/design.php",
+			"settings":
+			{
+				"buffer_size": 3527,
 				"line_ending": "Unix"
 			}
 		}
@@ -51,25 +43,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 267.0,
-		"last_filter": "wrap",
+		"height": 227.0,
+		"last_filter": "install",
 		"selected_items":
 		[
 			[
-				"wrap",
-				"Word Wrap: Toggle"
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"package",
 				"Package Control: List Packages"
 			],
 			[
-				"syntasas",
-				"Set Syntax: Sass"
+				"wrap",
+				"Word Wrap: Toggle"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
+				"syntasas",
+				"Set Syntax: Sass"
 			],
 			[
 				"packa",
@@ -112,24 +104,32 @@
 		"/Users/touson/Sites/rsfbathrooms",
 		"/Users/touson/Sites/rsfbathrooms/htdocs",
 		"/Users/touson/Sites/rsfbathrooms/htdocs/app",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/controllers",
 		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views",
-		"/Users/touson/Sites/rsfbathrooms/htdocs/resources",
-		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js",
-		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss",
-		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components"
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources"
 	],
 	"file_history":
 	[
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/home.php",
 		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/core.js",
+		"/Users/touson/Sites/rsfbathrooms/rsf.sublime-project",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/products.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/jquery.parallax-1.1.3.js",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/errors/html/error_404.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/routes.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/controllers/Page.php",
+		"/Users/touson/Library/Application Support/Sublime Text 3/Packages/AdvancedNewFile/Default (OSX).sublime-keymap",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/core/_common.scss",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/includes/scripts.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/contact.php",
+		"/Users/touson/Sites/rsfbathrooms/htdocs/app/config/autoload.php",
 		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_magnific.scss",
 		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_settings.scss",
-		"/Users/touson/Sites/rsfbathrooms/htdocs/app/views/home.php",
 		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/style.scss",
 		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/scss/components/_magnific-popup.scss",
 		"/Users/touson/Sites/rsfbathrooms/htdocs/resources/js/magnific_popup_1-1.js",
 		"/Users/touson/Sites/lbgroupltd.com/.gitignore",
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views/includes/footer.php",
-		"/Users/touson/Sites/rsfbathrooms/rsf.sublime-project",
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/app/views/home.php",
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/layout/_footer.scss",
 		"/Users/touson/Sites/rsfbathroomdesign.co.uk/htdocs/resources/scss/core/_common.scss",
@@ -170,6 +170,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"<project>",
 			""
 		]
 	},
@@ -178,6 +179,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"body",
 			"IMG;?>/products/",
 			"mfp-fade",
 			"&",
@@ -219,287 +221,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "htdocs/app/views/products.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7870,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7449,
-								7449
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1209.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "rsf.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 242,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								241,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "htdocs/app/views/includes/scripts.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 476,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								359,
-								359
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "htdocs/resources/scss/core/_common.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17679,
+						"buffer_size": 25441,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17046,
-								17046
+								24654,
+								24654
 							]
 						],
 						"settings":
@@ -507,71 +246,249 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 11595.0,
+						"translation.y": 17003.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "htdocs/resources/scss/core/_typography.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								979,
+								979
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 582.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "htdocs/app/views/design.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3527,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								429,
+								429
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -630,6 +547,34 @@
 		"selected_items":
 		[
 			[
+				"typog",
+				"htdocs/resources/scss/core/_typography.scss"
+			],
+			[
+				"produc",
+				"htdocs/app/views/products.php"
+			],
+			[
+				"paral",
+				"htdocs/resources/js/jquery.parallax-1.1.3.js"
+			],
+			[
+				"core",
+				"htdocs/resources/js/core.js"
+			],
+			[
+				"rout",
+				"htdocs/app/config/routes.php"
+			],
+			[
+				"page",
+				"htdocs/app/controllers/Page.php"
+			],
+			[
+				"common",
+				"htdocs/resources/scss/core/_common.scss"
+			],
+			[
 				"script",
 				"htdocs/app/views/includes/scripts.php"
 			],
@@ -638,16 +583,8 @@
 				"htdocs/app/views/home.php"
 			],
 			[
-				"core",
-				"htdocs/resources/js/core.js"
-			],
-			[
 				"commonsc",
 				"htdocs/resources/scss/core/_common.scss"
-			],
-			[
-				"produc",
-				"htdocs/app/views/products.php"
 			],
 			[
 				"footerscs",
@@ -676,10 +613,6 @@
 			[
 				"reset",
 				"resources/scss/core/_reset.scss"
-			],
-			[
-				"common",
-				"resources/scss/core/_common.scss"
 			],
 			[
 				"hom",

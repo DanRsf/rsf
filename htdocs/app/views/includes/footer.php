@@ -63,11 +63,11 @@
 
         <div id="social">
             <ul>
-                <li><a href="http://www.facebook.com/rsfbathrooms">f</a></li>
-                <li><a href="https://twitter.com/rsfbathrooms/">w</a></li>
-                <li><a href="https://uk.linkedin.com/in/rsfbath-essex-5452553b">k</a></li>
-                <li><a href="https://www.pinterest.com/rbathrooms/">i</a></li>
-                <li><a href="https://www.youtube.com/channel/UC-ObPbM9ZITIyLkDGSOEv0g">y</a></li>
+                <li><a href="http://www.facebook.com/rsfbathrooms" target-"_blank">f</a></li>
+                <li><a href="https://twitter.com/rsfbathrooms/" target-"_blank">w</a></li>
+                <li><a href="https://uk.linkedin.com/in/rsfbath-essex-5452553b" target-"_blank">k</a></li>
+                <li><a href="https://www.pinterest.com/rbathrooms/" target-"_blank">i</a></li>
+                <li><a href="https://www.youtube.com/channel/UC-ObPbM9ZITIyLkDGSOEv0g" target-"_blank">y</a></li>
             </ul>
         </div>
 

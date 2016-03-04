@@ -12,26 +12,40 @@ class Page extends MY_Controller
 
     public function index()
     {
-        $this->load->view('home');
+        $this->load->view('home', $this->data);
     }
 
     public function products()
     {
-        $this->load->view('products');
+        $this->load->view('products', $this->data);
     }
 
     public function contact()
     {
-        $this->load->view('contact');
+        $this->data['success'] = false;
+
+        if($this->input->post())
+        {
+            if($this->form_validation->run('contact'))
+            {
+                $this->load->model('contact_model');
+                $post = $this->input->post();
+                if($response = $this->contact_model->send($post['email'], $post['enquiry']))
+                {
+                    $this->data['success'] = true;
+                }
+            }
+        }
+        $this->load->view('contact', $this->data);
     }
 
     public function design()
     {
-        $this->load->view('design');
+        $this->load->view('design', $this->data);
     }
 
     public function installation()
     {
-        $this->load->view('installation');
+        $this->load->view('installation', $this->data);
     }
 }

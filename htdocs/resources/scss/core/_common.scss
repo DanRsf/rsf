@@ -27,7 +27,7 @@
             margin-top: 20px;
         }
     }
-}
+} 
 
 .scroll-block {
     position: relative;
@@ -536,6 +536,9 @@
                 &:placeholder {
                     color: $c-grey;
                     font-size: 13px;
+                }
+                &.error {
+                    border-color: $c-red;
                 }
             }
             input[type="text"] {
@@ -1074,6 +1077,10 @@
         .right-column {
 
         }
+    }
+
+    #ins-intro {
+    margin-bottom: 120px;
     }
 }
 
