@@ -992,6 +992,25 @@
                 margin: 50px 0 0 110px;
             }
         }
+    } 
+
+    #pp-copy-and-brands {
+        margin-top: 120px;
+        .left-column {
+            display: inline-block;
+            vertical-align: middle;
+            width: 48.5%;
+            padding: 0 40px;
+            margin-bottom: 0;
+        }
+        .brand-logos {
+            display: inline-block;
+            vertical-align: middle;
+            width: 50%;
+            li {
+                padding: 0 8px;
+            }
+        }
     }
 
     #form-container {

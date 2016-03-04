@@ -44,7 +44,7 @@
                     <input type="text" name="phone" placeholder="telephone" value="<?php echo set_value('phone') ? set_value('phone') : '';?>" class="<?php echo form_error('telephone') ? 'error' : ''?>" />
                     <textarea name="enquiry" placeholder="enquiry *"  class="<?php echo form_error('enquiry') ? 'error' : ''?>" ><?php echo set_value('enquiry') ? set_value('enquiry') : '';?></textarea>
                     <button>submit</button>
-                    <?php echo validation_errors();?>
+
                     <?php echo form_close();?>
                     <?php
                 }

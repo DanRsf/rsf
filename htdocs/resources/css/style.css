@@ -2533,167 +2533,11 @@ footer p {
     margin: 50px 0 0 110px;
   }
 
-  /* line 998, ../scss/core/_common.scss */
-  #form-container .left-column {
-    display: inline-block;
-    width: 45%;
-    vertical-align: top;
-    margin-right: 9%;
-  }
-  /* line 1004, ../scss/core/_common.scss */
-  #form-container .form {
-    display: inline-block;
-    width: 45%;
-    vertical-align: top;
-  }
-
-  /* line 1011, ../scss/core/_common.scss */
-  #dn-info {
-    margin-bottom: 30px;
-  }
-  /* line 1013, ../scss/core/_common.scss */
-  #dn-info .left-column {
-    width: 42.8%;
-    display: block;
-    margin-top: 50px;
-  }
-  /* line 1018, ../scss/core/_common.scss */
-  #dn-info .right-column {
-    float: right;
-    width: 50%;
-    margin-left: 7%;
-  }
-
-  /* line 1026, ../scss/core/_common.scss */
-  #gallery-container h2 {
-    font-size: 24px;
-  }
-  /* line 1030, ../scss/core/_common.scss */
-  #gallery-container #gallery-thumbs li {
-    width: 12.5%;
-    margin-left: 2%;
-  }
-  /* line 1033, ../scss/core/_common.scss */
-  #gallery-container #gallery-thumbs li:nth-of-type(5) {
-    margin-left: 2%;
-  }
-  /* line 1036, ../scss/core/_common.scss */
-  #gallery-container #gallery-thumbs li:first-child {
-    margin-left: 0px;
-  }
-
-  /* line 1043, ../scss/core/_common.scss */
-  #dn-rendering-light {
-    margin-bottom: 40px;
-  }
-  /* line 1045, ../scss/core/_common.scss */
-  #dn-rendering-light .left-column {
-    display: inline-block;
-    vertical-align: middle;
-    width: 60%;
-  }
-  /* line 1050, ../scss/core/_common.scss */
-  #dn-rendering-light .right-column {
-    display: inline-block;
-    vertical-align: middle;
-    width: 35%;
-    margin-left: 4.5%;
-  }
-
-  /* line 1058, ../scss/core/_common.scss */
-  #dn-rendering-dark {
-    margin-bottom: 70px;
-  }
-  /* line 1060, ../scss/core/_common.scss */
-  #dn-rendering-dark .left-column {
-    width: 35%;
-    margin-right: 4.5%;
-    margin-top: 30px;
-  }
-  /* line 1065, ../scss/core/_common.scss */
-  #dn-rendering-dark .right-column {
-    margin-bottom: 0;
-    float: right;
-    width: 60%;
-  }
-
-  /* line 1073, ../scss/core/_common.scss */
-  #ins-copy .left-column {
-    width: 47.8%;
-    margin-right: 2%;
-  }
-
-  /* line 1082, ../scss/core/_common.scss */
-  #ins-intro {
-    margin-bottom: 120px;
-  }
-}
-@media only screen and (min-width: 960px) {
-  /* line 1089, ../scss/core/_common.scss */
-  .page-header {
-    height: 440px;
-    background-size: 100%;
-  }
-
-  /* line 1096, ../scss/core/_common.scss */
-  #hp-intro .copy h1 {
-    font-size: 64px;
-  }
-  /* line 1098, ../scss/core/_common.scss */
-  #hp-intro .copy h1 span {
-    font-size: 65%;
-  }
-  /* line 1102, ../scss/core/_common.scss */
-  #hp-intro .copy p {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 70px;
-  }
-  /* line 1108, ../scss/core/_common.scss */
-  #hp-intro .section-link {
-    bottom: -70px;
-  }
-
-  /* line 1113, ../scss/core/_common.scss */
-  #hp-info-panels {
-    padding: 60px 0;
-  }
-  /* line 1118, ../scss/core/_common.scss */
-  #hp-info-panels ul li .content h2 {
-    font-size: 22px;
-  }
-
-  /* line 1127, ../scss/core/_common.scss */
-  #hp-product-design .copy {
-    margin-top: 70px;
-    width: 480px;
-  }
-  /* line 1130, ../scss/core/_common.scss */
-  #hp-product-design .copy h2 {
-    font-size: 28px;
-    line-height: 28px;
-  }
-  /* line 1134, ../scss/core/_common.scss */
-  #hp-product-design .copy .cta {
-    margin-top: 16px;
-    font-size: 14px;
-  }
-
-  /* line 1141, ../scss/core/_common.scss */
-  #hp-video {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  /* line 1144, ../scss/core/_common.scss */
-  #hp-video .video-wrapper {
-    padding-bottom: 42%;
-  }
-
-  /* line 1149, ../scss/core/_common.scss */
+  /* line 997, ../scss/core/_common.scss */
   #pp-copy-and-brands {
     margin-top: 120px;
   }
-  /* line 1151, ../scss/core/_common.scss */
+  /* line 999, ../scss/core/_common.scss */
   #pp-copy-and-brands .left-column {
     display: inline-block;
     vertical-align: middle;
@@ -2701,35 +2545,214 @@ footer p {
     padding: 0 40px;
     margin-bottom: 0;
   }
-  /* line 1158, ../scss/core/_common.scss */
+  /* line 1006, ../scss/core/_common.scss */
   #pp-copy-and-brands .brand-logos {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
   }
-  /* line 1162, ../scss/core/_common.scss */
+  /* line 1010, ../scss/core/_common.scss */
   #pp-copy-and-brands .brand-logos li {
     padding: 0 8px;
   }
 
-  /* line 1169, ../scss/core/_common.scss */
+  /* line 1017, ../scss/core/_common.scss */
+  #form-container .left-column {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin-right: 9%;
+  }
+  /* line 1023, ../scss/core/_common.scss */
+  #form-container .form {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+  }
+
+  /* line 1030, ../scss/core/_common.scss */
+  #dn-info {
+    margin-bottom: 30px;
+  }
+  /* line 1032, ../scss/core/_common.scss */
+  #dn-info .left-column {
+    width: 42.8%;
+    display: block;
+    margin-top: 50px;
+  }
+  /* line 1037, ../scss/core/_common.scss */
+  #dn-info .right-column {
+    float: right;
+    width: 50%;
+    margin-left: 7%;
+  }
+
+  /* line 1045, ../scss/core/_common.scss */
+  #gallery-container h2 {
+    font-size: 24px;
+  }
+  /* line 1049, ../scss/core/_common.scss */
+  #gallery-container #gallery-thumbs li {
+    width: 12.5%;
+    margin-left: 2%;
+  }
+  /* line 1052, ../scss/core/_common.scss */
+  #gallery-container #gallery-thumbs li:nth-of-type(5) {
+    margin-left: 2%;
+  }
+  /* line 1055, ../scss/core/_common.scss */
+  #gallery-container #gallery-thumbs li:first-child {
+    margin-left: 0px;
+  }
+
+  /* line 1062, ../scss/core/_common.scss */
+  #dn-rendering-light {
+    margin-bottom: 40px;
+  }
+  /* line 1064, ../scss/core/_common.scss */
+  #dn-rendering-light .left-column {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+  }
+  /* line 1069, ../scss/core/_common.scss */
+  #dn-rendering-light .right-column {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35%;
+    margin-left: 4.5%;
+  }
+
+  /* line 1077, ../scss/core/_common.scss */
+  #dn-rendering-dark {
+    margin-bottom: 70px;
+  }
+  /* line 1079, ../scss/core/_common.scss */
+  #dn-rendering-dark .left-column {
+    width: 35%;
+    margin-right: 4.5%;
+    margin-top: 30px;
+  }
+  /* line 1084, ../scss/core/_common.scss */
+  #dn-rendering-dark .right-column {
+    margin-bottom: 0;
+    float: right;
+    width: 60%;
+  }
+
+  /* line 1092, ../scss/core/_common.scss */
+  #ins-copy .left-column {
+    width: 47.8%;
+    margin-right: 2%;
+  }
+
+  /* line 1101, ../scss/core/_common.scss */
+  #ins-intro {
+    margin-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 1108, ../scss/core/_common.scss */
+  .page-header {
+    height: 440px;
+    background-size: 100%;
+  }
+
+  /* line 1115, ../scss/core/_common.scss */
+  #hp-intro .copy h1 {
+    font-size: 64px;
+  }
+  /* line 1117, ../scss/core/_common.scss */
+  #hp-intro .copy h1 span {
+    font-size: 65%;
+  }
+  /* line 1121, ../scss/core/_common.scss */
+  #hp-intro .copy p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 70px;
+  }
+  /* line 1127, ../scss/core/_common.scss */
+  #hp-intro .section-link {
+    bottom: -70px;
+  }
+
+  /* line 1132, ../scss/core/_common.scss */
+  #hp-info-panels {
+    padding: 60px 0;
+  }
+  /* line 1137, ../scss/core/_common.scss */
+  #hp-info-panels ul li .content h2 {
+    font-size: 22px;
+  }
+
+  /* line 1146, ../scss/core/_common.scss */
+  #hp-product-design .copy {
+    margin-top: 70px;
+    width: 480px;
+  }
+  /* line 1149, ../scss/core/_common.scss */
+  #hp-product-design .copy h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  /* line 1153, ../scss/core/_common.scss */
+  #hp-product-design .copy .cta {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+
+  /* line 1160, ../scss/core/_common.scss */
+  #hp-video {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /* line 1163, ../scss/core/_common.scss */
+  #hp-video .video-wrapper {
+    padding-bottom: 42%;
+  }
+
+  /* line 1168, ../scss/core/_common.scss */
+  #pp-copy-and-brands {
+    margin-top: 120px;
+  }
+  /* line 1170, ../scss/core/_common.scss */
+  #pp-copy-and-brands .left-column {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48.5%;
+    padding: 0 40px;
+    margin-bottom: 0;
+  }
+  /* line 1177, ../scss/core/_common.scss */
+  #pp-copy-and-brands .brand-logos {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+  /* line 1181, ../scss/core/_common.scss */
+  #pp-copy-and-brands .brand-logos li {
+    padding: 0 8px;
+  }
+
+  /* line 1188, ../scss/core/_common.scss */
   #pp-intro .copy {
     top: 40px;
     right: 40px;
   }
-  /* line 1172, ../scss/core/_common.scss */
+  /* line 1191, ../scss/core/_common.scss */
   #pp-intro .copy h1 {
     font-size: 26px;
     line-height: 27px;
     margin: 70px 0 0 150px;
   }
 
-  /* line 1181, ../scss/core/_common.scss */
+  /* line 1200, ../scss/core/_common.scss */
   .page-header .section-link {
     bottom: -70px;
   }
 
-  /* line 1186, ../scss/core/_common.scss */
+  /* line 1205, ../scss/core/_common.scss */
   #form-container .left-column {
     display: inline-block;
     width: 40%;
@@ -2737,43 +2760,43 @@ footer p {
     margin-right: 9.5%;
     margin-left: 5%;
   }
-  /* line 1193, ../scss/core/_common.scss */
+  /* line 1212, ../scss/core/_common.scss */
   #form-container .form {
     display: inline-block;
     width: 40%;
     vertical-align: top;
   }
 
-  /* line 1200, ../scss/core/_common.scss */
+  /* line 1219, ../scss/core/_common.scss */
   #dn-intro {
     margin-bottom: 80px;
   }
-  /* line 1203, ../scss/core/_common.scss */
+  /* line 1222, ../scss/core/_common.scss */
   #dn-intro .copy h1 {
     font-size: 21px;
     line-height: 28px;
     margin: 40px 0 0 40px;
   }
 
-  /* line 1211, ../scss/core/_common.scss */
+  /* line 1230, ../scss/core/_common.scss */
   #dn-info {
     margin-bottom: 30px;
   }
-  /* line 1213, ../scss/core/_common.scss */
+  /* line 1232, ../scss/core/_common.scss */
   #dn-info .left-column {
     width: 38.8%;
     display: block;
     margin-top: 50px;
     margin-left: 4%;
   }
-  /* line 1219, ../scss/core/_common.scss */
+  /* line 1238, ../scss/core/_common.scss */
   #dn-info .right-column {
     float: right;
     width: 50%;
     margin-left: 7%;
   }
 
-  /* line 1228, ../scss/core/_common.scss */
+  /* line 1247, ../scss/core/_common.scss */
   #dn-rendering-light p,
   #dn-rendering-dark p {
     font-size: 16px;
@@ -2781,7 +2804,7 @@ footer p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 1237, ../scss/core/_common.scss */
+  /* line 1256, ../scss/core/_common.scss */
   .lg-container {
     max-width: 1200px;
     padding: 0 30px;
@@ -2791,13 +2814,13 @@ footer p {
     height: 100%;
   }
 
-  /* line 1248, ../scss/core/_common.scss */
+  /* line 1267, ../scss/core/_common.scss */
   #hp-intro .copy h1 {
     font-size: 56px;
     margin-bottom: 30px;
   }
 
-  /* line 1255, ../scss/core/_common.scss */
+  /* line 1274, ../scss/core/_common.scss */
   #hp-montage {
     max-width: 1200px;
     padding: 0 30px;
@@ -2805,17 +2828,17 @@ footer p {
     overflow: hidden;
   }
 
-  /* line 1263, ../scss/core/_common.scss */
+  /* line 1282, ../scss/core/_common.scss */
   #hp-product-design .copy {
     margin: 70px 40px 70px 0;
   }
 
-  /* line 1269, ../scss/core/_common.scss */
+  /* line 1288, ../scss/core/_common.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42.6%;
   }
 
-  /* line 1275, ../scss/core/_common.scss */
+  /* line 1294, ../scss/core/_common.scss */
   #pp-intro .copy {
     top: 60px;
     right: 110px;
