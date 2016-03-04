@@ -10,7 +10,7 @@
             <div class="copy">
                 <h1>Your Bathroom<span>Reimagined</span></h1>
             </div>
-            <a href="#pp-products" class="section-link">view our products</a>
+            <a href="#products" class="section-link">view our products</a>
         </div>
 
         <div id="pp-copy-and-brands">
