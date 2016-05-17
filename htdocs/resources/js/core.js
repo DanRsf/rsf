@@ -10,7 +10,7 @@ var breakpoints = {
 };
 /**
  * Extend Number object to provide between functionality
- * 
+ *
  * @param INT a
  * @param INT b
  * @returns BOOLEAN
@@ -50,10 +50,10 @@ var breakpoints = {
 };
 
 /**
- * Calculates the height of the biggest element in the group, then sets the 
- * min-height property on the rest of the elements in the group so they are 
+ * Calculates the height of the biggest element in the group, then sets the
+ * min-height property on the rest of the elements in the group so they are
  * always at the same height.
- * 
+ *
  * @param jQuery Object $group
  */
 var set_max_height = function($group) {
@@ -64,7 +64,7 @@ var set_max_height = function($group) {
 
         $.each(selectors, function(index, selector) {
 
-            // If we're in the mobile view, honour the skip indicator "|" and 
+            // If we're in the mobile view, honour the skip indicator "|" and
             // skip over the element
             if (bp == 'xs' || bp == 'mb') {
                 if (selector.charAt(0) == '|') {
@@ -169,7 +169,7 @@ $(document).ready(function () {
     });
 
      $('.video-thumb').click(function () {
-        var iframe = $('<iframe src="' + $(this).data('video') + '?fs=0&modestbranding=1&rel=0&showinfo=0"></iframe>')
+        var iframe = $('<iframe src="http://www.youtube.com/embed/' + $(this).data('video') + '?fs=0&modestbranding=1&rel=0&showinfo=0&autoplay=1"></iframe>')
         $(this).html(iframe);
     });
 
@@ -190,6 +190,10 @@ $(document).ready(function () {
         type: 'image',
         mainClass: 'mfp-fade'
     });
+
+    setInterval(function(){
+        $('#dn-intro .background').toggleClass('show');
+    }, 5000);
 
  });
 

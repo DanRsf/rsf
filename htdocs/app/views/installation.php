@@ -1,13 +1,13 @@
 <?php $this->load->view('includes/meta', $this->data); ?>
 
-<body>
+<body class="installation">
 
     <?php $this->load->view('includes/header', $this->data); ?>
 
     <div id="main-container">
 
-        <div id="ins-intro" class="page-header">
-            <div class="lg-container">
+        <div class="page-header">
+            <div class="container">
                 <div class="copy">
                     <h1>High quality<br />installations from<br /><strong>a team you can trust</strong></h1>
                 </div>
@@ -15,7 +15,7 @@
                 <a href="#form-container" class="section-link">find out more</a>
         </div>
 
-        <div class="container" id="ins-copy">
+        <div class="container section">
             <div class="left-column">
                 <p>Finding the right installer is as important as finding the right bathroom, and you can be confident of a trouble-free installation with RSF Bathroom Designs.</p>
                 <p>Our professionally qualified in-house and recommended bathroom installers are performance-monitored to the highest quality standards, and our installation guarantees ensure your peace of mind.</p>

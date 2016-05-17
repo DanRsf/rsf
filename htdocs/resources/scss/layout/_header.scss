@@ -18,13 +18,16 @@ header {
         float: left;
         max-height: 40px;
     }
+    .tel-num {
+        display: none;
+    }
     nav.mobile {
         display: block;
         clear: both;
         float: right;
         width: 100%;
         #ellipse {
-            font-family: rsficon; 
+            font-family: rsficon;
             font-size: 36px;
             color: $c-blue;
             float: right;
@@ -86,103 +89,52 @@ header {
             }
         }
     }
-    .contact-details {
-        display: none;
-        float: right;
-        color: $c-blue;
-        @include transition(all 0.3s ease-in-out);
-        p {
-            font-size: 18px;
-            line-height:24px;
-            font-weight: $fw-bold;
-            margin-bottom: 0;
-            span {
-                font-size: 14px;
-                font-weight: $fw-normal;
-                margin-right:2px;
-            }
-        }
-    }
-}
 
-@include bp(min-width, $bp-small + 1) {
-    header {
-        padding: 20px 0;
-        nav.mobile {
-            display: none;
-        }
-        nav.desktop {
-            display: block;
-        }
-        .header-logo {
-            //max-width: 35%;
-            max-height: 40px;
-        }
-        .contact-details {
-            display: block;
-        }
-    }
-}
-
-@include bp(min-width, $bp-medium + 1) {
-    header {
-        .container {
-            padding: 0 40px;
-        }
-        &.small {
-            padding: 16px 0;
+    @include bp(min-width, $bp-small + 1) {
             .header-logo {
                 max-height: 40px;
             }
-            nav.desktop {
-                position: relative;
-                left: -150px;
-                a {
-                    line-height: 40px;
-                }
-            }
-            .contact-details {
-                float: right;
-                position: relative;
-                margin-bottom: -24px;
-                bottom: -7px;
-                span {
-                    display: none;
-                }
-            }
-        }
     }
-}
 
-@include bp(min-width, $bp-large + 1) {
-    header {
-        .contact-details {
-            p {
-                font-size: 22px;
-                line-height: 29px;
+    @include bp(min-width, $bp-medium + 1) {
+            padding: 20px 0;
+            .tel-num {
+                display: block;
+                float: right;
+                font-size: 24px;
+                line-height: 22px;
+                color: #0E5A94;
             }
-        }
-        nav.desktop {
-            ul {
-                li {
-                    a {
-                        font-size: 15px;
+            nav.mobile {
+                display: none;
+            }
+            nav.desktop {
+                display: block;
+                width: 78%;
+            }
+            .container {
+                padding: 0 30px;
+            }
+    }
+
+    @include bp(min-width, $bp-large + 1) {
+            nav.desktop {
+                padding-top: 8px;
+                width: 73%;
+                ul {
+                    li {
+                        a {
+                            font-size: 15px;
+                        }
                     }
                 }
             }
-        }
-        &.small {
-            .contact-details {
-                margin-bottom: -34px;
-                bottom: -6px;
+            .header-logo {
+                max-height: initial;
             }
-            nav.desktop {
-                left: -190px;
-            }
-        }
     }
-}
 
-@include bp(min-width, $bp-xlarge + 1) {
+    @include bp(min-width, $bp-xlarge + 1) {
 
+    }
 }

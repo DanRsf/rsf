@@ -1,6 +1,6 @@
 <?php $this->load->view('includes/meta', $this->data); ?>
 
-<body>
+<body class="home">
 
     <?php $this->load->view('includes/header', $this->data); ?>
 
@@ -14,7 +14,7 @@
             <a href="#hp-info-panels" class="section-link">find out more</a>
         </div>
 
-        <div class="container">
+        <div class="container section">
             <div id="hp-info-panels" class="scroll-block">
                 <ul>
                     <li>
@@ -59,8 +59,9 @@
             <div id="hp-video">
                 <h3>Take a look round our showroom</h3>
                 <p>Our large, fully operational showroom demonstrates the latest in high end gadgets and product design.  Visit us in person, or take a sneak peak with our virtual tour.</p>
-                <div class="video-thumb video-wrapper">
-                    <div id="player"></div>
+                <div class="video-thumb video-wrapper" data-video="k_ID2tUR5fI">
+                    <img src="<?php echo IMG;?>/general/hp-video-thumb.jpg" class="thumbnail"/>
+                    <img src="<?php echo IMG;?>/general/video-play-icon.png" class="play-button"/>
                 </div>
                 <a href="#hp-product-design" class="section-link">stunning designs</a>
             </div>
@@ -135,35 +136,6 @@
                     easing: 'easeInOutQuad'
                 });
             }
-            /*var scrollorama = $.scrollorama({
-                blocks: '.scroll-block',
-                enablePin: false
-            });
-
-            if(!mobile_device()) {
-
-                var windowWidth = $(window).width();
-
-                $('.page-header').parallax("50%", -0.5, true, (windowWidth > breakpoints.xlarge ? Math.abs(windowWidth / 2) * -1 : 0));
-                $('#hp-product-design').parallax("50%", -0.2, true);
-                
-                scrollorama
-                .animate('#hp-montage div', {
-                    delay: positions.montage[bp].delay,
-                    start: positions.montage[bp].start,
-                    end: positions.montage[bp].end,
-                    duration: positions.montage[bp].duration,
-                    property: 'background-size',
-                    easing: 'easeInOutQuad'
-                });
-
-                scrollorama
-                .animate('#hp-info-panels li:first-of-type', {duration: 100, delay: intro_block_delay(), property: 'opacity', start: 0, end: 1})
-                .animate('#hp-info-panels li:first-of-type', {duration: 400, delay: intro_block_delay(), property: 'left', start: '-10%', end: 0, easing: 'easeInOutCubic'})
-                .animate('#hp-info-panels li:last-of-type', {duration: 100, delay: intro_block_delay(), property: 'opacity', start: 0, end: 1})
-                .animate('#hp-info-panels li:last-of-type', {duration: 400, delay: intro_block_delay(), property: 'right', start: '-10%', end: 0, easing: 'easeInOutCubic'});
-            }*/
-
         });
     </script>
 

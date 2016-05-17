@@ -62,15 +62,15 @@ $btn-radius: 5px !default; // Button border-radius
 // Only used to define context-based color vars in this file.
 
 $c-blue:   #0E5A94;
-$c-lblue:  #53B2E0; 
-$c-dblue:  darken($c-blue, 10%); 
+$c-lblue:  #53B2E0;
+$c-dblue:  darken($c-blue, 10%);
 $c-black:  #292929;
 $c-white:  #ffffff;
 $c-green:  #AFCA0A;
 $c-red:    #E60004;
 $c-yellow: #FFDD15;
 $c-grey:   #949CA1;
-$c-dgrey:  #444444; 
+$c-dgrey:  #444444;
 $c-border: $c-dgrey;
 
 $c-success-text: #468d01;
@@ -134,7 +134,7 @@ $c-link-active: $c-dblue;
 $font-smoothing: antialiased !default; // We use this to control font-smoothing
 $text-direction: ltr !default; // We use these to control text direction settings
 
-$text-shadow: 0 0 9px #000000;
+$text-shadow: 0 0 6px rgba(0,0,0,0.7);
 
 $f-lato: Lato, Arial, Helvetica, sans-serif !default;
 $f-libre: 'Libre Baskerville', Arial, Helvetica, sans-serif !default;

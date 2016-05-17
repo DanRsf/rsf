@@ -20,6 +20,16 @@ class Page extends MY_Controller
         $this->load->view('products', $this->data);
     }
 
+    public function about()
+    {
+        $this->load->view('about-us', $this->data);
+    }
+
+    public function areas_covered()
+    {
+        $this->load->view('areas-covered', $this->data);
+    }
+
     public function contact()
     {
         $this->data['success'] = false;

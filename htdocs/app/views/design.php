@@ -1,21 +1,22 @@
 <?php $this->load->view('includes/meta', $this->data); ?>
 
-<body>
+<body class="design">
 
     <?php $this->load->view('includes/header', $this->data); ?>
 
     <div id="main-container">
 
-        <div id="dn-intro" class="page-header">
-            <div class="lg-container">
+        <div class="page-header">
+            <div class="background"></div>
+            <div class="container">
                 <div class="copy">
-                    <h1>designing in virtual reality<span>the ultimate consumer experience</span></h1>
+                    <h1>2D and 3D design<strong>the ultimate consumer experience</strong></h1>
                 </div>
             </div>
                 <a href="#dn-info" class="section-link">find out more</a>
         </div>
 
-        <div id="dn-info" class="container">
+        <div class="container intro">
             <div class="right-column">
                 <img src="<?php echo IMG;?>/general/virtual-worlds-logo.jpg" alt="virtual worlds logo">
             </div>
@@ -24,11 +25,11 @@
             </div>
         </div>
 
-        <div id="gallery-container" class="container">
+        <div class="container gallery">
             <h2>Designing your ideal bathroom couldn’t be easier</h2>
             <p>Below are examples to illustrate the high quality visualisations our team can produce for you.</p>
-            <img src="<?php echo IMG; ?>/gallery/images/1.jpg" id="gallery-viewer"/>
-            <ul id="gallery-thumbs">
+            <img src="<?php echo IMG; ?>/gallery/images/1.jpg" class="viewer"/>
+            <ul class="thumbs">
                 <li><img src="<?php echo IMG; ?>/gallery/thumbs/2.jpg" data-image="2.jpg" /></li>
                 <li><img src="<?php echo IMG; ?>/gallery/thumbs/3.jpg" data-image="3.jpg" /></li>
                 <li><img src="<?php echo IMG; ?>/gallery/thumbs/4.jpg" data-image="4.jpg" /></li>
@@ -37,9 +38,9 @@
                 <li><img src="<?php echo IMG; ?>/gallery/thumbs/7.jpg" data-image="7.jpg" /></li>
                 <li><img src="<?php echo IMG; ?>/gallery/thumbs/1.jpg" data-image="1.jpg" /></li>
             </ul>
-        </div>        
+        </div>
 
-        <div id="dn-rendering-light" class="container">
+        <div class="container image-left">
             <div class="left-column">
                 <img src="<?php echo IMG;?>/general/3d-rendering-light.jpg" alt="virtual worlds logo">
             </div>
@@ -48,7 +49,7 @@
             </div>
         </div>
 
-        <div  id="dn-rendering-dark" class="container">
+        <div class="container image-right">
             <div class="right-column">
                 <img src="<?php echo IMG;?>/general/3d-rendering-dark.jpg" alt="virtual worlds logo">
             </div>

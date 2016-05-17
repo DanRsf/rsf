@@ -39,8 +39,12 @@ $mq-fixed-value: false;
 
 @import "layout/header";
 @import "layout/footer";
+@import "layout/global";
 
 // ----------------------------------------------
 // Core
 
-@import "core/common"; 
+@import "core/page-headers";
+@import "core/common";
+@import "core/homepage";
+@import "core/pages";

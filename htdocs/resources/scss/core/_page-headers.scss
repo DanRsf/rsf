@@ -1,0 +1,362 @@
+.page-header {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 150%;
+    width: 100%;
+    height: 210px;
+    position: relative;
+    padding: 20px 0;
+    .section-link {
+        position: absolute;
+        bottom: -50px;
+        text-align: center;
+        width: 100%;
+    }
+    .copy {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        padding: 20px;
+        h1 {
+            font-family: 'Raleway', $f-lato;
+            font-weight: 100;
+            color: $c-white;
+            text-transform: uppercase;
+            text-align: left;
+            strong {
+                font-weight: $fw-bold;
+                color: $c-white;
+                display: block;
+            }
+        }
+        p {
+            color: $c-white;
+        }
+    }
+    .container {
+        @extend .container;
+        position: relative;
+        height: 100%;
+        overflow: visible;
+    }
+}
+
+.home {
+    .page-header {
+        background-image: url(/resources/img/page-headers/home2.jpg);
+        .copy {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            h1 {
+                color: $c-white;
+                font-size: 30px;
+                line-height: 100%;
+                font-weight: 300;
+                margin-bottom: 10px;
+                text-shadow: $text-shadow;
+                span {
+                    display: block;
+                    font-weight:100;
+                    font-size: 75%;
+                }
+            }
+            p {
+                max-width: 300px;
+                display: block;
+                margin: 0 auto 50px;
+                font-size:15px;
+                text-shadow: $text-shadow;
+                text-align:center;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.about {
+    .page-header {
+        background-image: url('/resources/img/page-headers/about.jpg');
+        .copy {
+            h1 {
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.products{
+    .page-header {
+        background-image: url('/resources/img/parallax/towels-on-wooden-shelf.jpg');
+        .copy {
+            h1 {
+                text-align: right;
+                font-size: 21px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+.design {
+    .page-header {
+        background-image: url('/resources/img/page-headers/design1.jpg');
+        .copy {
+            z-index: 2;
+            h1 {
+                font-size: 28px;
+                line-height: 33px;
+            }
+        }
+        .background {
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 100%;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-image: url('/resources/img/page-headers/design2.jpg');
+            opacity: 0;
+            @include transition(opacity 0.8s ease);
+            &.show {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.installation {
+    .page-header {
+        background-image: url('/resources/img/parallax/glass-wall.jpg');
+        margin-bottom: 80px;
+        .copy {
+            h1 {
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.areas {
+    .page-header {
+        padding: 0;
+    }
+}
+
+.contact {
+    .page-header {
+        background-image: url('/resources/img/page-headers/contact.jpg');
+        .copy {
+            h1 {
+                font-size: 26px;
+                line-height: 31px;
+            }
+        }
+    }
+}
+
+// =========================
+// Extra small breakpoint
+// =========================
+@include bp(min-width, $bp-xsmall + 1){
+    .products {
+        .page-header {
+            .copy {
+                h1 {
+                    font-size: 29px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+// =========================
+// Small breakpoint
+// =========================
+@include bp(min-width, $bp-small + 1){
+    .page-header {
+        .copy {
+            position: absolute;
+            width: 400px;
+            height: auto;
+        }
+    }
+    .about {
+        .page-header {
+            .copy {
+                h1 {
+                    font-size: 31px;
+                    line-height: 33px;
+                }
+            }
+        }
+    }
+    .products {
+        .page-header {
+            .copy {
+                right: 20px;
+                h1 {
+                    font-size: 31px;
+                    line-height: 33px;
+                }
+            }
+        }
+    }
+    .design {
+        .page-header {
+            .copy {
+                right: 20px;
+                bottom: 0;
+                h1 {
+                    font-size: 26px;
+                    line-height: 33px;
+                    margin: 30px 0 0 30px;
+                }
+            }
+        }
+    }
+    .installation {
+        .page-header {
+            .copy {
+                top: 20px;
+                left: 40px;
+                h1 {
+                    font-size: 30px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+    .contact {
+        .page-header {
+            .copy {
+                bottom: 20px;
+                left: 40px;
+            }
+        }
+    }
+}
+
+// =========================
+// Medium breakpoint
+// =========================
+@include bp(min-width, $bp-medium + 1){
+    .products {
+        .page-header {
+            .copy {
+                top: 40px;
+                h1 {
+                    font-size: 37px;
+                    line-height: 38px;
+                    margin: 30px 0 0 50px;
+                }
+            }
+        }
+    }
+    .installation {
+        .page-header {
+            margin-bottom: 120px;
+            .copy {
+                width: 560px;
+                h1 {
+                    font-size: 37px;
+                    line-height: 38px;
+                    margin: 0 50px 30px 0;
+                }
+            }
+        }
+    }
+    .contact {
+        .page-header {
+            .copy {
+                h1 {
+                    font-size: 30px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+}
+
+// =========================
+// Large breakpoint
+// =========================
+@include bp(min-width, $bp-large + 1){
+    .about {
+        .page-header {
+            .copy {
+                top: 40px;
+                left: 60px;
+                width: 500px;
+                h1 {
+                    font-size: 36px;
+                    line-height: 39px;
+                    margin: 0 30px 40px 0;
+                }
+            }
+        }
+    }
+    .products {
+        .page-header {
+            .copy {
+                top: 40px;
+                right: 40px;
+                h1 {
+                    font-size: 42px;
+                    line-height: 41px;
+                    margin: 50px 0 0 90px;
+                }
+            }
+        }
+    }
+    .design {
+        .page-header {
+            margin-bottom: 80px;
+            .copy {
+                width: 520px;
+                bottom: 40px;
+                right: 60px;
+                h1 {
+                    font-size: 35px;
+                    line-height: 40px;
+                    margin: 40px 0 0 40px;
+                }
+            }
+        }
+    }
+}
+
+// =========================
+// Extra large breakpoint
+// =========================
+@include bp(min-width, $bp-xlarge + 1){
+    .products {
+        .page-header {
+            .copy {
+                top: 60px;
+                right: 110px;
+            }
+        }
+    }
+    .installation {
+        .page-header {
+            .copy {
+                left: 60px;
+            }
+        }
+    }
+    .contact {
+        .page-header {
+            .copy {
+                left: 60px;
+            }
+        }
+    }
+}

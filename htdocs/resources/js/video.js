@@ -8,9 +8,8 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
-    
-function onYouTubeIframeAPIReady() {
 
+function onYouTubeIframeAPIReady() {
     var videoOptions = {
         height: '100%',
         width: '100%',
@@ -25,12 +24,16 @@ function onYouTubeIframeAPIReady() {
             'onReady': onPlayerReady
         }
     };
-
     player = new YT.Player('player', videoOptions);
-
-
 }
 
 function onPlayerReady(event) {
-    
+
 }
+
+$(document).ready(function(){
+    $('.video-thumb').click(function(){
+        $('#player').css('visiblity', 'visible');
+        $(this).css('display', 'none');
+    });
+});

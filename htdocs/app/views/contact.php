@@ -1,19 +1,20 @@
 <?php $this->load->view('includes/meta', $this->data); ?>
 
-<body>
+<body class="contact">
 
     <?php $this->load->view('includes/header', $this->data); ?>
 
     <div id="main-container">
 
-        <div id="ct-intro" class="page-header">
-            <div class="copy">
-                <h1>See how <strong>we can help</strong><br />with your project</h1>
+        <div class="page-header">
+            <div class="container">
+                <div class="copy">
+                    <h1>See how <strong>we can help</strong>with your project</h1>
+                </div>
             </div>
-            <a href="#form-container" class="section-link">find out how to contact us</a>
         </div>
 
-        <div id="form-container" class="container">
+        <div class="container section">
             <div class="left-column">
                 <p>Getting the bathroom of your dreams couldn’t be easier than with RSF Bathroom Designs.</p>
                 <p>Whether you are seeking inspiration or remodelling your bathroom, our experts will answer your questions, help you select the right product from our extensive range, and provide a full bespoke design and consultation service.</p>
@@ -49,12 +50,12 @@
                     <?php
                 }
                 ?>
-                
+
             </div>
         </div>
 
         <div id="gmap"></div>
-        
+
         <?php $this->load->view('includes/footer', $this->data); ?>
 
     </div>

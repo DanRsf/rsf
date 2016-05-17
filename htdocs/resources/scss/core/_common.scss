@@ -4,7 +4,35 @@
  * Common styling elements
  * ============================================ */
 
- .section-link {
+ .scroll-block {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    width: 100%;
+    padding-bottom: 75%;
+    position: relative;
+    img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.cta {
+    &:after {
+        font-family: 'rsficon';
+        content: $icon-arrow-flat-right;
+        margin-left: 4px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.section-link {
     font-size: 14px;
     display: block;
     text-align: center;
@@ -27,589 +55,18 @@
             margin-top: 20px;
         }
     }
-} 
-
-.scroll-block {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
 }
 
-#main-container {
-    width: 100%;
-    margin: 80px auto 0 auto;
-    background: #fff;
-}
-
-.container {
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 0 auto;
-    overflow: hidden;
-    img {
-        max-width: 100%;
-    }
-}
-
-.full {
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-
-.copy {
-    position: absolute;
-    overflow: hidden;
-}
-
-.image-wrapper {
-    width: 100%;
-    padding-bottom: 75%;
-    position: relative;
-    img { 
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}
-
-.left-column {
-    display: block;
-    margin-bottom: 30px;
-}
-
-.right-column {
-    display: block;
-}
-
-.cta {
-    &:after {
-        font-family: 'rsficon';
-        content: $icon-arrow-flat-right;
-        margin-left: 4px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-}
-
-.page-header {
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 150%;
-    width: 100%;
-    height: 210px; 
-    position: relative;
-    margin-bottom:60px;
-    .section-link {
-        position: absolute;
-        bottom: -50px;
-        text-align: center;
-        width: 100%;
-    }
-}
-
-#hp-intro {
-    background-image: url(/resources/img/parallax/big-window.jpg);
-    .copy {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        h1 {
-            font-family: $f-libre;
-            font-style: italic;
-            color: $c-white;
-            font-size: 30px;
-            line-height: 100%;
-            font-weight: 400;
-            margin-bottom: 10px;
-            text-shadow: $text-shadow;
-            span {
-                display: block;
-                font-weight:100;
-                font-size: 75%;
-            }
-        }
-        p {
-            max-width: 300px;
-            display: block;
-            margin: 0 auto 50px;
-            color: $c-white;
-            font-size:15px;
-            text-shadow: $text-shadow;
-            text-align:center;
-            line-height: 18px;
-        }
-    }
-    
-}
-
-#hp-info-panels {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    ul {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-        margin-bottom: 50px;
-        li {
-            overflow: hidden;
-            padding: 20px 0;
-            text-align: left;
-            display: block;
-            .icon {
-                font-family: rsficon;
-                font-size: 90px;
-                color: $c-dgrey;
-                display: inline-block;
-                vertical-align: middle;
-                margin-right: 20px;
-            }
-            .content {
-                width: 61%;
-                overflow: hidden;
-                display: inline-block;
-                vertical-align: middle;
-                h2 {
-                    margin-bottom: 6px;
-                    font-size: 18px;
-                    line-height: 23px;
-                    font-weight: $fw-light;
-                }
-                p {
-                    margin-bottom: 6px;
-                }
-                a {
-                    font-size: 14px;
-                    line-height: 20px;
-                }
-            }
-        }
-    }
-    .section-link {
-        display: none;
-    }
-}
-
-#hp-product-design {
-    background-image: url(/resources/img/parallax/pale-blue.jpg);
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: 50% 0;
-    width: 100%;
-    padding: 20px;
-    position: relative;
-    .copy {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding:20px;
-        background: rgba(0,0,0,0.6);
-        position: relative;
-        h2 {
-            color: $c-white;
-            font-size: 19px;
-            line-height: 19px;
-            text-transform: uppercase;
-            text-align: right;
-            font-weight: 600;
-            margin-bottom:14px;
-            span {
-                font-size: 75%;
-                display: block;
-                font-weight: 100;
-            }
-        }
-        p {
-            color: $c-white;
-            text-align: right;
-        }
-        a {
-            float: right;
-            font-size:14px;
-            color: $c-white;
-            &:after {
-                color: $c-white;
-            }
-            &:hover {
-                color: $c-lblue;
-                &:after {
-                    color: $c-lblue;
-                }
-            }
-        }
-    }
-    .section-link {
-        display: none;
-        position: absolute;
-        right: 6%;
-        bottom: 3%;
-        color: $c-white;
-        &:after {
-            color: $c-white;
-        }
-    }
-}
-
-#hp-video {
-    padding-top:60px;
-    padding-bottom: 60px;
-    h3 {
-        text-align: center;
-    }
-    p {
-        text-align: center;
-        margin-bottom: 24px;
-    }
-    .video-wrapper {
-        position: relative;
-        padding-bottom: 49.8%;
-        padding-top: 25px;
-        height: 0;
-        width: 100%;
-        clear: both;
-        display: block;
-        margin-bottom: 20px;
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0
-        }
-    }
-}
-
-#hp-montage {
-    overflow:hidden;
-    div {
-        position: relative;
-        background-position: 50% 0;
-        background-repeat: no-repeat;
-        background-size: 101%;
-    }
-    .sink {
-        background-image: url('/resources/img/general/hp-montage-basin.jpg');
-    }
-    .chrome-tap {
-        background-image: url('/resources/img/general/hp-montage-small-shower.jpg');
-    }
-    .chrome-shower {
-        background-image: url('/resources/img/general/hp-montage-tap.jpg');
-    }
-    .drencher {
-        background-image: url('/resources/img/general/hp-montage-big-shower.jpg');
-    }
-    .left {
-        width: 100%;
-    }
-    .right {
-        float:right;
-        &.small {
-            width:50%;
-        }
-        &.big {
-            width:100%;
-        }
-    }
-}
-
-#hp-testimonials {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    h3 {
-        margin-left: 4%;
-    }
-    ul {
-        font-size: 0;
-        li {
-            display: inline-block;
-            vertical-align: top;
-            width: 42%;
-            margin: 35px 4%;
-            position: relative;
-            &:before,
-            &:after {
-                font-family: rsficon;
-                display: block;
-                position: absolute;
-                z-index:1;
-                font-size: 48px;
-                opacity: 0.1;
-                color: $c-lblue;
-            }
-            &:before {
-                content: 'o';
-                top: 0;
-                left: -14px;
-            }
-            &:after {
-                content: 'q';
-                bottom: 50px;
-                right: 0;
-            }
-            p {
-                margin-bottom: 4px;
-            }
-            .customer {
-                font-family: $f-libre;
-                font-style: italic;
-                font-size: 14px;
-                line-height: 18px;
-                color: $c-blue;
-                span {
-                    margin-top: 4px;
-                    font-size: 12px;
-                    line-height: 14px;
-                    display: block;
-                    color: $c-grey;
-                }
-            }
-        }
-    }
-}
-
-
-#pp-intro {
-    background-image: url(/resources/img/parallax/towels-on-wooden-shelf.jpg);
-    .copy {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: rgba(0,0,0,0.5);
-        padding:20px;
-        color: $c-white;
-        h1 {
-            text-align: right;
-            text-transform: uppercase;
-            font-size: 21px;
-            line-height: 23px;
-            margin: 30px 0 0 30px;
-            span {
-                display: block;
-                font-weight: $fw-bold;
-            }
-        }
-    }
-}
-
-#pp-copy-and-brands {
-    margin-top: 70px;
+/**
+ * Image gallery
+ */
+.gallery {
     margin-bottom: 50px;
-    .left-column {
-        margin-bottom: 40px;
-        h2 {
-            
-        }
-    }
-    .brand-logos {
-        font-size: 0;
-        text-align: center;
-        li {
-            display: inline-block;
-            vertical-align: middle;
-            padding: 4px 8px;
-        }
-    }
-}
-
-#products {
-    font-size: 0;
-    ul {
-        display: inline-block;
-        vertical-align: top;
-        width: 47.5%;
-        margin-right: 5%;
-        &:nth-of-type(2n+2) {
-            margin-right: 0;
-        }
-        li {
-            width: 100%;
-            margin-bottom: 20px;
-            position: relative;
-            background-color: $c-dgrey;
-            & > img {
-                width: 100%;
-                opacity: 1;
-                transition: opacity 0.4s;
-                -webkit-transition: opacity 0.4s;
-            }
-            span {
-                position: absolute;
-                bottom: 0;
-                z-index:100;
-                max-height: 0;
-                overflow: hidden;
-                background: rgba(255, 255, 255, 0.7);
-                display: block;
-                width: 100%;
-                transition: max-height 0.2s ease-in;
-                -webkit-transition: max-height 0.2s ease-in;
-                img {
-                    float: right;
-                    margin: 20px;
-                }
-            }
-            &.show {
-                span {
-                    max-height: 100px;
-                }
-            }
-            &.dark {
-                & > img {
-                    opacity: 0.5;
-                }
-            }
-        }
-    }
-}
-
-#ct-intro {
-    background-image: url('/resources/img/parallax/colourful-curtain.jpg');
-    .copy {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: rgba(0,0,0,0.5);
-        padding:20px;
-        color: $c-white;
-        h1 {
-            text-align: right;
-            text-transform: uppercase;
-            font-size: 21px;
-            line-height: 23px;
-            margin: 30px 0 0 30px;
-            font-weight: $fw-light;
-            strong {
-                font-weight: $fw-bold;
-                color: $c-white;
-            }
-        }
-    }
-}
-
-#form-container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    .left-column {
-        margin-bottom: 40px;
-        .contact-details {
-            margin-top: 30px;
-            p {
-                color: $c-blue;
-                font-size: 16px;
-                strong {
-                    color: $c-blue;
-                    font-size: 24px;
-                }
-            }
-            a {
-                color: $c-blue;
-                font-size: 18px;
-            }
-        }
-    }
-    .form {
-        h2 {
-            color: $c-blue;
-            &:before {
-                font-family: rsficon;
-                content: 'e';
-                margin-right: 10px;
-                font-size: 20px;
-                display: inline-block;
-                vertical-align: baseline;
-                color: $c-blue;
-            }
-        }
-        form {
-            input[type="text"],
-            textarea {
-                padding: 6px 12px;
-                border: 1px solid $c-grey;
-                width: 100%;
-                font-size: 13px;
-                margin-bottom: 20px;
-                &:placeholder {
-                    color: $c-grey;
-                    font-size: 13px;
-                }
-                &.error {
-                    border-color: $c-red;
-                }
-            }
-            input[type="text"] {
-                
-            }
-            textarea {
-                height: 100px;
-            }
-            button {
-                color: $c-white;
-                padding: 10px 30px;
-                font-size: 13px;
-                display: inline-block;
-                border: 1px solid $c-lblue;
-                background: $c-lblue;
-                &:hover {
-                    background: $c-dblue;
-                }
-            }
-        }
-    }
-}
-
-#gmap {
-    width: 100%;
-    height: 300px;
-    margin:0;
-}
-
-#dn-intro {
-    background-image: url(/resources/img/parallax/bright-red.jpg);
-    .copy {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        background: rgba(0,0,0,0.5);
-        padding:20px;
-        color: $c-white;
-        h1 {
-            text-align: right;
-            text-transform: uppercase;
-            font-size: 15px;
-            line-height: 21px;
-            margin: 0;
-            padding: 0;
-            span {
-                display: block;
-                font-weight: $fw-bold;
-            }
-        }
-    }
-}
-
-
-#dn-info {
-    margin-bottom: 50px;
-    .right-column {
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
-#gallery-container {
-
-    margin-bottom: 50px;
-    #gallery-viewer {
+    .viewer {
         margin-bottom: 20px;
         width: 100%;
     }
-
-    #gallery-thumbs {
+    .thumbs {
         font-size: 0;
         text-align: center;
         li {
@@ -618,7 +75,7 @@
             margin-left: 2%;
             &:first-of-type,
             &:nth-of-type(5n) {
-                margin-left: 0; 
+                margin-left: 0;
             }
             img {
                 width: 100%;
@@ -629,127 +86,16 @@
     }
 }
 
-#dn-rendering-light {
-    margin-bottom: 40px;
-    .left-column {
-
-    }
-    .right-column {
-
-    }
-}
-
-#dn-rendering-dark {
-    margin-bottom: 40px;
-    .left-column {
-
-    }
-    .right-column {
-        margin-bottom: 30px;
-    }
-}
-
-#ins-intro {
-    background-image: url('/resources/img/parallax/glass-wall.jpg');
-    margin-bottom: 80px;
-    .copy {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        background: rgba(0,0,0,0.5);
-        padding:20px;
-        color: $c-white;
-        h1 {
-            text-align: left;
-            text-transform: uppercase;
-            font-size: 21px;
-            line-height: 26px;
-            margin: 0 30px 30px 0;
-            font-weight: $fw-light;
-            strong {
-                font-weight: $fw-bold;
-                color: $c-white;
-                display: block;
-            }
-        }
-    }
-}
-
-#ins-copy {
-    margin-bottom: 50px;
-    .contact-details {
-        margin-top: 30px;
-        p {
-            color: $c-blue;
-            font-size: 16px;
-            strong {
-                color: $c-blue;
-                font-size: 24px;
-            }
-        }
-        a {
-            color: $c-blue;
-            font-size: 18px;
-        }
-    }
-    .right-column {
-
-    }
-}
-
+// =========================
+// Extra small breakpoint
+// =========================
 @include bp(min-width, $bp-xsmall + 1) {
 
-    #hp-intro {
-        h1 {
-            margin-bottom: 26px;
-        }
-    }
-
-    #hp-info-panels {
-        ul {
-            li {
-                padding: 20px 7%;
-                .image {
-                    width: 31%;
-                    img {
-                        max-width: 100%;
-                    }
-                }
-                .content {
-                    width: 68%;
-                    h2 {
-                        margin-bottom: 6px;
-                        font-size: 18px;
-                        line-height: 23px;
-                    }
-                    p {
-                        font-size: 13px;
-                    }
-                    a {
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
-    }
-
-    #hp-montage {
-        .left {
-            float:left;
-            width:50%;
-        }
-        .right {
-            float:right;
-            &.small {
-                width:25%;
-            }
-            &.big {
-                width:50%;
-            }
-        }
-    }
 }
 
+// =========================
+// Small breakpoint
+// =========================
 @include bp(min-width, $bp-small + 1) {
 
     .page-header {
@@ -757,91 +103,11 @@
         height: 300px;
     }
 
-    #hp-intro {
-        .copy {
-            h1 {
-                margin-bottom: 20px;
-                font-size: 40px;
-                span {
-                    margin-top: 6px;
-                }
-            }
-            p {
-                margin-bottom: 50px;
-            }
-        }
-    }
-
-    #hp-info-panels {
-        padding: 30px 0;
-        ul {
-            width: 100%;
-            text-align: center;
-            padding: 0;
-            margin-bottom: 40px;
-            li {
-                width:33%;
-                padding: 0;
-                overflow: hidden;
-                text-align: center;
-                display: inline-block;
-                vertical-align: top;
-                .icon {
-                    line-height: 106px;
-                    margin: 0;
-                }
-                .content {
-                    width: 80%;
-                    h2 {
-                        font-size: 17px;
-                    }
-                }
-            }
-        }
-    }
-
-    #hp-product-design {
-        overflow: hidden;
-        .copy {
-            width: 400px;
-            float: right;
-            h2 {
-                font-size: 24px;
-                line-height: 24px;
-            }
-        }
-    }
-
-    #hp-video {
-        .video-wrapper {
-            padding-bottom: 51%;
-        }
-    }
-
-    #dn-intro {
-        .copy {
-            h1 {
-                font-size: 18px;
-                line-height: 25px;
-                margin: 30px 0 0 30px;
-            }
-        }
-    }
-
-    #dn-info {
-        margin-bottom: 30px;
-        .right-column {
-            float: right;
-            width: 50%;
-            margin-left: 30px;
-        }
-    }
-
-    #gallery-container {
+    .gallery {
         h2 {
             font-size: 24px;
         }
-        #gallery-thumbs {
+        .thumbs {
             li {
                 width: 12.5%;
                 margin-left: 2%;
@@ -854,198 +120,17 @@
             }
         }
     }
-
-    #dn-rendering-light {
-        margin-bottom: 40px;
-        .left-column {
-            display: inline-block;
-            vertical-align: middle;
-            width: 60%;
-        }
-        .right-column {
-            display: inline-block;
-            vertical-align: middle;
-            width: 35%;
-            margin-left: 4.5%;
-        }
-    }
-
-    #dn-rendering-dark {
-        margin-bottom: 70px;
-        .left-column {
-            width: 35%;
-            margin-right: 4.5%;
-            margin-top: 30px;
-        }
-        .right-column {
-            margin-bottom: 0;
-            float: right;
-            width: 60%;
-        }
-    }
-
-    #ins-intro {
-        .copy {
-            top: 40px;
-            left: 40px;
-        }
-    }
 }
 
+// =========================
+// Medium breakpoint
+// =========================
 @include bp(min-width, $bp-medium + 1) {
-
-    .left-column,
-    .right-column {
-        display: inline-block;
-        width: 49.8%;
-        vertical-align: top;
-        margin-bottom: 0;
-    }
-
-    #hp-intro {
-        .copy {
-            h1 {
-                font-size: 5vw;
-                margin-bottom:20px;
-            }
-            p {
-                max-width: 370px;
-                font-size: 18px;
-                line-height: 23px;
-                font-weight: 100;
-            }
-        }
-    } 
-
-    #hp-gallery {
-        padding: 60px 10%;
-        .content {
-            float: right;
-            margin-left: 5%;
-            width: 43%;
-            img {
-                margin: 0;
-                height: 80px;
-            }
-            p {
-                text-align: left;
-                font-size:13px;
-                line-height: 17px;
-            }
-        }
-        #gallery-viewer {
-            width: 52%;
-        }
-
-        #gallery-thumbs {
-            clear: both;
-            li {
-                width: 14.28%;
-            }
-        }
-    }
-
-    #hp-product-design {
-        background-size: 100%;
-    }
-
-    #hp-video {
-        .video-wrapper {
-            width: 80%;
-            padding-bottom: 41.2%;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-
-    #hp-testimonials {
-        ul {
-            li {
-                width: 25%;
-            }
-        }
-    }
-
-    #products {
-        ul {
-            width: 23%;
-            margin-right: 2.5%;
-            &:nth-of-type(2n+2) {
-                margin-right: 2.5%;
-            }
-            &:nth-of-type(4) {
-                margin-right: 0;
-            }
-            li {
-                img {
-
-                }
-            }
-        }
-    }
-
-    #pp-intro {
-        .copy {
-            h1 {
-                font-size: 24px;
-                line-height: 25px;
-                margin: 50px 0 0 110px;
-            }
-        }
-    } 
-
-    #pp-copy-and-brands {
-        margin-top: 120px;
-        .left-column {
-            display: inline-block;
-            vertical-align: middle;
-            width: 48.5%;
-            padding: 0 40px;
-            margin-bottom: 0;
-        }
-        .brand-logos {
-            display: inline-block;
-            vertical-align: middle;
-            width: 50%;
-            li {
-                padding: 0 8px;
-            }
-        }
-    }
-
-    #form-container {
-        .left-column {
-            display: inline-block;
-            width: 45%;
-            vertical-align: top;
-            margin-right: 9%;
-        }
-        .form {
-            display: inline-block;
-            width: 45%;
-            vertical-align: top;
-        }
-    }
-
-    #dn-info {
-        margin-bottom: 30px;
-        .left-column {
-            width: 42.8%;
-            display: block;
-            margin-top: 50px;
-        }
-        .right-column {
-            float: right;
-            width: 50%;
-            margin-left: 7%;
-        }
-    }
-
-    #gallery-container {
+    .gallery {
         h2 {
             font-size: 24px;
         }
-        #gallery-thumbs {
+        .thumbs {
             li {
                 width: 12.5%;
                 margin-left: 2%;
@@ -1058,201 +143,25 @@
             }
         }
     }
-
-    #dn-rendering-light {
-        margin-bottom: 40px;
-        .left-column {
-            display: inline-block;
-            vertical-align: middle;
-            width: 60%;
-        }
-        .right-column {
-            display: inline-block;
-            vertical-align: middle;
-            width: 35%;
-            margin-left: 4.5%;
-        }
-    }
-
-    #dn-rendering-dark {
-        margin-bottom: 70px;
-        .left-column {
-            width: 35%;
-            margin-right: 4.5%;
-            margin-top: 30px;
-        }
-        .right-column {
-            margin-bottom: 0;
-            float: right;
-            width: 60%;
-        }
-    }
-
-    #ins-copy {
-        .left-column {
-            width: 47.8%;
-            margin-right: 2%;
-        }
-        .right-column {
-
-        }
-    }
-
-    #ins-intro {
-    margin-bottom: 120px;
-    }
 }
 
+// =========================
+// Large breakpoint
+// =========================
 @include bp(min-width, $bp-large + 1) {
-
     .page-header {
         height: 440px;
         background-size: 100%;
-    }
-
-    #hp-intro {
-        .copy {
-            h1 {
-                font-size: 64px;
-                span {
-                    font-size: 65%;
-                }
-            }
-            p {
-                font-size: 20px;
-                line-height: 24px;
-                margin-bottom: 70px;
-            }
-        }
         .section-link {
             bottom: -70px;
         }
     }
-
-    #hp-info-panels {
-        padding: 60px 0;
-        ul {
-            li {
-                .content {
-                    h2 {
-                        font-size: 22px;
-                    }
-                }
-            }
-        }
-    }
-
-    #hp-product-design {
-        .copy {
-            margin-top: 70px;
-            width: 480px;
-            h2 {
-                font-size: 28px;
-                line-height: 28px;
-            }
-            .cta {
-                margin-top: 16px;
-                font-size: 14px;
-            }
-        }
-    }
-
-    #hp-video {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        .video-wrapper {
-            padding-bottom: 42%;
-        }
-    }
-
-    #pp-copy-and-brands {
-        margin-top: 120px;
-        .left-column {
-            display: inline-block;
-            vertical-align: middle;
-            width: 48.5%;
-            padding: 0 40px;
-            margin-bottom: 0;
-        }
-        .brand-logos {
-            display: inline-block;
-            vertical-align: middle;
-            width: 50%;
-            li {
-                padding: 0 8px;
-            }
-        }
-    }
-
-    #pp-intro {
-        .copy {
-            top: 40px;
-            right: 40px;
-            h1 {
-                font-size: 26px;
-                line-height: 27px;
-                margin: 70px 0 0 150px; 
-            }
-        }
-
-    }
-
-    .page-header .section-link {
-        bottom: -70px;
-    }
-
-    #form-container {
-        .left-column {
-            display: inline-block;
-            width: 40%;
-            vertical-align: top;
-            margin-right: 9.5%;
-            margin-left: 5%;
-        }
-        .form {
-            display: inline-block;
-            width: 40%;
-            vertical-align: top;
-        }
-    }
-
-    #dn-intro {
-        margin-bottom: 80px;
-        .copy {
-            h1 {
-                font-size: 21px;
-                line-height: 28px;
-                margin: 40px 0 0 40px;
-            }
-        }
-    }
-
-    #dn-info {
-        margin-bottom: 30px;
-        .left-column {
-            width: 38.8%;
-            display: block;
-            margin-top: 50px;
-            margin-left: 4%;
-        }
-        .right-column {
-            float: right;
-            width: 50%;
-            margin-left: 7%;
-        }
-    }
-
-    #dn-rendering-light,
-    #dn-rendering-dark {
-        p {
-            font-size: 16px;
-            line-height: 24px;
-        }
-    }
 }
 
+// =========================
+// Extra large breakpoint
+// =========================
 @include bp(min-width, $bp-xlarge + 1) {
-
     .lg-container {
         max-width: 1200px;
         padding: 0 30px;
@@ -1260,40 +169,5 @@
         overflow: hidden;
         position: relative;
         height: 100%;
-    }
-
-    #hp-intro {
-        .copy {
-            h1 {
-                font-size: 56px;
-                margin-bottom: 30px;
-            }
-        }
-    }
-
-    #hp-montage {
-        max-width: 1200px;
-        padding: 0 30px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    #hp-product-design {
-        .copy {
-            margin: 70px 40px 70px 0;
-        }
-    }
-
-    #hp-video {
-        .video-wrapper {
-            padding-bottom: 42.6%;
-        }
-    }
-
-    #pp-intro {
-        .copy {
-            top: 60px;
-            right: 110px;
-        }
     }
 }

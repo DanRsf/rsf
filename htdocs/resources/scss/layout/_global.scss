@@ -1,0 +1,79 @@
+#main-container {
+    width: 100%;
+    margin: 80px auto 0 auto;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+    }
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.full {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.left-column {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.right-column {
+    display: block;
+}
+
+// =========================
+// Extra small breakpoint
+// =========================
+@include bp(min-width, $bp-xsmall + 1){
+
+}
+
+// =========================
+// Small breakpoint
+// =========================
+@include bp(min-width, $bp-small + 1){
+
+}
+
+// =========================
+// Medium breakpoint
+// =========================
+@include bp(min-width, $bp-medium + 1){
+    #main-container {
+        margin-top: 96px;
+    }
+    .left-column,
+    .right-column {
+        display: inline-block;
+        width: 49.8%;
+        vertical-align: top;
+        margin-bottom: 0;
+    }
+}
+
+// =========================
+// Large breakpoint
+// =========================
+@include bp(min-width, $bp-large + 1){
+}
+
+// =========================
+// Extra large breakpoint
+// =========================
+@include bp(min-width, $bp-xlarge + 1){
+
+}

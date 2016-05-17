@@ -9,7 +9,7 @@
 </div>
 
 <footer>
-    
+
     <div class="container">
         <div class="footer-block">
             <nav>
@@ -22,11 +22,11 @@
                 </ul>
             </nav>
         </div>
-        
+
         <div class="footer-block">
         <blockquote>"Luxury brands at competitive prices with outstanding service from start to finish"</blockquote>
         </div>
-        
+
         <div class="footer-block">
             <div class="opening-times">
                 <h4>opening times</h4>
