@@ -1016,13 +1016,17 @@ header .tel-num {
   display: none;
 }
 /* line 24, ../scss/layout/_header.scss */
+header .opening-times {
+  display: none;
+}
+/* line 27, ../scss/layout/_header.scss */
 header nav.mobile {
   display: block;
   clear: both;
   float: right;
   width: 100%;
 }
-/* line 29, ../scss/layout/_header.scss */
+/* line 32, ../scss/layout/_header.scss */
 header nav.mobile #ellipse {
   font-family: rsficon;
   font-size: 36px;
@@ -1034,11 +1038,11 @@ header nav.mobile #ellipse {
   margin-top: -36px;
   margin-right: 30px;
 }
-/* line 39, ../scss/layout/_header.scss */
+/* line 42, ../scss/layout/_header.scss */
 header nav.mobile #ellipse:hover {
   color: #0a3e65;
 }
-/* line 43, ../scss/layout/_header.scss */
+/* line 46, ../scss/layout/_header.scss */
 header nav.mobile ul {
   margin-top: 20px;
   max-height: 0;
@@ -1048,27 +1052,27 @@ header nav.mobile ul {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 48, ../scss/layout/_header.scss */
+/* line 51, ../scss/layout/_header.scss */
 header nav.mobile ul.active {
   max-height: 350px;
   margin-bottom: 10px;
 }
-/* line 52, ../scss/layout/_header.scss */
+/* line 55, ../scss/layout/_header.scss */
 header nav.mobile ul li {
   display: block;
   border-top: 1px solid #949CA1;
 }
-/* line 55, ../scss/layout/_header.scss */
+/* line 58, ../scss/layout/_header.scss */
 header nav.mobile ul li a {
   padding: 12px 20px;
   display: block;
   font-size: 14px;
 }
-/* line 59, ../scss/layout/_header.scss */
+/* line 62, ../scss/layout/_header.scss */
 header nav.mobile ul li a:active, header nav.mobile ul li a:hover {
   background: #949CA1;
 }
-/* line 67, ../scss/layout/_header.scss */
+/* line 70, ../scss/layout/_header.scss */
 header nav.desktop {
   display: none;
   overflow: hidden;
@@ -1078,28 +1082,28 @@ header nav.desktop {
   text-align: right;
   padding-top: 4px;
 }
-/* line 75, ../scss/layout/_header.scss */
+/* line 78, ../scss/layout/_header.scss */
 header nav.desktop ul {
   font-size: 0;
 }
-/* line 77, ../scss/layout/_header.scss */
+/* line 80, ../scss/layout/_header.scss */
 header nav.desktop ul li {
   display: inline-block;
   padding: 0 2.8%;
 }
-/* line 80, ../scss/layout/_header.scss */
+/* line 83, ../scss/layout/_header.scss */
 header nav.desktop ul li a {
   display: block;
   line-height: 30px;
   font-size: 13px;
   text-align: center;
 }
-/* line 86, ../scss/layout/_header.scss */
+/* line 89, ../scss/layout/_header.scss */
 header nav.desktop ul li:last-of-type {
   padding-right: 0;
 }
 @media only screen and (min-width: 600px) {
-  /* line 94, ../scss/layout/_header.scss */
+  /* line 97, ../scss/layout/_header.scss */
   header .header-logo {
     max-height: 40px;
   }
@@ -1109,7 +1113,7 @@ header nav.desktop ul li:last-of-type {
   header {
     padding: 20px 0;
   }
-  /* line 101, ../scss/layout/_header.scss */
+  /* line 104, ../scss/layout/_header.scss */
   header .tel-num {
     display: block;
     float: right;
@@ -1117,31 +1121,47 @@ header nav.desktop ul li:last-of-type {
     line-height: 22px;
     color: #0E5A94;
   }
-  /* line 108, ../scss/layout/_header.scss */
+  /* line 111, ../scss/layout/_header.scss */
+  header .opening-times {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 12px;
+    line-height: 13px;
+    color: #0a3e65;
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
+    margin-right: 20px;
+  }
+  /* line 121, ../scss/layout/_header.scss */
+  header .opening-times span {
+    margin-left: 8px;
+  }
+  /* line 125, ../scss/layout/_header.scss */
   header nav.mobile {
     display: none;
   }
-  /* line 111, ../scss/layout/_header.scss */
+  /* line 128, ../scss/layout/_header.scss */
   header nav.desktop {
     display: block;
     width: 78%;
   }
-  /* line 115, ../scss/layout/_header.scss */
+  /* line 132, ../scss/layout/_header.scss */
   header .container, header .page-header .container, .page-header header .container {
     padding: 0 30px;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 121, ../scss/layout/_header.scss */
+  /* line 138, ../scss/layout/_header.scss */
   header nav.desktop {
     padding-top: 8px;
     width: 73%;
   }
-  /* line 126, ../scss/layout/_header.scss */
+  /* line 143, ../scss/layout/_header.scss */
   header nav.desktop ul li a {
     font-size: 15px;
   }
-  /* line 132, ../scss/layout/_header.scss */
+  /* line 149, ../scss/layout/_header.scss */
   header .header-logo {
     max-height: initial;
   }
@@ -1447,6 +1467,13 @@ footer p {
     vertical-align: top;
     margin-bottom: 0;
   }
+
+  /* line 67, ../scss/layout/_global.scss */
+  .about .left-column,
+  .about .right-column {
+    width: 43%;
+    margin: 0 3%;
+  }
 }
 /* line 1, ../scss/core/_page-headers.scss */
 .page-header {
@@ -1504,73 +1531,78 @@ footer p {
 }
 /* line 48, ../scss/core/_page-headers.scss */
 .home .page-header .copy {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  left: 0;
-  text-align: center;
+  background: none;
 }
-/* line 54, ../scss/core/_page-headers.scss */
+/* line 51, ../scss/core/_page-headers.scss */
 .home .page-header .copy h1 {
-  color: #ffffff;
-  font-size: 30px;
+  font-size: 34px;
   line-height: 100%;
-  font-weight: 300;
-  margin-bottom: 10px;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.2);
+  text-transform: none;
+  text-align: center;
+  font-weight: 200;
 }
-/* line 61, ../scss/core/_page-headers.scss */
+/* line 59, ../scss/core/_page-headers.scss */
 .home .page-header .copy h1 span {
   display: block;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 75%;
 }
-/* line 67, ../scss/core/_page-headers.scss */
+/* line 65, ../scss/core/_page-headers.scss */
 .home .page-header .copy p {
   max-width: 300px;
   display: block;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   font-size: 15px;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
   text-align: center;
   line-height: 18px;
+  font-weight: 100;
 }
 
-/* line 81, ../scss/core/_page-headers.scss */
+/* line 80, ../scss/core/_page-headers.scss */
 .about .page-header {
   background-image: url("/resources/img/page-headers/about.jpg");
 }
-/* line 84, ../scss/core/_page-headers.scss */
+/* line 83, ../scss/core/_page-headers.scss */
 .about .page-header .copy h1 {
   font-size: 21px;
   line-height: 26px;
 }
 
-/* line 93, ../scss/core/_page-headers.scss */
+/* line 92, ../scss/core/_page-headers.scss */
 .products .page-header {
   background-image: url("/resources/img/parallax/towels-on-wooden-shelf.jpg");
 }
-/* line 96, ../scss/core/_page-headers.scss */
+/* line 95, ../scss/core/_page-headers.scss */
 .products .page-header .copy h1 {
   text-align: right;
   font-size: 21px;
   line-height: 23px;
 }
+/* line 101, ../scss/core/_page-headers.scss */
+.products .page-header .section-link {
+  width: 83%;
+  bottom: -70px;
+}
 
-/* line 106, ../scss/core/_page-headers.scss */
+/* line 109, ../scss/core/_page-headers.scss */
 .design .page-header {
+  padding-top: 0;
   background-image: url("/resources/img/page-headers/design1.jpg");
 }
-/* line 108, ../scss/core/_page-headers.scss */
+/* line 112, ../scss/core/_page-headers.scss */
 .design .page-header .copy {
   z-index: 2;
 }
-/* line 110, ../scss/core/_page-headers.scss */
+/* line 114, ../scss/core/_page-headers.scss */
 .design .page-header .copy h1 {
   font-size: 28px;
   line-height: 33px;
 }
-/* line 115, ../scss/core/_page-headers.scss */
+/* line 119, ../scss/core/_page-headers.scss */
 .design .page-header .background {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1586,167 +1618,215 @@ footer p {
   -webkit-transition: opacity 0.8s ease;
   transition: opacity 0.8s ease;
 }
-/* line 126, ../scss/core/_page-headers.scss */
+/* line 130, ../scss/core/_page-headers.scss */
 .design .page-header .background.show {
   opacity: 1;
 }
 
-/* line 134, ../scss/core/_page-headers.scss */
+/* line 138, ../scss/core/_page-headers.scss */
 .installation .page-header {
   background-image: url("/resources/img/parallax/glass-wall.jpg");
-  margin-bottom: 80px;
 }
-/* line 138, ../scss/core/_page-headers.scss */
+/* line 141, ../scss/core/_page-headers.scss */
 .installation .page-header .copy h1 {
   font-size: 21px;
   line-height: 26px;
 }
 
-/* line 147, ../scss/core/_page-headers.scss */
+/* line 150, ../scss/core/_page-headers.scss */
 .areas .page-header {
   padding: 0;
 }
 
-/* line 153, ../scss/core/_page-headers.scss */
+/* line 156, ../scss/core/_page-headers.scss */
 .contact .page-header {
   background-image: url("/resources/img/page-headers/contact.jpg");
 }
-/* line 156, ../scss/core/_page-headers.scss */
+/* line 159, ../scss/core/_page-headers.scss */
 .contact .page-header .copy h1 {
   font-size: 26px;
   line-height: 31px;
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 171, ../scss/core/_page-headers.scss */
+  /* line 174, ../scss/core/_page-headers.scss */
+  .home .page-header .copy h1 {
+    margin-bottom: 26px;
+  }
+
+  /* line 183, ../scss/core/_page-headers.scss */
   .products .page-header .copy h1 {
     font-size: 29px;
     line-height: 32px;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 185, ../scss/core/_page-headers.scss */
+  /* line 197, ../scss/core/_page-headers.scss */
   .page-header .copy {
     position: absolute;
     width: 400px;
     height: auto;
   }
 
-  /* line 194, ../scss/core/_page-headers.scss */
+  /* line 205, ../scss/core/_page-headers.scss */
+  .home .page-header .copy {
+    padding-top: 40px;
+  }
+  /* line 207, ../scss/core/_page-headers.scss */
+  .home .page-header .copy h1 {
+    margin-bottom: 30px;
+    font-size: 48px;
+  }
+  /* line 210, ../scss/core/_page-headers.scss */
+  .home .page-header .copy h1 span {
+    margin-top: 6px;
+    font-size: 68%;
+  }
+  /* line 215, ../scss/core/_page-headers.scss */
+  .home .page-header .copy p {
+    font-size: 16px;
+    max-width: 380px;
+    line-height: 22px;
+  }
+
+  /* line 226, ../scss/core/_page-headers.scss */
   .about .page-header .copy h1 {
     font-size: 31px;
     line-height: 33px;
   }
 
-  /* line 203, ../scss/core/_page-headers.scss */
+  /* line 235, ../scss/core/_page-headers.scss */
   .products .page-header .copy {
     right: 20px;
   }
-  /* line 205, ../scss/core/_page-headers.scss */
+  /* line 237, ../scss/core/_page-headers.scss */
   .products .page-header .copy h1 {
     font-size: 31px;
     line-height: 33px;
   }
 
-  /* line 214, ../scss/core/_page-headers.scss */
+  /* line 246, ../scss/core/_page-headers.scss */
   .design .page-header .copy {
     right: 20px;
     bottom: 0;
   }
-  /* line 217, ../scss/core/_page-headers.scss */
+  /* line 249, ../scss/core/_page-headers.scss */
   .design .page-header .copy h1 {
     font-size: 26px;
     line-height: 33px;
     margin: 30px 0 0 30px;
   }
 
-  /* line 227, ../scss/core/_page-headers.scss */
+  /* line 259, ../scss/core/_page-headers.scss */
   .installation .page-header .copy {
     top: 20px;
     left: 40px;
   }
-  /* line 230, ../scss/core/_page-headers.scss */
+  /* line 262, ../scss/core/_page-headers.scss */
   .installation .page-header .copy h1 {
     font-size: 30px;
     line-height: 34px;
   }
 
-  /* line 239, ../scss/core/_page-headers.scss */
+  /* line 271, ../scss/core/_page-headers.scss */
   .contact .page-header .copy {
     bottom: 20px;
     left: 40px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 253, ../scss/core/_page-headers.scss */
+  /* line 285, ../scss/core/_page-headers.scss */
   .products .page-header .copy {
     top: 40px;
   }
-  /* line 255, ../scss/core/_page-headers.scss */
+  /* line 287, ../scss/core/_page-headers.scss */
   .products .page-header .copy h1 {
     font-size: 37px;
     line-height: 38px;
     margin: 30px 0 0 50px;
   }
-
-  /* line 264, ../scss/core/_page-headers.scss */
-  .installation .page-header {
-    margin-bottom: 120px;
+  /* line 293, ../scss/core/_page-headers.scss */
+  .products .page-header .section-link {
+    display: none;
   }
-  /* line 266, ../scss/core/_page-headers.scss */
+
+  /* line 300, ../scss/core/_page-headers.scss */
   .installation .page-header .copy {
     width: 560px;
   }
-  /* line 268, ../scss/core/_page-headers.scss */
+  /* line 302, ../scss/core/_page-headers.scss */
   .installation .page-header .copy h1 {
     font-size: 37px;
     line-height: 38px;
     margin: 0 50px 30px 0;
   }
 
-  /* line 279, ../scss/core/_page-headers.scss */
+  /* line 313, ../scss/core/_page-headers.scss */
   .contact .page-header .copy h1 {
     font-size: 30px;
     line-height: 36px;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 294, ../scss/core/_page-headers.scss */
+  /* line 328, ../scss/core/_page-headers.scss */
+  .home .page-header .copy {
+    padding-top: 100px;
+  }
+  /* line 330, ../scss/core/_page-headers.scss */
+  .home .page-header .copy h1 {
+    font-size: 64px;
+  }
+  /* line 332, ../scss/core/_page-headers.scss */
+  .home .page-header .copy h1 span {
+    font-size: 60%;
+  }
+  /* line 336, ../scss/core/_page-headers.scss */
+  .home .page-header .copy p {
+    font-size: 22px;
+    line-height: 27px;
+    max-width: 600px;
+  }
+  /* line 342, ../scss/core/_page-headers.scss */
+  .home .page-header .section-link {
+    bottom: -70px;
+  }
+
+  /* line 349, ../scss/core/_page-headers.scss */
   .about .page-header .copy {
     top: 40px;
     left: 60px;
     width: 500px;
   }
-  /* line 298, ../scss/core/_page-headers.scss */
+  /* line 353, ../scss/core/_page-headers.scss */
   .about .page-header .copy h1 {
     font-size: 36px;
     line-height: 39px;
     margin: 0 30px 40px 0;
   }
 
-  /* line 308, ../scss/core/_page-headers.scss */
+  /* line 363, ../scss/core/_page-headers.scss */
   .products .page-header .copy {
     top: 40px;
     right: 40px;
   }
-  /* line 311, ../scss/core/_page-headers.scss */
+  /* line 366, ../scss/core/_page-headers.scss */
   .products .page-header .copy h1 {
     font-size: 42px;
     line-height: 41px;
     margin: 50px 0 0 90px;
   }
 
-  /* line 320, ../scss/core/_page-headers.scss */
+  /* line 375, ../scss/core/_page-headers.scss */
   .design .page-header {
     margin-bottom: 80px;
   }
-  /* line 322, ../scss/core/_page-headers.scss */
+  /* line 377, ../scss/core/_page-headers.scss */
   .design .page-header .copy {
     width: 520px;
     bottom: 40px;
     right: 60px;
   }
-  /* line 326, ../scss/core/_page-headers.scss */
+  /* line 381, ../scss/core/_page-headers.scss */
   .design .page-header .copy h1 {
     font-size: 35px;
     line-height: 40px;
@@ -1754,18 +1834,18 @@ footer p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 342, ../scss/core/_page-headers.scss */
+  /* line 397, ../scss/core/_page-headers.scss */
   .products .page-header .copy {
     top: 60px;
     right: 110px;
   }
 
-  /* line 350, ../scss/core/_page-headers.scss */
+  /* line 405, ../scss/core/_page-headers.scss */
   .installation .page-header .copy {
     left: 60px;
   }
 
-  /* line 357, ../scss/core/_page-headers.scss */
+  /* line 412, ../scss/core/_page-headers.scss */
   .contact .page-header .copy {
     left: 60px;
   }
@@ -2216,87 +2296,68 @@ footer p {
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 238, ../scss/core/_homepage.scss */
-  #hp-intro h1 {
-    margin-bottom: 26px;
-  }
-
-  /* line 245, ../scss/core/_homepage.scss */
+  /* line 239, ../scss/core/_homepage.scss */
   #hp-info-panels ul li {
     padding: 20px 7%;
   }
-  /* line 247, ../scss/core/_homepage.scss */
+  /* line 241, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .image {
     width: 31%;
   }
-  /* line 249, ../scss/core/_homepage.scss */
+  /* line 243, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .image img {
     max-width: 100%;
   }
-  /* line 253, ../scss/core/_homepage.scss */
+  /* line 247, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content {
     width: 68%;
   }
-  /* line 255, ../scss/core/_homepage.scss */
+  /* line 249, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content h2 {
     margin-bottom: 6px;
     font-size: 18px;
     line-height: 23px;
   }
-  /* line 260, ../scss/core/_homepage.scss */
+  /* line 254, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content p {
     font-size: 13px;
   }
-  /* line 263, ../scss/core/_homepage.scss */
+  /* line 257, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content a {
     font-size: 13px;
   }
 
-  /* line 272, ../scss/core/_homepage.scss */
+  /* line 265, ../scss/core/_homepage.scss */
   #hp-montage .left {
     float: left;
     width: 50%;
   }
-  /* line 276, ../scss/core/_homepage.scss */
+  /* line 269, ../scss/core/_homepage.scss */
   #hp-montage .right {
     float: right;
   }
-  /* line 278, ../scss/core/_homepage.scss */
+  /* line 271, ../scss/core/_homepage.scss */
   #hp-montage .right.small {
     width: 25%;
   }
-  /* line 281, ../scss/core/_homepage.scss */
+  /* line 274, ../scss/core/_homepage.scss */
   #hp-montage .right.big {
     width: 50%;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 294, ../scss/core/_homepage.scss */
-  #hp-intro .copy h1 {
-    margin-bottom: 20px;
-    font-size: 40px;
-  }
-  /* line 297, ../scss/core/_homepage.scss */
-  #hp-intro .copy h1 span {
-    margin-top: 6px;
-  }
-  /* line 301, ../scss/core/_homepage.scss */
-  #hp-intro .copy p {
-    margin-bottom: 50px;
-  }
-
-  /* line 307, ../scss/core/_homepage.scss */
+  /* line 286, ../scss/core/_homepage.scss */
   #hp-info-panels {
     padding: 30px 0;
   }
-  /* line 309, ../scss/core/_homepage.scss */
+  /* line 288, ../scss/core/_homepage.scss */
   #hp-info-panels ul {
     width: 100%;
     text-align: center;
     padding: 0;
     margin-bottom: 40px;
   }
-  /* line 314, ../scss/core/_homepage.scss */
+  /* line 293, ../scss/core/_homepage.scss */
   #hp-info-panels ul li {
     width: 33%;
     padding: 0;
@@ -2305,87 +2366,47 @@ footer p {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 321, ../scss/core/_homepage.scss */
+  /* line 300, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .icon {
     line-height: 106px;
     margin: 0;
   }
-  /* line 325, ../scss/core/_homepage.scss */
+  /* line 304, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content {
     width: 80%;
   }
-  /* line 327, ../scss/core/_homepage.scss */
+  /* line 306, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content h2 {
     font-size: 17px;
   }
 
-  /* line 335, ../scss/core/_homepage.scss */
+  /* line 314, ../scss/core/_homepage.scss */
   #hp-product-design {
     overflow: hidden;
   }
-  /* line 337, ../scss/core/_homepage.scss */
+  /* line 316, ../scss/core/_homepage.scss */
   #hp-product-design .copy {
     width: 400px;
     float: right;
   }
-  /* line 340, ../scss/core/_homepage.scss */
+  /* line 319, ../scss/core/_homepage.scss */
   #hp-product-design .copy h2 {
     font-size: 24px;
     line-height: 24px;
   }
 
-  /* line 348, ../scss/core/_homepage.scss */
+  /* line 327, ../scss/core/_homepage.scss */
   #hp-video .video-wrapper {
     padding-bottom: 51%;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 360, ../scss/core/_homepage.scss */
-  #hp-intro .copy h1 {
-    font-size: 5vw;
-    margin-bottom: 20px;
-  }
-  /* line 364, ../scss/core/_homepage.scss */
-  #hp-intro .copy p {
-    max-width: 370px;
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 100;
-  }
-
-    /* #hp-gallery {
-        padding: 60px 10%;
-        .content {
-            float: right;
-            margin-left: 5%;
-            width: 43%;
-            img {
-                margin: 0;
-                height: 80px;
-            }
-            p {
-                text-align: left;
-                font-size:13px;
-                line-height: 17px;
-            }
-        }
-        #gallery-viewer {
-            width: 52%;
-        }
-
-        #gallery-thumbs {
-            clear: both;
-            li {
-                width: 14.28%;
-            }
-        }
-    } */
-  /* line 401, ../scss/core/_homepage.scss */
+  /* line 337, ../scss/core/_homepage.scss */
   #hp-product-design {
     background-size: 100%;
   }
 
-  /* line 406, ../scss/core/_homepage.scss */
+  /* line 342, ../scss/core/_homepage.scss */
   #hp-video .video-wrapper {
     width: 80%;
     padding-bottom: 41.2%;
@@ -2393,74 +2414,49 @@ footer p {
     margin-left: auto;
   }
 
-  /* line 416, ../scss/core/_homepage.scss */
+  /* line 352, ../scss/core/_homepage.scss */
   #hp-testimonials ul li {
     width: 25%;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 429, ../scss/core/_homepage.scss */
-  #hp-intro .copy h1 {
-    font-size: 64px;
-  }
-  /* line 431, ../scss/core/_homepage.scss */
-  #hp-intro .copy h1 span {
-    font-size: 65%;
-  }
-  /* line 435, ../scss/core/_homepage.scss */
-  #hp-intro .copy p {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 70px;
-  }
-  /* line 441, ../scss/core/_homepage.scss */
-  #hp-intro .section-link {
-    bottom: -70px;
-  }
-
-  /* line 446, ../scss/core/_homepage.scss */
+  /* line 363, ../scss/core/_homepage.scss */
   #hp-info-panels {
     padding: 60px 0;
   }
-  /* line 451, ../scss/core/_homepage.scss */
+  /* line 368, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content h2 {
     font-size: 22px;
   }
 
-  /* line 460, ../scss/core/_homepage.scss */
+  /* line 377, ../scss/core/_homepage.scss */
   #hp-product-design .copy {
     margin-top: 70px;
     width: 480px;
   }
-  /* line 463, ../scss/core/_homepage.scss */
+  /* line 380, ../scss/core/_homepage.scss */
   #hp-product-design .copy h2 {
     font-size: 28px;
     line-height: 28px;
   }
-  /* line 467, ../scss/core/_homepage.scss */
+  /* line 384, ../scss/core/_homepage.scss */
   #hp-product-design .copy .cta {
     margin-top: 16px;
     font-size: 14px;
   }
 
-  /* line 474, ../scss/core/_homepage.scss */
+  /* line 391, ../scss/core/_homepage.scss */
   #hp-video {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  /* line 477, ../scss/core/_homepage.scss */
+  /* line 394, ../scss/core/_homepage.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42%;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 489, ../scss/core/_homepage.scss */
-  #hp-intro .copy h1 {
-    font-size: 56px;
-    margin-bottom: 30px;
-  }
-
-  /* line 496, ../scss/core/_homepage.scss */
+  /* line 404, ../scss/core/_homepage.scss */
   #hp-montage {
     max-width: 1200px;
     padding: 0 30px;
@@ -2468,12 +2464,12 @@ footer p {
     overflow: hidden;
   }
 
-  /* line 504, ../scss/core/_homepage.scss */
+  /* line 412, ../scss/core/_homepage.scss */
   #hp-product-design .copy {
     margin: 70px 40px 70px 0;
   }
 
-  /* line 510, ../scss/core/_homepage.scss */
+  /* line 418, ../scss/core/_homepage.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42.6%;
   }
@@ -2556,80 +2552,100 @@ footer p {
 
 /* line 75, ../scss/core/_pages.scss */
 .design .intro {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
-/* line 77, ../scss/core/_pages.scss */
+/* line 78, ../scss/core/_pages.scss */
 .design .intro .right-column {
   display: block;
   margin-bottom: 20px;
 }
-/* line 82, ../scss/core/_pages.scss */
+/* line 83, ../scss/core/_pages.scss */
 .design .left-image {
   margin-bottom: 40px;
 }
-/* line 86, ../scss/core/_pages.scss */
+/* line 87, ../scss/core/_pages.scss */
 .design .right-image {
   margin-bottom: 40px;
 }
-/* line 88, ../scss/core/_pages.scss */
+/* line 89, ../scss/core/_pages.scss */
 .design .right-image .right-column {
   margin-bottom: 30px;
 }
 
-/* line 95, ../scss/core/_pages.scss */
+/* line 96, ../scss/core/_pages.scss */
 .installation .contact-details {
   margin-top: 30px;
 }
-/* line 97, ../scss/core/_pages.scss */
+/* line 98, ../scss/core/_pages.scss */
 .installation .contact-details p {
   color: #0E5A94;
   font-size: 16px;
 }
-/* line 100, ../scss/core/_pages.scss */
+/* line 101, ../scss/core/_pages.scss */
 .installation .contact-details p strong {
   color: #0E5A94;
   font-size: 24px;
 }
-/* line 105, ../scss/core/_pages.scss */
+/* line 106, ../scss/core/_pages.scss */
 .installation .contact-details a {
   color: #0E5A94;
   font-size: 18px;
 }
+/* line 111, ../scss/core/_pages.scss */
+.installation #install-images {
+  position: relative;
+}
+/* line 113, ../scss/core/_pages.scss */
+.installation #install-images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+/* line 119, ../scss/core/_pages.scss */
+.installation #install-images img.show {
+  opacity: 1;
+}
 
-/* line 112, ../scss/core/_pages.scss */
+/* line 126, ../scss/core/_pages.scss */
 #areas-map {
   height: 100%;
   width: 100%;
 }
 
-/* line 118, ../scss/core/_pages.scss */
+/* line 132, ../scss/core/_pages.scss */
 .contact .left-column {
   margin-bottom: 40px;
 }
-/* line 120, ../scss/core/_pages.scss */
+/* line 134, ../scss/core/_pages.scss */
 .contact .left-column .contact-details {
   margin-top: 30px;
 }
-/* line 122, ../scss/core/_pages.scss */
+/* line 136, ../scss/core/_pages.scss */
 .contact .left-column .contact-details p {
   color: #0E5A94;
   font-size: 16px;
 }
-/* line 125, ../scss/core/_pages.scss */
+/* line 139, ../scss/core/_pages.scss */
 .contact .left-column .contact-details p strong {
   color: #0E5A94;
   font-size: 24px;
 }
-/* line 130, ../scss/core/_pages.scss */
+/* line 144, ../scss/core/_pages.scss */
 .contact .left-column .contact-details a {
   color: #0E5A94;
   font-size: 18px;
 }
-/* line 137, ../scss/core/_pages.scss */
+/* line 151, ../scss/core/_pages.scss */
 .contact .form h2 {
   color: #0E5A94;
 }
-/* line 139, ../scss/core/_pages.scss */
+/* line 153, ../scss/core/_pages.scss */
 .contact .form h2:before {
   font-family: rsficon;
   content: 'e';
@@ -2639,7 +2655,7 @@ footer p {
   vertical-align: baseline;
   color: #0E5A94;
 }
-/* line 150, ../scss/core/_pages.scss */
+/* line 164, ../scss/core/_pages.scss */
 .contact .form form input[type="text"],
 .contact .form form textarea {
   padding: 6px 12px;
@@ -2648,22 +2664,22 @@ footer p {
   font-size: 13px;
   margin-bottom: 20px;
 }
-/* line 157, ../scss/core/_pages.scss */
+/* line 171, ../scss/core/_pages.scss */
 .contact .form form input[type="text"]:placeholder,
 .contact .form form textarea:placeholder {
   color: #949CA1;
   font-size: 13px;
 }
-/* line 161, ../scss/core/_pages.scss */
+/* line 175, ../scss/core/_pages.scss */
 .contact .form form input[type="text"].error,
 .contact .form form textarea.error {
   border-color: #E60004;
 }
-/* line 168, ../scss/core/_pages.scss */
+/* line 182, ../scss/core/_pages.scss */
 .contact .form form textarea {
   height: 100px;
 }
-/* line 171, ../scss/core/_pages.scss */
+/* line 185, ../scss/core/_pages.scss */
 .contact .form form button {
   color: #ffffff;
   padding: 10px 30px;
@@ -2672,12 +2688,12 @@ footer p {
   border: 1px solid #53B2E0;
   background: #53B2E0;
 }
-/* line 178, ../scss/core/_pages.scss */
+/* line 192, ../scss/core/_pages.scss */
 .contact .form form button:hover {
   background: #0a3e65;
 }
 
-/* line 186, ../scss/core/_pages.scss */
+/* line 200, ../scss/core/_pages.scss */
 #gmap {
   width: 100%;
   height: 300px;
@@ -2685,44 +2701,44 @@ footer p {
 }
 
 @media only screen and (min-width: 600px) {
-  /* line 204, ../scss/core/_pages.scss */
+  /* line 218, ../scss/core/_pages.scss */
   .design .intro {
     margin-bottom: 30px;
   }
-  /* line 206, ../scss/core/_pages.scss */
+  /* line 220, ../scss/core/_pages.scss */
   .design .intro .right-column {
     float: right;
     width: 50%;
     margin-left: 30px;
   }
-  /* line 212, ../scss/core/_pages.scss */
+  /* line 226, ../scss/core/_pages.scss */
   .design .image-left {
     margin-bottom: 40px;
   }
-  /* line 214, ../scss/core/_pages.scss */
+  /* line 228, ../scss/core/_pages.scss */
   .design .image-left .left-column {
     display: inline-block;
     vertical-align: middle;
     width: 60%;
   }
-  /* line 219, ../scss/core/_pages.scss */
+  /* line 233, ../scss/core/_pages.scss */
   .design .image-left .right-column {
     display: inline-block;
     vertical-align: middle;
     width: 35%;
     margin-left: 4.5%;
   }
-  /* line 227, ../scss/core/_pages.scss */
+  /* line 241, ../scss/core/_pages.scss */
   .design .image-right {
     margin-bottom: 70px;
   }
-  /* line 229, ../scss/core/_pages.scss */
+  /* line 243, ../scss/core/_pages.scss */
   .design .image-right .left-column {
     width: 35%;
     margin-right: 4.5%;
     margin-top: 30px;
   }
-  /* line 234, ../scss/core/_pages.scss */
+  /* line 248, ../scss/core/_pages.scss */
   .design .image-right .right-column {
     margin-bottom: 0;
     float: right;
@@ -2730,11 +2746,16 @@ footer p {
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 248, ../scss/core/_pages.scss */
-  .products .intro {
-    margin-top: 120px;
+  /* line 262, ../scss/core/_pages.scss */
+  .about h2 {
+    margin-left: 3%;
   }
-  /* line 250, ../scss/core/_pages.scss */
+
+  /* line 267, ../scss/core/_pages.scss */
+  .products .intro {
+    margin-top: 40px;
+  }
+  /* line 269, ../scss/core/_pages.scss */
   .products .intro .left-column {
     display: inline-block;
     vertical-align: middle;
@@ -2742,94 +2763,94 @@ footer p {
     padding: 0 40px;
     margin-bottom: 0;
   }
-  /* line 257, ../scss/core/_pages.scss */
+  /* line 276, ../scss/core/_pages.scss */
   .products .intro .brand-logos {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
   }
-  /* line 261, ../scss/core/_pages.scss */
+  /* line 280, ../scss/core/_pages.scss */
   .products .intro .brand-logos li {
     padding: 0 8px;
   }
-  /* line 267, ../scss/core/_pages.scss */
+  /* line 286, ../scss/core/_pages.scss */
   .products #products ul {
     width: 23%;
     margin-right: 2.5%;
   }
-  /* line 270, ../scss/core/_pages.scss */
+  /* line 289, ../scss/core/_pages.scss */
   .products #products ul:nth-of-type(2n+2) {
     margin-right: 2.5%;
   }
-  /* line 273, ../scss/core/_pages.scss */
+  /* line 292, ../scss/core/_pages.scss */
   .products #products ul:nth-of-type(4) {
     margin-right: 0;
   }
 
-  /* line 285, ../scss/core/_pages.scss */
+  /* line 304, ../scss/core/_pages.scss */
   .design .intro {
     margin-bottom: 30px;
   }
-  /* line 287, ../scss/core/_pages.scss */
+  /* line 306, ../scss/core/_pages.scss */
   .design .intro .left-column {
     width: 42.8%;
     display: block;
     margin-top: 50px;
   }
-  /* line 292, ../scss/core/_pages.scss */
+  /* line 311, ../scss/core/_pages.scss */
   .design .intro .right-column {
     float: right;
     width: 50%;
     margin-left: 7%;
   }
-  /* line 298, ../scss/core/_pages.scss */
+  /* line 317, ../scss/core/_pages.scss */
   .design .image-left {
     margin-bottom: 40px;
   }
-  /* line 300, ../scss/core/_pages.scss */
+  /* line 319, ../scss/core/_pages.scss */
   .design .image-left .left-column {
     display: inline-block;
     vertical-align: middle;
     width: 60%;
   }
-  /* line 305, ../scss/core/_pages.scss */
+  /* line 324, ../scss/core/_pages.scss */
   .design .image-left .right-column {
     display: inline-block;
     vertical-align: middle;
     width: 35%;
     margin-left: 4.5%;
   }
-  /* line 313, ../scss/core/_pages.scss */
+  /* line 332, ../scss/core/_pages.scss */
   .design .image-right {
     margin-bottom: 70px;
   }
-  /* line 315, ../scss/core/_pages.scss */
+  /* line 334, ../scss/core/_pages.scss */
   .design .image-right .left-column {
     width: 35%;
     margin-right: 4.5%;
     margin-top: 30px;
   }
-  /* line 320, ../scss/core/_pages.scss */
+  /* line 339, ../scss/core/_pages.scss */
   .design .image-right .right-column {
     margin-bottom: 0;
     float: right;
     width: 60%;
   }
 
-  /* line 328, ../scss/core/_pages.scss */
+  /* line 347, ../scss/core/_pages.scss */
   .installation .left-column {
     width: 47.8%;
     margin-right: 2%;
   }
 
-  /* line 334, ../scss/core/_pages.scss */
+  /* line 353, ../scss/core/_pages.scss */
   .contact .left-column {
     display: inline-block;
     width: 45%;
     vertical-align: top;
     margin-right: 9%;
   }
-  /* line 340, ../scss/core/_pages.scss */
+  /* line 359, ../scss/core/_pages.scss */
   .contact .form {
     display: inline-block;
     width: 45%;
@@ -2837,11 +2858,7 @@ footer p {
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 353, ../scss/core/_pages.scss */
-  .products .intro {
-    margin-top: 120px;
-  }
-  /* line 355, ../scss/core/_pages.scss */
+  /* line 373, ../scss/core/_pages.scss */
   .products .intro .left-column {
     display: inline-block;
     vertical-align: middle;
@@ -2849,42 +2866,42 @@ footer p {
     padding: 0 40px;
     margin-bottom: 0;
   }
-  /* line 362, ../scss/core/_pages.scss */
+  /* line 380, ../scss/core/_pages.scss */
   .products .intro .brand-logos {
     display: inline-block;
     vertical-align: middle;
     width: 50%;
   }
-  /* line 366, ../scss/core/_pages.scss */
+  /* line 384, ../scss/core/_pages.scss */
   .products .intro .brand-logos li {
     padding: 0 12px 12px 0;
   }
 
-  /* line 373, ../scss/core/_pages.scss */
+  /* line 391, ../scss/core/_pages.scss */
   .design .intro {
     margin-bottom: 30px;
   }
-  /* line 375, ../scss/core/_pages.scss */
+  /* line 393, ../scss/core/_pages.scss */
   .design .intro .left-column {
     width: 38.8%;
     display: block;
     margin-top: 50px;
     margin-left: 4%;
   }
-  /* line 381, ../scss/core/_pages.scss */
+  /* line 399, ../scss/core/_pages.scss */
   .design .intro .right-column {
     float: right;
     width: 50%;
     margin-left: 7%;
   }
-  /* line 389, ../scss/core/_pages.scss */
+  /* line 407, ../scss/core/_pages.scss */
   .design .image-left p,
   .design .image-right p {
     font-size: 16px;
     line-height: 24px;
   }
 
-  /* line 396, ../scss/core/_pages.scss */
+  /* line 414, ../scss/core/_pages.scss */
   .contact .left-column {
     display: inline-block;
     width: 40%;
@@ -2892,7 +2909,7 @@ footer p {
     margin-right: 9.5%;
     margin-left: 5%;
   }
-  /* line 403, ../scss/core/_pages.scss */
+  /* line 421, ../scss/core/_pages.scss */
   .contact .form {
     display: inline-block;
     width: 40%;

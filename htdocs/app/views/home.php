@@ -6,7 +6,7 @@
 
     <div id="main-container">
 
-        <div id="hp-intro" class="page-header">
+        <div class="page-header">
             <div class="copy">
                 <h1>Beautiful Bathrooms<span>Affordable Prices</span></h1>
                 <p>Luxury brands at competitive prices, with outstanding service from start to finish.</p>

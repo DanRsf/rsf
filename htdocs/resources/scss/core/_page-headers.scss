@@ -46,32 +46,31 @@
     .page-header {
         background-image: url(/resources/img/page-headers/home2.jpg);
         .copy {
-            position: absolute;
             width: 100%;
-            bottom: 0;
-            left: 0;
-            text-align: center;
+            background: none;
             h1 {
-                color: $c-white;
-                font-size: 30px;
+                font-size: 34px;
                 line-height: 100%;
-                font-weight: 300;
-                margin-bottom: 10px;
-                text-shadow: $text-shadow;
+                margin-bottom: 20px;
+                text-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0,0,0,0.2);
+                text-transform: none;
+                text-align: center;
+                font-weight: 200;
                 span {
                     display: block;
-                    font-weight:100;
+                    font-weight:300;
                     font-size: 75%;
                 }
             }
             p {
                 max-width: 300px;
                 display: block;
-                margin: 0 auto 50px;
+                margin: 0 auto;
                 font-size:15px;
-                text-shadow: $text-shadow;
+                text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
                 text-align:center;
                 line-height: 18px;
+                font-weight: 100;
             }
         }
     }
@@ -99,11 +98,16 @@
                 line-height: 23px;
             }
         }
+        .section-link {
+            width: 83%;
+            bottom: -70px;
+        }
     }
 }
 
 .design {
     .page-header {
+        padding-top: 0;
         background-image: url('/resources/img/page-headers/design1.jpg');
         .copy {
             z-index: 2;
@@ -133,7 +137,6 @@
 .installation {
     .page-header {
         background-image: url('/resources/img/parallax/glass-wall.jpg');
-        margin-bottom: 80px;
         .copy {
             h1 {
                 font-size: 21px;
@@ -165,6 +168,15 @@
 // Extra small breakpoint
 // =========================
 @include bp(min-width, $bp-xsmall + 1){
+    .home {
+        .page-header {
+            .copy {
+                h1 {
+                    margin-bottom: 26px;
+                }
+            }
+        }
+    }
     .products {
         .page-header {
             .copy {
@@ -186,6 +198,26 @@
             position: absolute;
             width: 400px;
             height: auto;
+        }
+    }
+    .home {
+        .page-header {
+            .copy {
+                padding-top: 40px;
+                h1 {
+                    margin-bottom: 30px;
+                    font-size: 48px;
+                    span {
+                        margin-top: 6px;
+                        font-size: 68%;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    max-width: 380px;
+                    line-height: 22px;
+                }
+            }
         }
     }
     .about {
@@ -258,11 +290,13 @@
                     margin: 30px 0 0 50px;
                 }
             }
+            .section-link {
+                display: none;
+            }
         }
     }
     .installation {
         .page-header {
-            margin-bottom: 120px;
             .copy {
                 width: 560px;
                 h1 {
@@ -289,6 +323,27 @@
 // Large breakpoint
 // =========================
 @include bp(min-width, $bp-large + 1){
+    .home {
+        .page-header {
+            .copy {
+                padding-top: 100px;
+                h1 {
+                    font-size: 64px;
+                    span {
+                        font-size: 60%;
+                    }
+                }
+                p {
+                    font-size: 22px;
+                    line-height: 27px;
+                    max-width: 600px;
+                }
+            }
+            .section-link {
+                bottom: -70px;
+            }
+        }
+    }
     .about {
         .page-header {
             .copy {

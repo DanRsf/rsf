@@ -12,7 +12,6 @@
                     <h1>High quality<br />installations from<br /><strong>a team you can trust</strong></h1>
                 </div>
             </div>
-                <a href="#form-container" class="section-link">find out more</a>
         </div>
 
         <div class="container section">
@@ -26,8 +25,9 @@
                     <a href="mailto:info@rsfbathroomdesigns.com">info@rsfbathroomdesigns.com</a>
                 </div>
             </div>
-            <div class="right-column">
-                <img src="<?php echo IMG;?>/general/team.jpg" alt="RSF Installation team">
+            <div class="right-column" id="install-images">
+                <img src="<?php echo IMG;?>/general/installation-1.jpg" alt="RSF Installation team" class="show">
+                <img src="<?php echo IMG;?>/general/installation-2.jpg" alt="RSF Installation team">
             </div>
         </div>
 

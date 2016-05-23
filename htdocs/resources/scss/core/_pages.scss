@@ -73,7 +73,8 @@
 
 .design {
     .intro {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        margin-top: 40px;
         .right-column {
             display: block;
             margin-bottom: 20px;
@@ -105,6 +106,19 @@
         a {
             color: $c-blue;
             font-size: 18px;
+        }
+    }
+    #install-images {
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            @include transition(opacity 0.5s ease-in-out);
+            &.show {
+                opacity: 1;
+            }
         }
     }
 }
@@ -244,9 +258,14 @@
 // Medium breakpoint
 // =========================
 @include bp(min-width, $bp-medium + 1){
+    .about {
+        h2 {
+            margin-left: 3%;
+        }
+    }
     .products {
         .intro {
-            margin-top: 120px;
+            margin-top: 40px;
             .left-column {
                 display: inline-block;
                 vertical-align: middle;
@@ -351,7 +370,6 @@
 @include bp(min-width, $bp-large + 1){
     .products {
         .intro {
-            margin-top: 120px;
             .left-column {
                 display: inline-block;
                 vertical-align: middle;

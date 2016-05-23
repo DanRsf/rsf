@@ -234,12 +234,6 @@
 // Extra small breakpoint
 // =========================
 @include bp(min-width, $bp-xsmall + 1){
-    #hp-intro {
-        h1 {
-            margin-bottom: 26px;
-        }
-    }
-
     #hp-info-panels {
         ul {
             li {
@@ -267,7 +261,6 @@
             }
         }
     }
-
     #hp-montage {
         .left {
             float:left;
@@ -289,20 +282,6 @@
 // Small breakpoint
 // =========================
 @include bp(min-width, $bp-small + 1){
-    #hp-intro {
-        .copy {
-            h1 {
-                margin-bottom: 20px;
-                font-size: 40px;
-                span {
-                    margin-top: 6px;
-                }
-            }
-            p {
-                margin-bottom: 50px;
-            }
-        }
-    }
 
     #hp-info-panels {
         padding: 30px 0;
@@ -355,49 +334,6 @@
 // Medium breakpoint
 // =========================
 @include bp(min-width, $bp-medium + 1){
-    #hp-intro {
-        .copy {
-            h1 {
-                font-size: 5vw;
-                margin-bottom:20px;
-            }
-            p {
-                max-width: 370px;
-                font-size: 18px;
-                line-height: 23px;
-                font-weight: 100;
-            }
-        }
-    }
-
-    /* #hp-gallery {
-        padding: 60px 10%;
-        .content {
-            float: right;
-            margin-left: 5%;
-            width: 43%;
-            img {
-                margin: 0;
-                height: 80px;
-            }
-            p {
-                text-align: left;
-                font-size:13px;
-                line-height: 17px;
-            }
-        }
-        #gallery-viewer {
-            width: 52%;
-        }
-
-        #gallery-thumbs {
-            clear: both;
-            li {
-                width: 14.28%;
-            }
-        }
-    } */
-
     #hp-product-design {
         background-size: 100%;
     }
@@ -424,25 +360,6 @@
 // Large breakpoint
 // =========================
 @include bp(min-width, $bp-large + 1){
-    #hp-intro {
-        .copy {
-            h1 {
-                font-size: 64px;
-                span {
-                    font-size: 65%;
-                }
-            }
-            p {
-                font-size: 20px;
-                line-height: 24px;
-                margin-bottom: 70px;
-            }
-        }
-        .section-link {
-            bottom: -70px;
-        }
-    }
-
     #hp-info-panels {
         padding: 60px 0;
         ul {
@@ -484,15 +401,6 @@
 // Extra large breakpoint
 // =========================
 @include bp(min-width, $bp-xlarge + 1){
-    #hp-intro {
-        .copy {
-            h1 {
-                font-size: 56px;
-                margin-bottom: 30px;
-            }
-        }
-    }
-
     #hp-montage {
         max-width: 1200px;
         padding: 0 30px;

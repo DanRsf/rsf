@@ -2,6 +2,9 @@
     <div id="ellipse">b</div>
     <ul>
         <li>
+            <a href="/">home</a>
+        </li>
+        <li>
             <a href="/about-us">about</a>
         </li>
         <li>

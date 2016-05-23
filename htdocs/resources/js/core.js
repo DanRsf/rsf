@@ -163,9 +163,9 @@ $(document).ready(function () {
     /**
      * Image gallery on homepage
      */
-     $('#gallery-thumbs img').click(function () {
+     $('.gallery .thumbs img').click(function () {
         var filename = $(this).data('image');
-        $('#gallery-viewer').attr('src', '/resources/img/gallery/images/' + filename);
+        $('.gallery .viewer').attr('src', '/resources/img/gallery/images/' + filename);
     });
 
      $('.video-thumb').click(function () {
@@ -192,13 +192,17 @@ $(document).ready(function () {
     });
 
     setInterval(function(){
-        $('#dn-intro .background').toggleClass('show');
+        $('.design .page-header .background').toggleClass('show');
     }, 5000);
 
+    setInterval(function(){
+        $('#install-images img').toggleClass('show');
+    }, 4000);
  });
 
 $(window).load(function () {
     resize_functions();
+    set_install_image_height();
 
     // Manage the height of any height managed panels
     if ($('[data-height-determined-by]').length > 0) {
@@ -208,6 +212,7 @@ $(window).load(function () {
 
 $(window).resize(function () {
     resize_functions();
+    set_install_image_height();
 
     // Manage the height of any height managed panels
     if ($('[data-height-determined-by]').length > 0) {
@@ -215,10 +220,15 @@ $(window).resize(function () {
     }
 });
 
+var set_install_image_height = function(){
+    var container = $('#install-images');
+    container.css('height', container.width() / 1.4573);
+};
+
 var resize_functions = function () {
     set_breakpoint();
     resize_montage_images();
-}
+};
 
 var resize_montage_images = function () {
     $left = typeof $left != 'undefined' ? $left : $('#hp-montage .left');

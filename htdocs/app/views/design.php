@@ -13,7 +13,6 @@
                     <h1>2D and 3D design<strong>the ultimate consumer experience</strong></h1>
                 </div>
             </div>
-                <a href="#dn-info" class="section-link">find out more</a>
         </div>
 
         <div class="container intro">

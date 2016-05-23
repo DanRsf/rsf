@@ -3,8 +3,25 @@
 	[
 		{
 			"path": ".",
-			"folder_exclude_patterns": ["sys","*cache*","hooks","language","logs","third_party","cache","helpers"],
-			"file_exclude_patterns": [".htaccess","index.html",".gitignore","README.md"]
-		}
+            "folder_exclude_patterns": ["htdocs/app","htdocs/resources","htdocs/sys"]
+		},
+        {
+            "path": "htdocs/app/controllers"
+        },
+        {
+            "path": "htdocs/app/views"
+        },
+        {
+            "path": "htdocs/resources/img"
+        },
+        {
+            "path": "htdocs/resources/js"
+        },
+        {
+            "path": "htdocs/resources/scss"
+        },
+        {
+            "path": "htdocs/app/controllers"
+        }
 	]
 }

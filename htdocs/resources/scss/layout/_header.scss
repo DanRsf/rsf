@@ -21,6 +21,9 @@ header {
     .tel-num {
         display: none;
     }
+    .opening-times {
+        display: none;
+    }
     nav.mobile {
         display: block;
         clear: both;
@@ -104,6 +107,20 @@ header {
                 font-size: 24px;
                 line-height: 22px;
                 color: #0E5A94;
+            }
+            .opening-times {
+                display: inline-block;
+                vertical-align: bottom;
+                font-size: $f-size-xs;
+                line-height: $f-size-s;
+                color: $c-dblue;
+                padding-top: 10px;
+                padding-right: 10px;
+                float: right;
+                margin-right: 20px;
+                span {
+                    margin-left: 8px;
+                }
             }
             nav.mobile {
                 display: none;

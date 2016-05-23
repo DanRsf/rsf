@@ -7,9 +7,6 @@
     <div id="main-container">
 
         <div class="page-header">
-            <div class="copy">
-                <h1>We cover <strong>Essex and the London area</strong>strong></h1>
-            </div>
             <div id="areas-map"></div>
         </div>
 
