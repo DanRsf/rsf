@@ -26,6 +26,10 @@ $icon-tick: "\74";
 $icon-tools: "\4f";
 $icon-twitter: "\77";
 $icon-youtube: "\79";
+$icon-shopping-cart: "\73";
+$icon-showroom: "\53";
+$icon-reviews: "\61";
+$icon-survey: "\67";
 
 
 @font-face {
@@ -184,3 +188,24 @@ $icon-youtube: "\79";
         content: $icon-youtube;
     }
 }
+.icon-shopping-cart {
+    &:before {
+        content: $icon-shopping-cart;
+    }
+}
+.icon-showroom {
+    &:before {
+        content: $icon-showroom;
+    }
+}
+.icon-reviews {
+    &:before {
+        content: $icon-reviews;
+    }
+}
+.icon-survey {
+    &:before {
+        content: $icon-survey;
+    }
+}
+

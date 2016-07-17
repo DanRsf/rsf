@@ -191,6 +191,10 @@ $(document).ready(function () {
         mainClass: 'mfp-fade'
     });
 
+    $('.youtube').magnificPopup({
+        type: 'iframe'
+    });
+
     setInterval(function(){
         $('.design .page-header .background').toggleClass('show');
     }, 5000);

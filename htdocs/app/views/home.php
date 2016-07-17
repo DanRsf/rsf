@@ -77,24 +77,28 @@
                 <ul data-height-determined-by="|p,|h4">
                     <li>
                         <a href="/contact">
+                            <span class="icon-survey"></span>
                             <h4>Book a Survey</h4>
                             <p>We can provide a full survey and no obligation quote.  Contact us to arrange an appointment.</p>
                         </a>
                     </li>
                     <li>
                         <a href="http://www.rsfbathrooms.co.uk" target="_blank">
+                            <span class="icon-shopping-cart"></span>
                             <h4>Shop Online</h4>
                             <p>We have thousands of products available to buy online.  Visit our online store for further details.</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a class="youtube" href="https://www.youtube.com/watch?v=k_ID2tUR5fI">
+                        <span class="icon-play"></span>
                             <h4>Showroom Tour</h4>
                             <p>Our large, fully operational showroom demonstrates the latest in high end gadgets and product design.</p>
                         </a>
                     </li>
                     <li>
                         <a href="http://www.reviews.co.uk/company-reviews/store/rsf-bathrooms" target="_blank">
+                            <span class="icon-reviews"></span>
                             <h4>Customer Reviews</h4>
                             <p>We pride ourselve in excellent customer service, but don't take our word for it, see what our customers are saying.</p>
                         </a>

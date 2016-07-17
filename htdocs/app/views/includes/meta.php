@@ -18,6 +18,7 @@
         <link rel="apple-touch-icon" sizes="72x72" href="<?php echo IMG;?>/general/touch_icon_ipad.png" />
         <link rel="apple-touch-icon" sizes="114x114" href="<?php echo IMG;?>/general/touch_icon_iphone_retina.png" />
         <link rel="apple-touch-icon" sizes="144x144" href="<?php echo IMG;?>/general/touch_icon_ipad_retina.png" />
+        <link rel="stylesheet" type="text/css" href="<?php echo CSS;?>/magnific-popup.css?v=<?php echo time();?>" media="screen" />
         <link rel="stylesheet" type="text/css" href="<?php echo CSS;?>/style.css?v=<?php echo time();?>" media="screen" />
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
