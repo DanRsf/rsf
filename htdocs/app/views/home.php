@@ -7,9 +7,14 @@
     <div id="main-container">
 
         <div class="page-header">
+            <div class="background one active" /></div>
+            <div class="background two dark" /></div>
+            <div class="background three" /></div>
+            <div class="background four" /></div>
+            <div class="background five" /></div>
             <div class="copy">
                 <h1>Beautiful Bathrooms<span>Affordable Prices</span></h1>
-                <p>Luxury brands at competitive prices, with outstanding service from start to finish.</p>
+                <p>Luxury brands at competitive prices, with outstanding service from start to finish.<small>Supply Only – Design &amp; Supply – Full Design &amp; Install</small></p>
             </div>
             <a href="#hp-info-panels" class="section-link">find out more</a>
         </div>
@@ -55,7 +60,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
             <div id="hp-video">
                 <h3>Take a look round our showroom</h3>
                 <p>Our large, fully operational showroom demonstrates the latest in high end gadgets and product design.  Visit us in person, or take a sneak peak with our virtual tour.</p>
@@ -64,6 +69,37 @@
                     <img src="<?php echo IMG;?>/general/video-play-icon.png" class="play-button"/>
                 </div>
                 <a href="#hp-product-design" class="section-link">stunning designs</a>
+            </div>
+        </div> -->
+
+        <div id="hp-cta-panels">
+            <div class="container">
+                <ul data-height-determined-by="|p,|h4">
+                    <li>
+                        <a href="/contact">
+                            <h4>Book a Survey</h4>
+                            <p>We can provide a full survey and no obligation quote.  Contact us to arrange an appointment.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.rsfbathrooms.co.uk" target="_blank">
+                            <h4>Shop Online</h4>
+                            <p>We have thousands of products available to buy online.  Visit our online store for further details.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h4>Showroom Tour</h4>
+                            <p>Our large, fully operational showroom demonstrates the latest in high end gadgets and product design.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.reviews.co.uk/company-reviews/store/rsf-bathrooms" target="_blank">
+                            <h4>Customer Reviews</h4>
+                            <p>We pride ourselve in excellent customer service, but don't take our word for it, see what our customers are saying.</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -78,7 +114,7 @@
         </div>
 
         <div class="container">
-            <div id="hp-testimonials">
+            <div class="testimonials">
                 <h3>See what our clients think of us...</h3>
                 <ul data-height-determined-by="p,.customer">
                     <li>
@@ -135,6 +171,21 @@
                     property: 'background-size',
                     easing: 'easeInOutQuad'
                 });
+
+                timer = setInterval(function(){
+                    var $backgroundElements = $('.page-header .background');
+                    var position = $backgroundElements.index($('.background.active'));
+                    position = position + 1 == $backgroundElements.length ? 0 : position + 1;
+                    $backgroundElements.removeClass('active');
+                    var $next = $backgroundElements.eq(position);
+                    $next.addClass('active');
+                    if($next.hasClass('dark')) {
+                        $next.siblings('.copy').addClass('dark');
+                    }
+                    else {
+                        $next.siblings('.copy').removeClass('dark');
+                    }
+                }, 5000)
             }
         });
     </script>

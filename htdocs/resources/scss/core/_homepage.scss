@@ -175,55 +175,30 @@
     }
 }
 
-#hp-testimonials {
-    padding-top: 60px;
-    padding-bottom: 50px;
-    h3 {
-        margin-left: 4%;
-    }
+#hp-cta-panels {
+    @extend .full-width;
+    background: $c-lgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
     ul {
         font-size: 0;
         li {
-            display: inline-block;
-            vertical-align: top;
-            width: 42%;
-            margin: 35px 4%;
-            position: relative;
-            &:before,
-            &:after {
-                font-family: rsficon;
-                display: block;
-                position: absolute;
-                z-index:1;
-                font-size: 48px;
-                opacity: 0.1;
-                color: $c-lblue;
-            }
-            &:before {
-                content: 'o';
-                top: 0;
-                left: -14px;
-            }
-            &:after {
-                content: 'q';
-                bottom: 50px;
-                right: 0;
-            }
-            p {
-                margin-bottom: 4px;
-            }
-            .customer {
-                font-family: $f-libre;
-                font-style: italic;
-                font-size: 14px;
-                line-height: 18px;
-                color: $c-blue;
-                span {
-                    margin-top: 4px;
-                    font-size: 12px;
-                    line-height: 14px;
-                    display: block;
-                    color: $c-grey;
+            display: block;
+            padding: 30px;
+            background: $c-white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            a {
+                h4 {
+                    color: $c-text;
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-weight: 300;
+                }
+                p {
+                    font-size: 13px;
+                    margin-bottom: 0;
+                    color: $c-text;
                 }
             }
         }
@@ -328,6 +303,26 @@
             padding-bottom: 51%;
         }
     }
+
+    #hp-cta-panels {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        ul {
+            li {
+                display: inline-block;
+                vertical-align: top;
+                width: 47%;
+                margin-right: 5%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                &:nth-of-type(2n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }
 
 // =========================
@@ -347,10 +342,22 @@
         }
     }
 
-    #hp-testimonials {
+    #hp-cta-panels {
         ul {
             li {
-                width: 25%;
+                width: 22.7%;
+                margin-right: 3%;
+                &:nth-of-type(2n) {
+                    margin-right: 3%;
+                }
+                &:nth-of-type(4) {
+                    margin-right: 0;
+                }
+                a {
+                    h4 {
+                        font-size: 17px;
+                    }
+                }
             }
         }
     }
@@ -393,6 +400,18 @@
         padding-bottom: 60px;
         .video-wrapper {
             padding-bottom: 42%;
+        }
+    }
+
+    #hp-cta-panels {
+        ul {
+            li {
+                a {
+                    h4 {
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 }

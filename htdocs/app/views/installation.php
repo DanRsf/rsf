@@ -31,6 +31,38 @@
             </div>
         </div>
 
+        <div class="container">
+            <div class="testimonials">
+                <h3>See what our clients think of us...</h3>
+                <ul data-height-determined-by="p,.customer">
+                    <li>
+                        <p>Bought Duravit and Hansgrohe, great products at great prices, thanks for a speedy and professional service.</p>
+                        <div class="customer">Mr Hunt<span>Hutton Mount, Essex</span></div>
+                    </li>
+                    <li>
+                        <p>Carried out design and complete service, found showroom very impressive and service to match.</p>
+                        <div class="customer">Mr &amp; Mrs Allen<span>Hornchurch, Essex</span></div>
+                    </li>
+                    <li>
+                        <p>Would recommend this company to my family and friends, very impressed with workmanship.</p>
+                        <div class="customer">Mr &amp; Mrs Holleran<span>Hornchurch, Essex</span></div>
+                    </li>
+                    <li>
+                        <p>Pleasure working with this company, great from start to finish, loved showroom.</p>
+                        <div class="customer">Mr &amp; Mrs Pooley<span>South Benfleet, Essex</span></div>
+                    </li>
+                    <li>
+                        <p>Great service from start to finish would recommend RSF Bathrooms.</p>
+                        <div class="customer">Mr &amp; Mrs Fish<span>Upminster, Essex</span></div>
+                    </li>
+                    <li>
+                        <p>Thank you for my lovely bathroom, overjoyed with everything.</p>
+                        <div class="customer">Mr &amp; Mrs Floyd<span>Chigwell, Essex</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <?php $this->load->view('includes/footer', $this->data); ?>
 
     </div>

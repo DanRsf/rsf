@@ -1429,12 +1429,17 @@ footer p {
 }
 
 /* line 17, ../scss/layout/_global.scss */
+.full-width, #hp-cta-panels {
+  width: 100%;
+}
+
+/* line 21, ../scss/layout/_global.scss */
 .section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* line 22, ../scss/layout/_global.scss */
+/* line 26, ../scss/layout/_global.scss */
 .full {
   width: 100%;
   top: 0;
@@ -1442,24 +1447,24 @@ footer p {
   position: absolute;
 }
 
-/* line 29, ../scss/layout/_global.scss */
+/* line 33, ../scss/layout/_global.scss */
 .left-column {
   display: block;
   margin-bottom: 30px;
 }
 
-/* line 34, ../scss/layout/_global.scss */
+/* line 38, ../scss/layout/_global.scss */
 .right-column {
   display: block;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 56, ../scss/layout/_global.scss */
+  /* line 60, ../scss/layout/_global.scss */
   #main-container {
     margin-top: 96px;
   }
 
-  /* line 59, ../scss/layout/_global.scss */
+  /* line 63, ../scss/layout/_global.scss */
   .left-column,
   .right-column {
     display: inline-block;
@@ -1468,7 +1473,7 @@ footer p {
     margin-bottom: 0;
   }
 
-  /* line 67, ../scss/layout/_global.scss */
+  /* line 71, ../scss/layout/_global.scss */
   .about .left-column,
   .about .right-column {
     width: 43%;
@@ -1525,84 +1530,145 @@ footer p {
   overflow: visible;
 }
 
-/* line 46, ../scss/core/_page-headers.scss */
-.home .page-header {
-  background-image: url(/resources/img/page-headers/home2.jpg);
-}
-/* line 48, ../scss/core/_page-headers.scss */
+/* line 47, ../scss/core/_page-headers.scss */
 .home .page-header .copy {
   width: 100%;
   background: none;
+  z-index: 2;
 }
 /* line 51, ../scss/core/_page-headers.scss */
 .home .page-header .copy h1 {
   font-size: 34px;
   line-height: 100%;
   margin-bottom: 20px;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.6);
   text-transform: none;
   text-align: center;
   font-weight: 200;
+  -moz-transition: color 1.5s ease;
+  -o-transition: color 1.5s ease;
+  -webkit-transition: color 1.5s ease;
+  transition: color 1.5s ease;
 }
-/* line 59, ../scss/core/_page-headers.scss */
+/* line 60, ../scss/core/_page-headers.scss */
 .home .page-header .copy h1 span {
   display: block;
   font-weight: 300;
   font-size: 75%;
 }
-/* line 65, ../scss/core/_page-headers.scss */
+/* line 66, ../scss/core/_page-headers.scss */
 .home .page-header .copy p {
   max-width: 300px;
   display: block;
   margin: 0 auto;
   font-size: 15px;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5), 0 0 14px rgba(0, 0, 0, 0.5);
   text-align: center;
   line-height: 18px;
   font-weight: 100;
+  -moz-transition: color 1.5s ease;
+  -o-transition: color 1.5s ease;
+  -webkit-transition: color 1.5s ease;
+  transition: color 1.5s ease;
+}
+/* line 76, ../scss/core/_page-headers.scss */
+.home .page-header .copy p small {
+  display: block;
+  font-size: 70%;
+  margin-top: 10px;
+}
+/* line 83, ../scss/core/_page-headers.scss */
+.home .page-header .copy.dark h1 {
+  color: #444444;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.2);
+}
+/* line 87, ../scss/core/_page-headers.scss */
+.home .page-header .copy.dark p {
+  color: #444444;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+}
+/* line 93, ../scss/core/_page-headers.scss */
+.home .page-header .background {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  -moz-transition: opacity 1.5s ease;
+  -o-transition: opacity 1.5s ease;
+  -webkit-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+}
+/* line 104, ../scss/core/_page-headers.scss */
+.home .page-header .background.active {
+  opacity: 1;
+}
+/* line 107, ../scss/core/_page-headers.scss */
+.home .page-header .background.one {
+  background-image: url(/resources/img/page-headers/home/1.jpg);
+}
+/* line 110, ../scss/core/_page-headers.scss */
+.home .page-header .background.two {
+  background-image: url(/resources/img/page-headers/home/2.jpg);
+}
+/* line 113, ../scss/core/_page-headers.scss */
+.home .page-header .background.three {
+  background-image: url(/resources/img/page-headers/home/3.jpg);
+}
+/* line 116, ../scss/core/_page-headers.scss */
+.home .page-header .background.four {
+  background-image: url(/resources/img/page-headers/home/4.jpg);
+}
+/* line 119, ../scss/core/_page-headers.scss */
+.home .page-header .background.five {
+  background-image: url(/resources/img/page-headers/home/5.jpg);
 }
 
-/* line 80, ../scss/core/_page-headers.scss */
+/* line 127, ../scss/core/_page-headers.scss */
 .about .page-header {
   background-image: url("/resources/img/page-headers/about.jpg");
 }
-/* line 83, ../scss/core/_page-headers.scss */
+/* line 130, ../scss/core/_page-headers.scss */
 .about .page-header .copy h1 {
   font-size: 21px;
   line-height: 26px;
 }
 
-/* line 92, ../scss/core/_page-headers.scss */
+/* line 139, ../scss/core/_page-headers.scss */
 .products .page-header {
   background-image: url("/resources/img/parallax/towels-on-wooden-shelf.jpg");
 }
-/* line 95, ../scss/core/_page-headers.scss */
+/* line 142, ../scss/core/_page-headers.scss */
 .products .page-header .copy h1 {
   text-align: right;
   font-size: 21px;
   line-height: 23px;
 }
-/* line 101, ../scss/core/_page-headers.scss */
+/* line 148, ../scss/core/_page-headers.scss */
 .products .page-header .section-link {
   width: 83%;
   bottom: -70px;
 }
 
-/* line 109, ../scss/core/_page-headers.scss */
+/* line 156, ../scss/core/_page-headers.scss */
 .design .page-header {
   padding-top: 0;
   background-image: url("/resources/img/page-headers/design1.jpg");
 }
-/* line 112, ../scss/core/_page-headers.scss */
+/* line 159, ../scss/core/_page-headers.scss */
 .design .page-header .copy {
   z-index: 2;
 }
-/* line 114, ../scss/core/_page-headers.scss */
+/* line 161, ../scss/core/_page-headers.scss */
 .design .page-header .copy h1 {
   font-size: 28px;
   line-height: 33px;
 }
-/* line 119, ../scss/core/_page-headers.scss */
+/* line 166, ../scss/core/_page-headers.scss */
 .design .page-header .background {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -1618,215 +1684,215 @@ footer p {
   -webkit-transition: opacity 0.8s ease;
   transition: opacity 0.8s ease;
 }
-/* line 130, ../scss/core/_page-headers.scss */
+/* line 177, ../scss/core/_page-headers.scss */
 .design .page-header .background.show {
   opacity: 1;
 }
 
-/* line 138, ../scss/core/_page-headers.scss */
+/* line 185, ../scss/core/_page-headers.scss */
 .installation .page-header {
   background-image: url("/resources/img/parallax/glass-wall.jpg");
 }
-/* line 141, ../scss/core/_page-headers.scss */
+/* line 188, ../scss/core/_page-headers.scss */
 .installation .page-header .copy h1 {
   font-size: 21px;
   line-height: 26px;
 }
 
-/* line 150, ../scss/core/_page-headers.scss */
+/* line 197, ../scss/core/_page-headers.scss */
 .areas .page-header {
   padding: 0;
 }
 
-/* line 156, ../scss/core/_page-headers.scss */
+/* line 203, ../scss/core/_page-headers.scss */
 .contact .page-header {
   background-image: url("/resources/img/page-headers/contact.jpg");
 }
-/* line 159, ../scss/core/_page-headers.scss */
+/* line 206, ../scss/core/_page-headers.scss */
 .contact .page-header .copy h1 {
   font-size: 26px;
   line-height: 31px;
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 174, ../scss/core/_page-headers.scss */
+  /* line 221, ../scss/core/_page-headers.scss */
   .home .page-header .copy h1 {
     margin-bottom: 26px;
   }
 
-  /* line 183, ../scss/core/_page-headers.scss */
+  /* line 230, ../scss/core/_page-headers.scss */
   .products .page-header .copy h1 {
     font-size: 29px;
     line-height: 32px;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 197, ../scss/core/_page-headers.scss */
+  /* line 244, ../scss/core/_page-headers.scss */
   .page-header .copy {
     position: absolute;
     width: 400px;
     height: auto;
   }
 
-  /* line 205, ../scss/core/_page-headers.scss */
+  /* line 252, ../scss/core/_page-headers.scss */
   .home .page-header .copy {
     padding-top: 40px;
   }
-  /* line 207, ../scss/core/_page-headers.scss */
+  /* line 254, ../scss/core/_page-headers.scss */
   .home .page-header .copy h1 {
     margin-bottom: 30px;
     font-size: 48px;
   }
-  /* line 210, ../scss/core/_page-headers.scss */
+  /* line 257, ../scss/core/_page-headers.scss */
   .home .page-header .copy h1 span {
     margin-top: 6px;
     font-size: 68%;
   }
-  /* line 215, ../scss/core/_page-headers.scss */
+  /* line 262, ../scss/core/_page-headers.scss */
   .home .page-header .copy p {
     font-size: 16px;
     max-width: 380px;
     line-height: 22px;
   }
 
-  /* line 226, ../scss/core/_page-headers.scss */
+  /* line 273, ../scss/core/_page-headers.scss */
   .about .page-header .copy h1 {
     font-size: 31px;
     line-height: 33px;
   }
 
-  /* line 235, ../scss/core/_page-headers.scss */
+  /* line 282, ../scss/core/_page-headers.scss */
   .products .page-header .copy {
     right: 20px;
   }
-  /* line 237, ../scss/core/_page-headers.scss */
+  /* line 284, ../scss/core/_page-headers.scss */
   .products .page-header .copy h1 {
     font-size: 31px;
     line-height: 33px;
   }
 
-  /* line 246, ../scss/core/_page-headers.scss */
+  /* line 293, ../scss/core/_page-headers.scss */
   .design .page-header .copy {
     right: 20px;
     bottom: 0;
   }
-  /* line 249, ../scss/core/_page-headers.scss */
+  /* line 296, ../scss/core/_page-headers.scss */
   .design .page-header .copy h1 {
     font-size: 26px;
     line-height: 33px;
     margin: 30px 0 0 30px;
   }
 
-  /* line 259, ../scss/core/_page-headers.scss */
+  /* line 306, ../scss/core/_page-headers.scss */
   .installation .page-header .copy {
     top: 20px;
     left: 40px;
   }
-  /* line 262, ../scss/core/_page-headers.scss */
+  /* line 309, ../scss/core/_page-headers.scss */
   .installation .page-header .copy h1 {
     font-size: 30px;
     line-height: 34px;
   }
 
-  /* line 271, ../scss/core/_page-headers.scss */
+  /* line 318, ../scss/core/_page-headers.scss */
   .contact .page-header .copy {
     bottom: 20px;
     left: 40px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 285, ../scss/core/_page-headers.scss */
+  /* line 332, ../scss/core/_page-headers.scss */
   .products .page-header .copy {
     top: 40px;
   }
-  /* line 287, ../scss/core/_page-headers.scss */
+  /* line 334, ../scss/core/_page-headers.scss */
   .products .page-header .copy h1 {
     font-size: 37px;
     line-height: 38px;
     margin: 30px 0 0 50px;
   }
-  /* line 293, ../scss/core/_page-headers.scss */
+  /* line 340, ../scss/core/_page-headers.scss */
   .products .page-header .section-link {
     display: none;
   }
 
-  /* line 300, ../scss/core/_page-headers.scss */
+  /* line 347, ../scss/core/_page-headers.scss */
   .installation .page-header .copy {
     width: 560px;
   }
-  /* line 302, ../scss/core/_page-headers.scss */
+  /* line 349, ../scss/core/_page-headers.scss */
   .installation .page-header .copy h1 {
     font-size: 37px;
     line-height: 38px;
     margin: 0 50px 30px 0;
   }
 
-  /* line 313, ../scss/core/_page-headers.scss */
+  /* line 360, ../scss/core/_page-headers.scss */
   .contact .page-header .copy h1 {
     font-size: 30px;
     line-height: 36px;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 328, ../scss/core/_page-headers.scss */
+  /* line 375, ../scss/core/_page-headers.scss */
   .home .page-header .copy {
     padding-top: 100px;
   }
-  /* line 330, ../scss/core/_page-headers.scss */
+  /* line 377, ../scss/core/_page-headers.scss */
   .home .page-header .copy h1 {
     font-size: 64px;
   }
-  /* line 332, ../scss/core/_page-headers.scss */
+  /* line 379, ../scss/core/_page-headers.scss */
   .home .page-header .copy h1 span {
     font-size: 60%;
   }
-  /* line 336, ../scss/core/_page-headers.scss */
+  /* line 383, ../scss/core/_page-headers.scss */
   .home .page-header .copy p {
     font-size: 22px;
     line-height: 27px;
     max-width: 600px;
   }
-  /* line 342, ../scss/core/_page-headers.scss */
+  /* line 389, ../scss/core/_page-headers.scss */
   .home .page-header .section-link {
     bottom: -70px;
   }
 
-  /* line 349, ../scss/core/_page-headers.scss */
+  /* line 396, ../scss/core/_page-headers.scss */
   .about .page-header .copy {
     top: 40px;
     left: 60px;
     width: 500px;
   }
-  /* line 353, ../scss/core/_page-headers.scss */
+  /* line 400, ../scss/core/_page-headers.scss */
   .about .page-header .copy h1 {
     font-size: 36px;
     line-height: 39px;
     margin: 0 30px 40px 0;
   }
 
-  /* line 363, ../scss/core/_page-headers.scss */
+  /* line 410, ../scss/core/_page-headers.scss */
   .products .page-header .copy {
     top: 40px;
     right: 40px;
   }
-  /* line 366, ../scss/core/_page-headers.scss */
+  /* line 413, ../scss/core/_page-headers.scss */
   .products .page-header .copy h1 {
     font-size: 42px;
     line-height: 41px;
     margin: 50px 0 0 90px;
   }
 
-  /* line 375, ../scss/core/_page-headers.scss */
+  /* line 422, ../scss/core/_page-headers.scss */
   .design .page-header {
     margin-bottom: 80px;
   }
-  /* line 377, ../scss/core/_page-headers.scss */
+  /* line 424, ../scss/core/_page-headers.scss */
   .design .page-header .copy {
     width: 520px;
     bottom: 40px;
     right: 60px;
   }
-  /* line 381, ../scss/core/_page-headers.scss */
+  /* line 428, ../scss/core/_page-headers.scss */
   .design .page-header .copy h1 {
     font-size: 35px;
     line-height: 40px;
@@ -1834,18 +1900,18 @@ footer p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 397, ../scss/core/_page-headers.scss */
+  /* line 444, ../scss/core/_page-headers.scss */
   .products .page-header .copy {
     top: 60px;
     right: 110px;
   }
 
-  /* line 405, ../scss/core/_page-headers.scss */
+  /* line 452, ../scss/core/_page-headers.scss */
   .installation .page-header .copy {
     left: 60px;
   }
 
-  /* line 412, ../scss/core/_page-headers.scss */
+  /* line 459, ../scss/core/_page-headers.scss */
   .contact .page-header .copy {
     left: 60px;
   }
@@ -1951,63 +2017,132 @@ footer p {
   margin: 0 auto;
 }
 
+/* line 89, ../scss/core/_common.scss */
+.testimonials {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+/* line 92, ../scss/core/_common.scss */
+.testimonials h3 {
+  margin-left: 4%;
+}
+/* line 95, ../scss/core/_common.scss */
+.testimonials ul {
+  font-size: 0;
+}
+/* line 97, ../scss/core/_common.scss */
+.testimonials ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 42%;
+  margin: 35px 4%;
+  position: relative;
+}
+/* line 103, ../scss/core/_common.scss */
+.testimonials ul li:before, .testimonials ul li:after {
+  font-family: rsficon;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  font-size: 48px;
+  opacity: 0.1;
+  color: #53B2E0;
+}
+/* line 113, ../scss/core/_common.scss */
+.testimonials ul li:before {
+  content: 'o';
+  top: 0;
+  left: -14px;
+}
+/* line 118, ../scss/core/_common.scss */
+.testimonials ul li:after {
+  content: 'q';
+  bottom: 50px;
+  right: 0;
+}
+/* line 123, ../scss/core/_common.scss */
+.testimonials ul li p {
+  margin-bottom: 4px;
+}
+/* line 126, ../scss/core/_common.scss */
+.testimonials ul li .customer {
+  font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0E5A94;
+}
+/* line 132, ../scss/core/_common.scss */
+.testimonials ul li .customer span {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  display: block;
+  color: #949CA1;
+}
+
 @media only screen and (min-width: 600px) {
-  /* line 101, ../scss/core/_common.scss */
+  /* line 156, ../scss/core/_common.scss */
   .page-header {
     background-size: 100%;
     height: 300px;
   }
 
-  /* line 107, ../scss/core/_common.scss */
+  /* line 162, ../scss/core/_common.scss */
   .gallery h2 {
     font-size: 24px;
   }
-  /* line 111, ../scss/core/_common.scss */
+  /* line 166, ../scss/core/_common.scss */
   .gallery .thumbs li {
     width: 12.5%;
     margin-left: 2%;
   }
-  /* line 114, ../scss/core/_common.scss */
+  /* line 169, ../scss/core/_common.scss */
   .gallery .thumbs li:nth-of-type(5) {
     margin-left: 2%;
   }
-  /* line 117, ../scss/core/_common.scss */
+  /* line 172, ../scss/core/_common.scss */
   .gallery .thumbs li:first-child {
     margin-left: 0px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 130, ../scss/core/_common.scss */
+  /* line 185, ../scss/core/_common.scss */
   .gallery h2 {
     font-size: 24px;
   }
-  /* line 134, ../scss/core/_common.scss */
+  /* line 189, ../scss/core/_common.scss */
   .gallery .thumbs li {
     width: 12.5%;
     margin-left: 2%;
   }
-  /* line 137, ../scss/core/_common.scss */
+  /* line 192, ../scss/core/_common.scss */
   .gallery .thumbs li:nth-of-type(5) {
     margin-left: 2%;
   }
-  /* line 140, ../scss/core/_common.scss */
+  /* line 195, ../scss/core/_common.scss */
   .gallery .thumbs li:first-child {
     margin-left: 0px;
   }
+
+  /* line 203, ../scss/core/_common.scss */
+  .testimonials ul li {
+    width: 25%;
+  }
 }
 @media only screen and (min-width: 960px) {
-  /* line 152, ../scss/core/_common.scss */
+  /* line 214, ../scss/core/_common.scss */
   .page-header {
     height: 440px;
     background-size: 100%;
   }
-  /* line 155, ../scss/core/_common.scss */
+  /* line 217, ../scss/core/_common.scss */
   .page-header .section-link {
     bottom: -70px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 165, ../scss/core/_common.scss */
+  /* line 227, ../scss/core/_common.scss */
   .lg-container {
     max-width: 1200px;
     padding: 0 30px;
@@ -2232,132 +2367,100 @@ footer p {
 }
 
 /* line 178, ../scss/core/_homepage.scss */
-#hp-testimonials {
-  padding-top: 60px;
-  padding-bottom: 50px;
+#hp-cta-panels {
+  background: #CCCCCC;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-/* line 181, ../scss/core/_homepage.scss */
-#hp-testimonials h3 {
-  margin-left: 4%;
-}
-/* line 184, ../scss/core/_homepage.scss */
-#hp-testimonials ul {
+/* line 183, ../scss/core/_homepage.scss */
+#hp-cta-panels ul {
   font-size: 0;
 }
-/* line 186, ../scss/core/_homepage.scss */
-#hp-testimonials ul li {
-  display: inline-block;
-  vertical-align: top;
-  width: 42%;
-  margin: 35px 4%;
-  position: relative;
+/* line 185, ../scss/core/_homepage.scss */
+#hp-cta-panels ul li {
+  display: block;
+  padding: 30px;
+  background: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 /* line 192, ../scss/core/_homepage.scss */
-#hp-testimonials ul li:before, #hp-testimonials ul li:after {
-  font-family: rsficon;
-  display: block;
-  position: absolute;
-  z-index: 1;
-  font-size: 48px;
-  opacity: 0.1;
-  color: #53B2E0;
+#hp-cta-panels ul li a h4 {
+  color: #444444;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
 }
-/* line 202, ../scss/core/_homepage.scss */
-#hp-testimonials ul li:before {
-  content: 'o';
-  top: 0;
-  left: -14px;
-}
-/* line 207, ../scss/core/_homepage.scss */
-#hp-testimonials ul li:after {
-  content: 'q';
-  bottom: 50px;
-  right: 0;
-}
-/* line 212, ../scss/core/_homepage.scss */
-#hp-testimonials ul li p {
-  margin-bottom: 4px;
-}
-/* line 215, ../scss/core/_homepage.scss */
-#hp-testimonials ul li .customer {
-  font-family: "Libre Baskerville", Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: 14px;
-  line-height: 18px;
-  color: #0E5A94;
-}
-/* line 221, ../scss/core/_homepage.scss */
-#hp-testimonials ul li .customer span {
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 14px;
-  display: block;
-  color: #949CA1;
+/* line 198, ../scss/core/_homepage.scss */
+#hp-cta-panels ul li a p {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: #444444;
 }
 
 @media only screen and (min-width: 480px) {
-  /* line 239, ../scss/core/_homepage.scss */
+  /* line 214, ../scss/core/_homepage.scss */
   #hp-info-panels ul li {
     padding: 20px 7%;
   }
-  /* line 241, ../scss/core/_homepage.scss */
+  /* line 216, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .image {
     width: 31%;
   }
-  /* line 243, ../scss/core/_homepage.scss */
+  /* line 218, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .image img {
     max-width: 100%;
   }
-  /* line 247, ../scss/core/_homepage.scss */
+  /* line 222, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content {
     width: 68%;
   }
-  /* line 249, ../scss/core/_homepage.scss */
+  /* line 224, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content h2 {
     margin-bottom: 6px;
     font-size: 18px;
     line-height: 23px;
   }
-  /* line 254, ../scss/core/_homepage.scss */
+  /* line 229, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content p {
     font-size: 13px;
   }
-  /* line 257, ../scss/core/_homepage.scss */
+  /* line 232, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content a {
     font-size: 13px;
   }
 
-  /* line 265, ../scss/core/_homepage.scss */
+  /* line 240, ../scss/core/_homepage.scss */
   #hp-montage .left {
     float: left;
     width: 50%;
   }
-  /* line 269, ../scss/core/_homepage.scss */
+  /* line 244, ../scss/core/_homepage.scss */
   #hp-montage .right {
     float: right;
   }
-  /* line 271, ../scss/core/_homepage.scss */
+  /* line 246, ../scss/core/_homepage.scss */
   #hp-montage .right.small {
     width: 25%;
   }
-  /* line 274, ../scss/core/_homepage.scss */
+  /* line 249, ../scss/core/_homepage.scss */
   #hp-montage .right.big {
     width: 50%;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 286, ../scss/core/_homepage.scss */
+  /* line 261, ../scss/core/_homepage.scss */
   #hp-info-panels {
     padding: 30px 0;
   }
-  /* line 288, ../scss/core/_homepage.scss */
+  /* line 263, ../scss/core/_homepage.scss */
   #hp-info-panels ul {
     width: 100%;
     text-align: center;
     padding: 0;
     margin-bottom: 40px;
   }
-  /* line 293, ../scss/core/_homepage.scss */
+  /* line 268, ../scss/core/_homepage.scss */
   #hp-info-panels ul li {
     width: 33%;
     padding: 0;
@@ -2366,47 +2469,68 @@ footer p {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 300, ../scss/core/_homepage.scss */
+  /* line 275, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .icon {
     line-height: 106px;
     margin: 0;
   }
-  /* line 304, ../scss/core/_homepage.scss */
+  /* line 279, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content {
     width: 80%;
   }
-  /* line 306, ../scss/core/_homepage.scss */
+  /* line 281, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content h2 {
     font-size: 17px;
   }
 
-  /* line 314, ../scss/core/_homepage.scss */
+  /* line 289, ../scss/core/_homepage.scss */
   #hp-product-design {
     overflow: hidden;
   }
-  /* line 316, ../scss/core/_homepage.scss */
+  /* line 291, ../scss/core/_homepage.scss */
   #hp-product-design .copy {
     width: 400px;
     float: right;
   }
-  /* line 319, ../scss/core/_homepage.scss */
+  /* line 294, ../scss/core/_homepage.scss */
   #hp-product-design .copy h2 {
     font-size: 24px;
     line-height: 24px;
   }
 
-  /* line 327, ../scss/core/_homepage.scss */
+  /* line 302, ../scss/core/_homepage.scss */
   #hp-video .video-wrapper {
     padding-bottom: 51%;
   }
+
+  /* line 307, ../scss/core/_homepage.scss */
+  #hp-cta-panels {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /* line 313, ../scss/core/_homepage.scss */
+  #hp-cta-panels ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 320, ../scss/core/_homepage.scss */
+  #hp-cta-panels ul li:nth-of-type(2n) {
+    margin-right: 0;
+  }
 }
 @media only screen and (min-width: 768px) {
-  /* line 337, ../scss/core/_homepage.scss */
+  /* line 332, ../scss/core/_homepage.scss */
   #hp-product-design {
     background-size: 100%;
   }
 
-  /* line 342, ../scss/core/_homepage.scss */
+  /* line 337, ../scss/core/_homepage.scss */
   #hp-video .video-wrapper {
     width: 80%;
     padding-bottom: 41.2%;
@@ -2414,49 +2538,67 @@ footer p {
     margin-left: auto;
   }
 
-  /* line 352, ../scss/core/_homepage.scss */
-  #hp-testimonials ul li {
-    width: 25%;
+  /* line 347, ../scss/core/_homepage.scss */
+  #hp-cta-panels ul li {
+    width: 22.7%;
+    margin-right: 3%;
+  }
+  /* line 350, ../scss/core/_homepage.scss */
+  #hp-cta-panels ul li:nth-of-type(2n) {
+    margin-right: 3%;
+  }
+  /* line 353, ../scss/core/_homepage.scss */
+  #hp-cta-panels ul li:nth-of-type(4) {
+    margin-right: 0;
+  }
+  /* line 357, ../scss/core/_homepage.scss */
+  #hp-cta-panels ul li a h4 {
+    font-size: 17px;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 363, ../scss/core/_homepage.scss */
+  /* line 370, ../scss/core/_homepage.scss */
   #hp-info-panels {
     padding: 60px 0;
   }
-  /* line 368, ../scss/core/_homepage.scss */
+  /* line 375, ../scss/core/_homepage.scss */
   #hp-info-panels ul li .content h2 {
     font-size: 22px;
   }
 
-  /* line 377, ../scss/core/_homepage.scss */
+  /* line 384, ../scss/core/_homepage.scss */
   #hp-product-design .copy {
     margin-top: 70px;
     width: 480px;
   }
-  /* line 380, ../scss/core/_homepage.scss */
+  /* line 387, ../scss/core/_homepage.scss */
   #hp-product-design .copy h2 {
     font-size: 28px;
     line-height: 28px;
   }
-  /* line 384, ../scss/core/_homepage.scss */
+  /* line 391, ../scss/core/_homepage.scss */
   #hp-product-design .copy .cta {
     margin-top: 16px;
     font-size: 14px;
   }
 
-  /* line 391, ../scss/core/_homepage.scss */
+  /* line 398, ../scss/core/_homepage.scss */
   #hp-video {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  /* line 394, ../scss/core/_homepage.scss */
+  /* line 401, ../scss/core/_homepage.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42%;
   }
+
+  /* line 410, ../scss/core/_homepage.scss */
+  #hp-cta-panels ul li a h4 {
+    font-size: 18px;
+  }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 404, ../scss/core/_homepage.scss */
+  /* line 423, ../scss/core/_homepage.scss */
   #hp-montage {
     max-width: 1200px;
     padding: 0 30px;
@@ -2464,12 +2606,12 @@ footer p {
     overflow: hidden;
   }
 
-  /* line 412, ../scss/core/_homepage.scss */
+  /* line 431, ../scss/core/_homepage.scss */
   #hp-product-design .copy {
     margin: 70px 40px 70px 0;
   }
 
-  /* line 418, ../scss/core/_homepage.scss */
+  /* line 437, ../scss/core/_homepage.scss */
   #hp-video .video-wrapper {
     padding-bottom: 42.6%;
   }
