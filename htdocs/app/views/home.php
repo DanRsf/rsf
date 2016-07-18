@@ -19,59 +19,6 @@
             <a href="#hp-info-panels" class="section-link">find out more</a>
         </div>
 
-        <div class="container section">
-            <div id="hp-info-panels" class="scroll-block">
-                <ul>
-                    <li>
-                        <div class="icon">T</div>
-                        <div class="content">
-                            <h2>Beautiful Products</h2>
-                            <p>Our beautiful range of bathroom furniture from the world’s leading brands provides the quality you’ve come to expect.</p>
-                            <a href="/products" class="cta">find out more</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">z</div>
-                        <div class="content">
-                            <h2>Stunning Designs</h2>
-                            <p>Our full bespoke design service draws on the extensive knowledge of our creative team and industry leading design software.</p>
-                            <a href="/design" class="cta">find out more</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon">O</div>
-                        <div class="content">
-                            <h2>Quality Installations</h2>
-                            <p>Our high quality installation service is the ideal way to make your dream bathroom design a reality.</p>
-                            <a href="/installation" class="cta">find out more</a>
-                        </div>
-                    </li>
-                </ul>
-                <a href="#hp-big-tap" class="section-link">stunning designs</a>
-            </div>
-        </div>
-
-        <div id="hp-montage">
-            <div class="scroll-block">
-                <div class="sink left"></div>
-                <div class="chrome-tap right small"></div>
-                <div class="chrome-shower right small"></div>
-                <div class="drencher right big"></div>
-            </div>
-        </div>
-
-        <!-- <div class="container">
-            <div id="hp-video">
-                <h3>Take a look round our showroom</h3>
-                <p>Our large, fully operational showroom demonstrates the latest in high end gadgets and product design.  Visit us in person, or take a sneak peak with our virtual tour.</p>
-                <div class="video-thumb video-wrapper" data-video="k_ID2tUR5fI">
-                    <img src="<?php echo IMG;?>/general/hp-video-thumb.jpg" class="thumbnail"/>
-                    <img src="<?php echo IMG;?>/general/video-play-icon.png" class="play-button"/>
-                </div>
-                <a href="#hp-product-design" class="section-link">stunning designs</a>
-            </div>
-        </div> -->
-
         <div id="hp-cta-panels">
             <div class="container">
                 <ul data-height-determined-by="|p,|h4">
@@ -104,6 +51,47 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+        </div>
+
+        <div id="hp-montage">
+            <div class="scroll-block">
+                <div class="sink left"></div>
+                <div class="chrome-tap right small"></div>
+                <div class="chrome-shower right small"></div>
+                <div class="drencher right big"></div>
+            </div>
+        </div>
+
+        <div class="container section">
+            <div id="hp-info-panels" class="scroll-block">
+                <ul>
+                    <li>
+                        <div class="icon">T</div>
+                        <div class="content">
+                            <h2>Beautiful Products</h2>
+                            <p>Our beautiful range of bathroom furniture from the world’s leading brands provides the quality you’ve come to expect.</p>
+                            <a href="/products" class="cta">find out more</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">z</div>
+                        <div class="content">
+                            <h2>Stunning Designs</h2>
+                            <p>Our full bespoke design service draws on the extensive knowledge of our creative team and industry leading design software.</p>
+                            <a href="/design" class="cta">find out more</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">O</div>
+                        <div class="content">
+                            <h2>Quality Installations</h2>
+                            <p>Our high quality installation service is the ideal way to make your dream bathroom design a reality.</p>
+                            <a href="/installation" class="cta">find out more</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#hp-big-tap" class="section-link">stunning designs</a>
             </div>
         </div>
 

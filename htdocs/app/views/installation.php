@@ -32,6 +32,52 @@
         </div>
 
         <div class="container">
+            <h3>Let our work speak for itself...</h3>
+            <ul class="popup-gallery">
+                <li>
+                    <a href="/resources/img/install/large/1.jpg">
+                        <img src="/resources/img/install/thumbs/1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/img/install/large/2.jpg">
+                        <img src="/resources/img/install/thumbs/2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/img/install/large/3.jpg">
+                        <img src="/resources/img/install/thumbs/3.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/img/install/large/4.jpg">
+                        <img src="/resources/img/install/thumbs/4.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/img/install/large/5.jpg">
+                        <img src="/resources/img/install/thumbs/5.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/img/install/large/6.jpg">
+                        <img src="/resources/img/install/thumbs/6.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/img/install/large/7.jpg">
+                        <img src="/resources/img/install/thumbs/7.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/resources/img/install/large/8.jpg">
+                        <img src="/resources/img/install/thumbs/8.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
             <div class="testimonials">
                 <h3>See what our clients think of us...</h3>
                 <ul data-height-determined-by="p,.customer">
@@ -68,6 +114,28 @@
     </div>
 
     <?php $this->load->view('includes/scripts', $this->data); ?>
+
+    <script>
+        $(document).ready(function() {
+            $('.popup-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                tLoading: 'Loading image #%curr%...',
+                mainClass: 'mfp-img-mobile',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                },
+                image: {
+                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                    titleSrc: function(item) {
+                        return item.el.attr('title');
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
