@@ -164,21 +164,22 @@
                     easing: 'easeInOutQuad'
                 });
 
-                timer = setInterval(function(){
-                    var $backgroundElements = $('.page-header .background');
-                    var position = $backgroundElements.index($('.background.active'));
-                    position = position + 1 == $backgroundElements.length ? 0 : position + 1;
-                    $backgroundElements.removeClass('active');
-                    var $next = $backgroundElements.eq(position);
-                    $next.addClass('active');
-                    if($next.hasClass('dark')) {
-                        $next.siblings('.copy').addClass('dark');
-                    }
-                    else {
-                        $next.siblings('.copy').removeClass('dark');
-                    }
-                }, 5000)
             }
+
+            timer = setInterval(function(){
+                var $backgroundElements = $('.page-header .background');
+                var position = $backgroundElements.index($('.background.active'));
+                position = position + 1 == $backgroundElements.length ? 0 : position + 1;
+                $backgroundElements.removeClass('active');
+                var $next = $backgroundElements.eq(position);
+                $next.addClass('active');
+                if($next.hasClass('dark')) {
+                    $next.siblings('.copy').addClass('dark');
+                }
+                else {
+                    $next.siblings('.copy').removeClass('dark');
+                }
+            }, 5000)
         });
     </script>
 

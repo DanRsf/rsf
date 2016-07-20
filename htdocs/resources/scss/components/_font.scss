@@ -30,6 +30,11 @@ $icon-shopping-cart: "\73";
 $icon-showroom: "\53";
 $icon-reviews: "\61";
 $icon-survey: "\67";
+$icon-facebook-block: "\31";
+$icon-linkedin-block: "\32";
+$icon-pinterest-block: "\33";
+$icon-twitter-block: "\34";
+$icon-youtube-block: "\35";
 
 
 @font-face {
@@ -56,6 +61,25 @@ $icon-survey: "\67";
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin icon($content){
+    font-family: 'rsficon' !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    content: $content;
+}
+//usage: @include icon_block($arrows, arrow_r);
+@mixin font-icon($content) {
+    &:before {
+        @include icon($content);
+    }
 }
 
 .icon-arrow-up {
@@ -206,6 +230,31 @@ $icon-survey: "\67";
 .icon-survey {
     &:before {
         content: $icon-survey;
+    }
+}
+.icon-facebook-block {
+    &:before {
+        content: $icon-facebook-block;
+    }
+}
+.icon-linkedin-block {
+    &:before {
+        content: $icon-linkedin-block;
+    }
+}
+.icon-pinterest-block {
+    &:before {
+        content: $icon-pinterest-block;
+    }
+}
+.icon-twitter-block {
+    &:before {
+        content: $icon-twitter-block;
+    }
+}
+.icon-youtube-block {
+    &:before {
+        content: $icon-youtube-block;
     }
 }
 

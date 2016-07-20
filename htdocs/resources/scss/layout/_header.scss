@@ -93,6 +93,80 @@ header {
         }
     }
 
+    .social-links {
+        display: none;
+        float: right;
+        margin-right: 30px;
+        a {
+            background: white;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            margin-right: 10px;
+            &:before {
+                position: absolute;
+                top: 8px;
+                left: -4px;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        span {
+            float: right;
+            padding-right: 8px;
+        }
+
+
+    }
+
+    .social-linked {
+        @include font-icon($icon-linkedin-block);
+        &:before {
+            font-family: $f-icon;
+            font-size: 32px;
+            color: $c-linkedin;
+        }
+    }
+
+    .social-youtube {
+        @include font-icon($icon-youtube-block);
+        &:before {
+            font-family: $f-icon;
+            font-size: 32px;
+            color: $c-youtube;
+        }
+    }
+
+    .social-facebook {
+        @include font-icon($icon-facebook-block);
+        &:before {
+            font-family: $f-icon;
+            font-size: 32px;
+            color: $c-facebook;
+        }
+    }
+
+    .social-twitter {
+        @include font-icon($icon-twitter-block);
+        &:before {
+            font-family: $f-icon;
+            font-size: 32px;
+            color: $c-twitter;
+        }
+    }
+
+    .social-pinterest {
+        @include font-icon($icon-pinterest-block);
+        &:before {
+            font-family: $f-icon;
+            font-size: 32px;
+            color: $c-pinterest;
+        }
+    }
+
     @include bp(min-width, $bp-small + 1) {
             .header-logo {
                 max-height: 40px;
@@ -100,7 +174,7 @@ header {
     }
 
     @include bp(min-width, $bp-medium + 1) {
-            padding: 20px 0;
+            padding: 20px 0 10px;
             .tel-num {
                 display: block;
                 float: right;
@@ -135,8 +209,11 @@ header {
     }
 
     @include bp(min-width, $bp-large + 1) {
+            .social-links {
+                display: block;
+            }
             nav.desktop {
-                padding-top: 8px;
+                padding-top: 10px;
                 width: 73%;
                 ul {
                     li {

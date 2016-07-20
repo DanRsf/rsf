@@ -5,7 +5,7 @@
     width: 100%;
     height: 210px;
     position: relative;
-    padding: 20px 0;
+    padding: 0;
     .section-link {
         position: absolute;
         bottom: -50px;
@@ -45,6 +45,7 @@
 .home {
     .page-header {
         .copy {
+            position: relative;
             width: 100%;
             background: none;
             z-index: 2;
@@ -93,7 +94,7 @@
         .background {
             background-repeat: no-repeat;
             background-position: 50%;
-            background-size: 100%;
+            background-size: 120%;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -327,6 +328,14 @@
 // Medium breakpoint
 // =========================
 @include bp(min-width, $bp-medium + 1){
+    .page-header {
+        padding: 20px 0;
+    }
+    .home {
+        .page-header {
+            background-size: 100%;
+        }
+    }
     .products {
         .page-header {
             .copy {

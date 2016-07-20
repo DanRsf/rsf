@@ -86,6 +86,42 @@
     }
 }
 
+.online-shop-link {
+    margin-top: 20px;
+    border: 1px solid darken($c-lblue, 10%);
+    background: $c-lblue;
+    display: inline-block;
+    padding: 10px 20px;
+    @extend .icon-shopping-cart;
+    @include border-radius(4px);
+    &:hover {
+        background: $c-blue;
+    }
+    &:before {
+        font-family: rsficon;
+        font-size: 34px;
+        width: 34px;
+        line-height: 34px;
+        display: inline-block;
+        vertical-align: middle;
+        color: $c-white;
+        margin-right: 10px;
+    }
+    a {
+        @extend .cta;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 23px;
+        color: $c-white;
+        &:after {
+            vertical-align: top;
+        }
+        &:hover {
+            color: $c-white;
+        }
+    }
+}
+
 .testimonials {
     padding-top: 60px;
     padding-bottom: 50px;

@@ -21,6 +21,7 @@
                     <h2>Quality to be proud of...</h2>
                     <p>We are committed to offering the very best products from industry leading manufacturers.  Crosswater, Keuco, Kohler, Imperial, Duravit, Utopia, Daryl, Matki, Burgbad and Bauhaus are all included in our extensive range.</p>
                     <p>A selection of our high quality brassware, baths, WC's, designer radiators, tiles, mirror cabinets and bathroom furniture can be seen below.  For the full range, please see our catalogue.</p>
+                    <div class="online-shop-link"><a href="http://www.rsfbathrooms.co.uk" target="_blank">Buy online now!</a></div>
                 </div>
                 <ul class="brand-logos">
                     <li><img src="<?php echo IMG;?>/brands/aqualisa.jpg" /></li>
