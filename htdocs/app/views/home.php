@@ -14,19 +14,21 @@
             <div class="background five" /></div>
             <div class="copy">
                 <h1>Beautiful Bathrooms<span>Affordable Prices</span></h1>
-                <p>Luxury brands at competitive prices, with outstanding service from start to finish.<small>Supply Only – Design &amp; Supply – Full Design &amp; Install</small></p>
+                <p>Luxury brands at competitive prices, with outstanding service from start to finish.</p>
             </div>
             <a href="#hp-info-panels" class="section-link">find out more</a>
         </div>
 
         <div id="hp-cta-panels">
             <div class="container">
+                <h2>Supply Only – Design &amp; Supply – Full Design &amp; Install</h2>
                 <ul data-height-determined-by="|p,|h4">
                     <li>
                         <a href="/contact">
                             <span class="icon-survey"></span>
                             <h4>Book a Survey</h4>
                             <p>We can provide a full survey and no obligation quote.  Contact us to arrange an appointment.</p>
+                            <span class="more-info">more info</span>
                         </a>
                     </li>
                     <li>
@@ -34,6 +36,7 @@
                             <span class="icon-shopping-cart"></span>
                             <h4>Shop Online</h4>
                             <p>We have thousands of products available to buy online.  Visit our online store for further details.</p>
+                            <span class="more-info">more info</span>
                         </a>
                     </li>
                     <li>
@@ -41,6 +44,7 @@
                         <span class="icon-play"></span>
                             <h4>Showroom Tour</h4>
                             <p>Our large, fully operational showroom demonstrates the latest in high end gadgets and product design.</p>
+                            <span class="more-info">more info</span>
                         </a>
                     </li>
                     <li>
@@ -48,6 +52,7 @@
                             <span class="icon-reviews"></span>
                             <h4>Customer Reviews</h4>
                             <p>We pride ourselve in excellent customer service, but don't take our word for it, see what our customers are saying.</p>
+                            <span class="more-info">more info</span>
                         </a>
                     </li>
                 </ul>
