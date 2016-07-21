@@ -7,7 +7,7 @@
             <a class="social-facebook" title="RSF Bathrooms on Facebook" href="http://www.facebook.com/rsfbathrooms" target="_blank">&nbsp;</a>
             <a class="social-twitter" title="RSF Bathrooms on Twitter" href="https://twitter.com/rsfbathrooms/" target="_blank">&nbsp;</a>
             <a class="social-pinterest" title="RSF Bathrooms Pinterest" href="https://www.pinterest.com/rbathrooms/" target="_blank">&nbsp;</a>
-            <a class="social-linked" title="RSF Bathrooms on linkedIn" href="https://uk.linkedin.com/in/rsfbath-essex-5452553b" target="_blank">&nbsp;</a>
+            <!-- <a class="social-linked" title="RSF Bathrooms on linkedIn" href="https://uk.linkedin.com/in/rsfbath-essex-5452553b" target="_blank">&nbsp;</a> -->
             <a class="social-youtube" title="RSF Bathrooms on YouTube" href="https://www.youtube.com/channel/UC-ObPbM9ZITIyLkDGSOEv0g" target="_blank">&nbsp;</a>
         </div>
         <?php $this->load->view('includes/nav', $this->data); ?>
