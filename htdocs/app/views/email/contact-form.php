@@ -197,8 +197,8 @@
               <td>
 
                 <div>
-                  <h2>RSF Bathrooms&trade; Contact Enquiry</h2>
-                  <p>A customer has submitted an enquiry through the contact form on the rsfbathroomdesigns.co.uk&trade; website. Here are the submitted details.</p>
+                  <h2>RSF Bathrooms Enquiry</h2>
+                  <p>A customer has submitted an enquiry through the contact form on the rsfbathroomdesigns.co.uk website. Here are the submitted details.</p>
                   <h3>Details</h3>
                   <table>
                     <tr>

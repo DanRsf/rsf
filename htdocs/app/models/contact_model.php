@@ -13,9 +13,8 @@ Class Contact_model extends CI_Model {
 
     public function send($fromEmail, $enquiry, $fromName, $fromTel, $toEmail = false, $subject = false)
     {
-        // $from = $toEmail !== false ? $toEmail : 'info@rsfbathrooms.co.uk';
-    	$from = $toEmail !== false ? $toEmail : 'chris@touson.co.uk';
-    	$from = $subject ? $subject : 'Website enquiry';
+        $to = $toEmail !== false ? $toEmail : 'info@rsfbathrooms.co.uk';
+    	$subject = $subject !== false ? $subject : 'Website enquiry';
 
         $emailData = [
             'email' => $fromEmail,
@@ -27,7 +26,7 @@ Class Contact_model extends CI_Model {
         $message = $this->load->view('email/contact-form', $emailData, true);
 
         $this->email->from($fromEmail, $fromName);
-        $this->email->to($toEmail);
+        $this->email->to($to);
         $this->email->subject($subject);
         $this->email->message($message);
 

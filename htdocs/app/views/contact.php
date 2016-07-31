@@ -32,7 +32,7 @@
                 {
                     ?>
                     <p>Thank you for your enquiry.</p>
-                    <p>Your details have been sent to our customer servers team who will contact you shortly to discuss your requirements further.</p>
+                    <p>Your details have been sent to our customer services team who will contact you shortly to discuss your requirements further.</p>
                     <p>If you enquiry is urgent, feel free to give us a call.</p>
                     <?php
                 }
