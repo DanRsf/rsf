@@ -14,7 +14,7 @@
         <div class="footer-block">
             <nav>
                 <ul>
-                    <li><a href="/about">about</a></li>
+                    <li><a href="/about-us">about</a></li>
                     <li><a href="/products">products</a></li>
                     <li><a href="/design">design</a></li>
                     <li><a href="/installation">installation</a></li>

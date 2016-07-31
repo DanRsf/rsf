@@ -39,8 +39,11 @@ class Page extends MY_Controller
             if($this->form_validation->run('contact'))
             {
                 $this->load->model('contact_model');
-                $post = $this->input->post();
-                if($response = $this->contact_model->send($post['email'], $post['enquiry']))
+                foreach(['name','email','enquiry','phone'] as $field) {
+                    $post[$field] = $this->input->post($field);
+                }
+
+                if($response = $this->contact_model->send($post['email'], $post['enquiry'], $post['name'], $post['phone']))
                 {
                     $this->data['success'] = true;
                 }

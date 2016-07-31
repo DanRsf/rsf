@@ -193,7 +193,7 @@
         }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs-0yThrbAompGPyxsE57NlhgI9tZ7YhI&callback=initMap"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs-0yThrbAompGPyxsE57NlhgI9tZ7YhI&callback=initMap"></script>
 </body>
 </html>
