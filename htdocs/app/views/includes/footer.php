@@ -1,10 +1,10 @@
 <div id="sign-up">
     <div class="container">
-        <p>sign up to our <strong>free</strong> newsletter</p>
+        <!-- <p>sign up to our <strong>free</strong> newsletter</p>
         <form action="">
             <input type="text">
             <button>submit</button>
-        </form>
+        </form> -->
     </div>
 </div>
 

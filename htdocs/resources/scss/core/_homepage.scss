@@ -107,6 +107,7 @@
         background-position: 50% 0;
         background-repeat: no-repeat;
         background-size: 101%;
+        @include transform(background-size 1s);
     }
     .sink {
         background-image: url('/resources/img/general/hp-montage-basin.jpg');

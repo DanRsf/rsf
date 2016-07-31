@@ -159,15 +159,15 @@
                     enablePin: false
                 });
 
-                scrollorama
-                .animate('#hp-montage div', {
-                    delay: positions.montage[bp].delay,
-                    start: positions.montage[bp].start,
-                    end: positions.montage[bp].end,
-                    duration: positions.montage[bp].duration,
-                    property: 'background-size',
-                    easing: 'easeInOutQuad'
-                });
+                // scrollorama
+                // .animate('#hp-montage div', {
+                //     delay: positions.montage[bp].delay,
+                //     start: positions.montage[bp].start,
+                //     end: positions.montage[bp].end,
+                //     duration: positions.montage[bp].duration,
+                //     property: 'background-size',
+                //     easing: 'easeInOutQuad'
+                // });
 
             }
 
